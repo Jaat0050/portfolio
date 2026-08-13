@@ -1,233 +1,1012 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arjun Rana</title>
-    <link rel=" stylesheet" href="style.css">
-    <link rel="icon" href="images/icon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/e1e056e2a8.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<!-- ----------------------------------------top------------------------------------ -->
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo" >
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Flutter Developer</p>
-            <h1>Hi, I'm <span>Arjun</span><br>Rana From Bharat</h1>
-        </div>
-    </div>
-</div>
-<!-- ---------------------------------------about----------------------------------------- -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/flutter.png">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Bringing over a year of dedicated expertise to the table, I am a seasoned Flutter developer with a distinct focus on cross-platform app development. My proficiency extends beyond mere coding; my strong project management skills ensure not just the completion but the timely delivery of projects. When it comes to crafting websites and apps, reliability takes center stage in my approach.<br>Backed by a proven track record, I am committed to optimal performance, constantly staying abreast of the latest technologies to incorporate cutting-edge solutions. Let's embark on this journey together, turning your innovative ideas into tangible, functional realities.</p>               
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('training')">Training</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Flutter</span><br><br>Android app, Ios app, Flutter web, State management, GetX, Bloc, etc...</li>
-                        <li><span>Firebase</span><br><br>Firebase integration, Firestore, Oauth, etc...</li>
-                        <li><span>GitHub</span><br><br>Git commands, Code management, etc...</li>
-                        <li><span>Web development</span><br><br>HTML and CSS</li>
-                        <li><span>API's</span><br><br>API integrations, Restfull api, 3rd party api integration, etc...</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>June,2023 - Current</span><br><br>Flutter Developer<br><span1>NextGen Techno Ventures</span1></li>
-                        <li><span>April,2023 (1 month)</span><br><br>Flutter Developer Intern<br><span1>Celebrare</span1></li>
-                        <li><span>June,2022 (3 months)</span><br><br>Android Developer Intern<br><span1>Baoiam Innovations Pvt. Ltd.</span1></li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="training">
-                    <ul>
-                        <li><span>Android Application Development</span><br><br>From Great Learning<br><span1>Virtual</span1></li>
-                        <li><span>Full Stack Development</span><br><br>From RCE<br><span1>Roorkee College of Roorkee</span1></li>
-                        <li><span>Web Development</span><br><br>From IIT Bombay (Spoken Tutorial)<br><span1>Virtual</span1></li>
-                        <li><span>C/C++ Programming</span><br><br>From IIT Bombay (Spoken Tutorial)<br><span1>Virtual</span1></li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2019 - 2023</span><br><br>BTech (CSE)<br><span1>Uttrakhand Technical University</span1></li>
-                        <li><span>2018 - 2019</span><br><br>12th<br><span1>D.A.V. Public School</span1></li>
-                        <li><span>2016 - 2017</span><br><br>10th<br><span1>D.A.V. Public School</span1></li>
-                    </ul>
-                </div>
-                 <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-            </div>
-        </div>
-    </div>
-</div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arjun Rana | Flutter Developer & Mobile Application Engineer</title>
 
-<!-- --------------------------------------services------------------------------------- -->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <!-- ======================================================================= -->
-            <div>
-                <i class="fa-brands fa-android"></i>
-                <h2>Application Development</h2>
-                <p>Crafting cutting-edge mobile applications tailored to meet your unique needs. Our expertise in Android development ensures seamless, user-friendly experiences that elevate your brand in the digital landscape.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-globe"></i>
-                <h2>Web Development</h2>
-                <p>Building robust and responsive websites that leave a lasting impression. Our web development services combine creativity and functionality, delivering a captivating online presence for your business or project.</p>
-                <a href="#">learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-list-check"></i>
-                <h2>Project Management</h2>
-                <p>Ensuring successful project delivery through meticulous planning and execution. Our project management services streamline the development process, keeping projects on track and ensuring your vision becomes a reality.</p>
-                <a href="#">Learn more</a>
-            </div>
-           <!-- ======================================================================= -->
-        </div>
-    </div>
-</div>
-<!-- --------------------------------------work------------------------------------- -->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/ph1.png">
-                <div class="layer">
-                    <h3>Expence Tracker</h3>
-                    <p>Effortlessly manage your finances with the Expense Tracker app. Track your daily expenses, analyze spending patterns, and stay in control of your budget. This user-friendly tool provides insightful reports, helping you make informed financial decisions. Say goodbye to financial stress and hello to a smarter way of managing your money.</p>
-                    <a href="https://github.com/Jaat0050/CipherSchools-Flutter-Assignment."><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/ph2.png">
-                <div class="layer">
-                    <h3>Loan Facilator App</h3>
-                    <p>Empower your financial journey with the Loan Facilitator App. Seamlessly navigate the loan application process, access personalized financial advice, and make informed decisions about your borrowing needs. Whether you're exploring options for a new home, business venture, or personal investment, this app simplifies the lending landscape, making financial opportunities more accessible than ever.</p>
-                    <a href="https://github.com/Jaat0050"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/ph3.png">
-                <div class="layer">
-                    <h3>Hangman game</h3>
-                    <p>Experience the classic word-guessing fun with the Hangman Game. Challenge your vocabulary and strategic thinking as you try to uncover the hidden word. With engaging gameplay and a user-friendly interface, this app provides a delightful way to sharpen your language skills. Whether you're a solo player or competing with friends, the Hangman Game is your go-to source for entertainment and mental stimulation.</p>
-                    <a href="https://github.com/Jaat0050/HangMan"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="https://github.com/Jaat0050" class="btn">See more</a>
-    </div>
-</div>
-<!-- --------------------------------------contact------------------------------------- -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:rana.arjun62001@gmail.com">rana.arjun62001@gmial.com</a></p>
-                <p><i class="fa-solid fa-square-phone"></i><a href="tel:+917417662218">+91 74176 62218</a></p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/rana.a_005/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/arjunrana.jaat.1"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://wa.me/917417662218"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://twitter.com/rana_a_005"><i class="fa-brands fa-twitter-square"></i></a>
-                    <a href="https://www.linkedin.com/in/arjun-rana-738503194"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Jaat0050"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <a href="images/Arjun Rana Resume.pdf" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © Arjun Rana 🔱 Jai Shree Ram 🔱</p>
-    </div>
-</div>
+  <!-- SEO -->
+  <meta name="description" content="Arjun Rana — Mobile Application Developer & Flutter Expert specializing in production iOS & Android apps, AI-powered mobile experiences, Firebase, Supabase and REST API integrations. 3+ years professional experience.">
+  <meta name="keywords" content="Arjun Rana, Flutter Developer, Mobile Application Developer, Flutter Expert, AI Application Developer, Flutter Developer India, iOS Android Developer, Firebase Developer">
+  <meta name="author" content="Arjun Rana">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jaat0050.github.io/portfolio/">
 
-<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jaat0050.github.io/portfolio/">
+  <meta property="og:title" content="Arjun Rana | Flutter Developer & Mobile Application Engineer">
+  <meta property="og:description" content="Building scalable, high-performance mobile experiences for iOS and Android using Flutter, modern architecture, cloud technologies and AI.">
+  <meta property="og:image" content="https://jaat0050.github.io/portfolio/images/og-image.jpg">
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@rana_a_005">
+  <meta name="twitter:title" content="Arjun Rana | Flutter Developer">
+  <meta name="twitter:description" content="Building scalable mobile apps with Flutter, AI & Cloud.">
+  <meta name="twitter:image" content="https://jaat0050.github.io/portfolio/images/og-image.jpg">
 
-<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
-<script>
-     var sidemenu = document.getElementById("sidemenu");
+  <!-- Favicon -->
+  <link rel="icon" href="images/icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
 
-     function openmenu(){
-         sidemenu.style.right = "0";
-     }
-     function closemenu(){
-         sidemenu.style.right = "-200px";
-     }
-</script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyDanjzL5W9wfoXg-QixhMNWHqXovLbfQzAOQLD8syzXeF2jAlDDA4Cyr7dNTDSbAJEag/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfuly"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Arjun Rana",
+    "jobTitle": "Mobile Application Developer",
+    "description": "Flutter Developer and Mobile Application Engineer with 3+ years of experience building production iOS and Android applications.",
+    "url": "https://jaat0050.github.io/portfolio/",
+    "sameAs": [
+      "https://github.com/Jaat0050",
+      "https://www.linkedin.com/in/arjun-rana-738503194",
+      "https://twitter.com/rana_a_005"
+    ]
+  }
   </script>
-    
+</head>
+<body class="loading">
+
+  <!-- ================================================================
+       CUSTOM CURSOR
+       ================================================================ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ================================================================
+       LOADER
+       ================================================================ -->
+  <div id="loader" role="status" aria-label="Loading portfolio">
+    <div class="loader-name"><span>ARJUN</span> RANA</div>
+    <div class="loader-sub">Mobile &bull; Flutter &bull; AI</div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar" id="loaderBar"></div>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       NAVIGATION
+       ================================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo" aria-label="Arjun Rana Home">AR<span>.</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="#hero" data-section="hero">Home</a></li>
+      <li><a href="#about" data-section="about">About</a></li>
+      <li><a href="#skills" data-section="skills">Skills</a></li>
+      <li><a href="#experience" data-section="experience">Experience</a></li>
+      <li><a href="#projects" data-section="projects">Projects</a></li>
+      <li><a href="#ailab" data-section="ailab">AI Lab</a></li>
+      <li><a href="#services" data-section="services">Services</a></li>
+      <li><a href="#contact" class="nav-cta" data-section="contact">Let's Talk</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+    <a href="#hero" class="mobile-nav-link">Home</a>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#skills" class="mobile-nav-link">Skills</a>
+    <a href="#experience" class="mobile-nav-link">Experience</a>
+    <a href="#projects" class="mobile-nav-link">Projects</a>
+    <a href="#ailab" class="mobile-nav-link">AI Lab</a>
+    <a href="#services" class="mobile-nav-link">Services</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+  </div>
+
+  <!-- ================================================================
+       HERO SECTION
+       ================================================================ -->
+  <section id="hero" aria-label="Hero section">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge reveal">
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          Available for Freelance &amp; Full-time Roles
+        </div>
+
+        <h1 class="hero-name reveal reveal-delay-1">
+          <span class="line-1">Arjun</span><br>
+          <span class="line-2">Rana</span>
+        </h1>
+
+        <p class="hero-title reveal reveal-delay-2">
+          Mobile Application Developer
+          <span class="sep" aria-hidden="true">·</span>
+          Flutter Expert
+          <span class="sep" aria-hidden="true">·</span>
+          AI-Powered Apps
+        </p>
+
+        <p class="hero-description reveal reveal-delay-3">
+          Building scalable, high-performance mobile experiences for iOS and Android using Flutter, modern architecture, cloud technologies and AI.
+        </p>
+
+        <div class="hero-tags reveal reveal-delay-3" aria-label="Technology expertise">
+          <span class="hero-tag">Flutter</span>
+          <span class="hero-tag">Dart</span>
+          <span class="hero-tag">Firebase</span>
+          <span class="hero-tag">Supabase</span>
+          <span class="hero-tag">REST APIs</span>
+          <span class="hero-tag">AI Integration</span>
+          <span class="hero-tag">iOS &amp; Android</span>
+        </div>
+
+        <div class="hero-cta reveal reveal-delay-4">
+          <a href="#contact" class="btn-primary magnetic" id="heroContactBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            Let's Talk
+          </a>
+          <a href="#projects" class="btn-secondary magnetic" id="heroProjectsBtn">
+            View My Work
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right" aria-hidden="true">
+        <div id="phone-canvas-container">
+          <canvas id="phone-canvas"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+      Scroll to explore
+    </div>
+  </section>
+
+  <!-- ================================================================
+       ABOUT SECTION
+       ================================================================ -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title" id="about-heading">The Engineer<br>Behind the <em>Apps</em></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-story reveal reveal-delay-1">
+          <p>
+            I'm <strong>Arjun Rana</strong>, a Mobile Application Developer from India with <strong>3+ years of professional Flutter development</strong> experience. I specialize in building production-ready iOS and Android applications that are fast, scalable, and user-focused.
+          </p>
+          <p>
+            Currently at <strong>NextGen Techno Ventures</strong>, I work across the full mobile development lifecycle — from architecture decisions and UI implementation to API integration, Firebase backend setup, and App Store / Play Store deployment.
+          </p>
+          <p>
+            My development work increasingly includes <strong>AI-powered application experiences</strong>, integrating LLM APIs and intelligent features into mobile products. I believe the next generation of mobile applications will be shaped by the intersection of Flutter's cross-platform capability and AI.
+          </p>
+
+          <div class="about-highlights">
+            <div class="about-highlight-item">
+              <div class="about-highlight-icon">📱</div>
+              <div>
+                <div class="about-highlight-text">iOS &amp; Android Production Apps</div>
+                <div class="about-highlight-sub">App Store &amp; Google Play deployments</div>
+              </div>
+            </div>
+            <div class="about-highlight-item">
+              <div class="about-highlight-icon">🔥</div>
+              <div>
+                <div class="about-highlight-text">Firebase &amp; Cloud Backends</div>
+                <div class="about-highlight-sub">Auth, Firestore, Storage, Functions, FCM</div>
+              </div>
+            </div>
+            <div class="about-highlight-item">
+              <div class="about-highlight-icon">🤖</div>
+              <div>
+                <div class="about-highlight-text">AI-Powered Mobile Experiences</div>
+                <div class="about-highlight-sub">LLM integration, intelligent features</div>
+              </div>
+            </div>
+            <div class="about-highlight-item">
+              <div class="about-highlight-icon">⚡</div>
+              <div>
+                <div class="about-highlight-text">Real-Time Applications</div>
+                <div class="about-highlight-sub">WebSockets, STOMP, live data</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right reveal reveal-delay-2">
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-number" data-target="3" data-suffix="+">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="3" data-suffix="">0</div>
+              <div class="stat-label">Companies Worked</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="5" data-suffix="+">0</div>
+              <div class="stat-label">Tech Stacks</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="2" data-suffix="">0</div>
+              <div class="stat-label">Platforms Shipped</div>
+            </div>
+          </div>
+
+          <div class="about-tech-used">
+            <div class="about-tech-label">Primary Technologies</div>
+            <div class="about-tech-pills">
+              <span class="tech-pill">Flutter</span>
+              <span class="tech-pill">Dart</span>
+              <span class="tech-pill">Firebase</span>
+              <span class="tech-pill">Supabase</span>
+              <span class="tech-pill">REST APIs</span>
+              <span class="tech-pill">BLoC</span>
+              <span class="tech-pill">GetX</span>
+              <span class="tech-pill">Provider</span>
+              <span class="tech-pill">Riverpod</span>
+              <span class="tech-pill">WebSockets</span>
+              <span class="tech-pill">Google Maps</span>
+              <span class="tech-pill">AI APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SKILLS / TECHNOLOGY UNIVERSE
+       ================================================================ -->
+  <section id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="skills-header reveal">
+        <span class="section-tag">Technology Stack</span>
+        <h2 class="section-title" id="skills-heading">My Technology<br><em>Universe</em></h2>
+        <p class="section-subtitle">Click any technology node to explore my experience and expertise with it.</p>
+      </div>
+
+      <!-- 3D Universe (Desktop) -->
+      <canvas id="tech-universe-canvas" aria-label="Interactive technology universe. Click nodes to learn about each technology." role="img"></canvas>
+
+      <!-- Info Panel -->
+      <div class="tech-info-panel" id="techInfoPanel" aria-live="polite">
+        <div class="tech-info-icon" id="techInfoIcon">🎯</div>
+        <div>
+          <div class="tech-info-name" id="techInfoName">Click a technology node</div>
+          <div class="tech-info-desc" id="techInfoDesc">Hover or click any technology in the universe above to see detailed experience.</div>
+        </div>
+      </div>
+      <p class="tech-hint" aria-hidden="true">🖱️ Drag to rotate &nbsp;·&nbsp; Click to learn &nbsp;·&nbsp; Scroll to zoom</p>
+
+      <!-- Tech Grid (Mobile fallback) -->
+      <div class="tech-grid-mobile" id="techGridMobile" aria-label="Technology skills">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       EXPERIENCE SECTION
+       ================================================================ -->
+  <section id="experience" aria-labelledby="experience-heading">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-tag">Career</span>
+        <h2 class="section-title" id="experience-heading">Experience &amp;<br><em>Timeline</em></h2>
+        <p class="section-subtitle">3+ years of professional Flutter and mobile application development across multiple organizations.</p>
+      </div>
+
+      <div class="timeline" role="list" aria-label="Work experience timeline">
+
+        <!-- NextGen Techno Ventures -->
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-dot current" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-date">June 2023 – Present</span>
+              <span class="timeline-type">Full-time</span>
+            </div>
+            <h3 class="timeline-role">Flutter Developer</h3>
+            <div class="timeline-company">NextGen Techno Ventures</div>
+            <p class="timeline-desc">
+              Building and maintaining production-ready Flutter applications for iOS and Android. Responsible for full-cycle development including architecture, UI implementation, backend integration, and deployment to App Store and Google Play.
+            </p>
+            <div class="timeline-tags" aria-label="Technologies used">
+              <span class="timeline-tag">Flutter</span>
+              <span class="timeline-tag">Dart</span>
+              <span class="timeline-tag">Firebase</span>
+              <span class="timeline-tag">Supabase</span>
+              <span class="timeline-tag">REST APIs</span>
+              <span class="timeline-tag">BLoC</span>
+              <span class="timeline-tag">GetX</span>
+              <span class="timeline-tag">Google Maps</span>
+              <span class="timeline-tag">WebSockets</span>
+              <span class="timeline-tag">AI APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Celebrare -->
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-date">April 2023 · 1 Month</span>
+              <span class="timeline-type">Internship</span>
+            </div>
+            <h3 class="timeline-role">Flutter Developer Intern</h3>
+            <div class="timeline-company">Celebrare</div>
+            <p class="timeline-desc">
+              Contributed to Flutter application development, gaining hands-on experience with cross-platform mobile development and industry-standard workflows.
+            </p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Flutter</span>
+              <span class="timeline-tag">Dart</span>
+              <span class="timeline-tag">Mobile Development</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Baoiam Innovations -->
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-date">June 2022 · 3 Months</span>
+              <span class="timeline-type">Internship</span>
+            </div>
+            <h3 class="timeline-role">Android Developer Intern</h3>
+            <div class="timeline-company">Baoiam Innovations Pvt. Ltd.</div>
+            <p class="timeline-desc">
+              Developed native Android applications, building a strong foundation in mobile application architecture, Java/Kotlin development patterns, and Android platform fundamentals.
+            </p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Android</span>
+              <span class="timeline-tag">Java</span>
+              <span class="timeline-tag">Mobile Development</span>
+              <span class="timeline-tag">Android Studio</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education -->
+      <div class="education-block">
+        <h3 class="education-title">Education &amp; Training</h3>
+        <div class="education-grid">
+          <div class="education-card reveal">
+            <div class="education-year">2019 – 2023</div>
+            <div class="education-degree">BTech — Computer Science &amp; Engineering</div>
+            <div class="education-school">Uttarakhand Technical University</div>
+          </div>
+          <div class="education-card reveal reveal-delay-1">
+            <div class="education-year">Training</div>
+            <div class="education-degree">Android Application Development</div>
+            <div class="education-school">Great Learning (Virtual)</div>
+          </div>
+          <div class="education-card reveal reveal-delay-2">
+            <div class="education-year">Training</div>
+            <div class="education-degree">Full Stack Development</div>
+            <div class="education-school">RCE — Roorkee College of Engineering</div>
+          </div>
+          <div class="education-card reveal reveal-delay-3">
+            <div class="education-year">Training</div>
+            <div class="education-degree">Web Development &amp; C/C++ Programming</div>
+            <div class="education-school">IIT Bombay — Spoken Tutorial</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PROJECTS SECTION
+       ================================================================ -->
+  <section id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-tag">Selected Work</span>
+        <h2 class="section-title" id="projects-heading">Apps I've<br>Helped <em>Build</em></h2>
+        <p class="section-subtitle">Production-quality mobile applications built with Flutter, integrated with cloud backends and modern architecture.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Expense Tracker -->
+        <article class="project-card reveal" 
+                 data-project="expense"
+                 aria-label="Expense Tracker project"
+                 tabindex="0"
+                 role="button"
+                 onkeydown="if(event.key==='Enter')openModal('expense')">
+          <div class="project-image">
+            <img src="images/project_expense.jpg" 
+                 alt="Expense Tracker Flutter App — financial dashboard with charts and transaction history" 
+                 loading="lazy">
+            <div class="project-image-overlay" aria-hidden="true"></div>
+            <span class="project-platform-badge">iOS &amp; Android</span>
+          </div>
+          <div class="project-body">
+            <div class="project-category">Finance · Flutter</div>
+            <h3 class="project-name">Expense Tracker</h3>
+            <p class="project-desc">
+              A personal finance management application built with Flutter. Track daily expenses, analyze spending patterns across categories, and visualize financial data with interactive charts and dashboards.
+            </p>
+            <div class="project-tags" aria-label="Technologies">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Dart</span>
+              <span class="project-tag">Local Storage</span>
+              <span class="project-tag">Charts</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Jaat0050/CipherSchools-Flutter-Assignment." 
+                 class="project-link" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 aria-label="View Expense Tracker on GitHub"
+                 onclick="event.stopPropagation()">
+                View on GitHub
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <span class="project-role">Developer</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Loan Facilitator -->
+        <article class="project-card reveal reveal-delay-1" 
+                 data-project="loan"
+                 aria-label="Loan Facilitator App project"
+                 tabindex="0"
+                 role="button"
+                 onkeydown="if(event.key==='Enter')openModal('loan')">
+          <div class="project-image">
+            <img src="images/project_loan.jpg" 
+                 alt="Loan Facilitator App — fintech mobile application with loan options and application progress" 
+                 loading="lazy">
+            <div class="project-image-overlay" aria-hidden="true"></div>
+            <span class="project-platform-badge">iOS &amp; Android</span>
+          </div>
+          <div class="project-body">
+            <div class="project-category">FinTech · Flutter</div>
+            <h3 class="project-name">Loan Facilitator App</h3>
+            <p class="project-desc">
+              A fintech mobile application that simplifies the loan application process. Features personalized financial advice, loan options comparison, application progress tracking, and approval status updates.
+            </p>
+            <div class="project-tags" aria-label="Technologies">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Dart</span>
+              <span class="project-tag">REST API</span>
+              <span class="project-tag">Finance</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Jaat0050" 
+                 class="project-link" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 aria-label="View GitHub profile"
+                 onclick="event.stopPropagation()">
+                View on GitHub
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <span class="project-role">Developer</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Hangman -->
+        <article class="project-card reveal reveal-delay-2" 
+                 data-project="hangman"
+                 aria-label="Hangman Game project"
+                 tabindex="0"
+                 role="button"
+                 onkeydown="if(event.key==='Enter')openModal('hangman')">
+          <div class="project-image">
+            <img src="images/project_hangman.jpg" 
+                 alt="Hangman Game Flutter App — word guessing game with keyboard and score display" 
+                 loading="lazy">
+            <div class="project-image-overlay" aria-hidden="true"></div>
+            <span class="project-platform-badge">iOS &amp; Android</span>
+          </div>
+          <div class="project-body">
+            <div class="project-category">Game · Flutter</div>
+            <h3 class="project-name">Hangman Game</h3>
+            <p class="project-desc">
+              A classic word-guessing game built with Flutter. Features a clean dark UI, letter-by-letter guess mechanics, score tracking, lives system, and an engaging interactive keyboard interface.
+            </p>
+            <div class="project-tags" aria-label="Technologies">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Dart</span>
+              <span class="project-tag">Game Logic</span>
+              <span class="project-tag">State Management</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Jaat0050/HangMan" 
+                 class="project-link" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 aria-label="View Hangman Game on GitHub"
+                 onclick="event.stopPropagation()">
+                View on GitHub
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <span class="project-role">Developer</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align:center; margin-top: 40px;" class="reveal">
+        <a href="https://github.com/Jaat0050" 
+           class="btn-secondary" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           id="githubBtn"
+           aria-label="View all projects on GitHub">
+          View All Projects on GitHub
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PROJECT MODALS
+       ================================================================ -->
+  <!-- Expense Tracker Modal -->
+  <div class="modal-overlay" id="modal-expense" role="dialog" aria-modal="true" aria-labelledby="modal-expense-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <img src="images/project_expense.jpg" alt="Expense Tracker application interface">
+        <button class="modal-close" onclick="closeModal('expense')" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-category">Finance · Flutter · Mobile</div>
+        <h3 class="modal-title" id="modal-expense-title">Expense Tracker</h3>
+        <p class="modal-description">
+          A personal finance management Flutter application designed to help users track their daily expenditures, understand spending patterns, and make informed financial decisions. The app provides clear visualizations through charts, category breakdowns, and financial summaries.
+        </p>
+        <div class="modal-section-title">Technologies Used</div>
+        <div class="modal-tags">
+          <span class="modal-tag">Flutter</span>
+          <span class="modal-tag">Dart</span>
+          <span class="modal-tag">Local Storage</span>
+          <span class="modal-tag">Charts &amp; Visualization</span>
+          <span class="modal-tag">State Management</span>
+        </div>
+        <div class="modal-actions">
+          <a href="https://github.com/Jaat0050/CipherSchools-Flutter-Assignment." target="_blank" rel="noopener noreferrer" class="btn-primary">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            View Source
+          </a>
+          <button class="btn-secondary" onclick="closeModal('expense')">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loan Facilitator Modal -->
+  <div class="modal-overlay" id="modal-loan" role="dialog" aria-modal="true" aria-labelledby="modal-loan-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <img src="images/project_loan.jpg" alt="Loan Facilitator application interface">
+        <button class="modal-close" onclick="closeModal('loan')" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-category">FinTech · Flutter · Mobile</div>
+        <h3 class="modal-title" id="modal-loan-title">Loan Facilitator App</h3>
+        <p class="modal-description">
+          A fintech Flutter application that simplifies the loan discovery and application process. Users can browse loan options, compare interest rates, track their application progress step-by-step, and receive real-time status updates. The app brings financial accessibility through a clean, intuitive mobile experience.
+        </p>
+        <div class="modal-section-title">Technologies Used</div>
+        <div class="modal-tags">
+          <span class="modal-tag">Flutter</span>
+          <span class="modal-tag">Dart</span>
+          <span class="modal-tag">REST API</span>
+          <span class="modal-tag">Financial UI</span>
+          <span class="modal-tag">Form Validation</span>
+        </div>
+        <div class="modal-actions">
+          <a href="https://github.com/Jaat0050" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            View GitHub
+          </a>
+          <button class="btn-secondary" onclick="closeModal('loan')">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hangman Modal -->
+  <div class="modal-overlay" id="modal-hangman" role="dialog" aria-modal="true" aria-labelledby="modal-hangman-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <img src="images/project_hangman.jpg" alt="Hangman Game application interface">
+        <button class="modal-close" onclick="closeModal('hangman')" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-category">Game · Flutter · Mobile</div>
+        <h3 class="modal-title" id="modal-hangman-title">Hangman Game</h3>
+        <p class="modal-description">
+          A polished word-guessing game built with Flutter, featuring a clean dark aesthetic, smooth animations, and engaging gameplay. Players guess letters one at a time, with a lives system and score tracker to keep the experience competitive and fun.
+        </p>
+        <div class="modal-section-title">Technologies Used</div>
+        <div class="modal-tags">
+          <span class="modal-tag">Flutter</span>
+          <span class="modal-tag">Dart</span>
+          <span class="modal-tag">Game Logic</span>
+          <span class="modal-tag">State Management</span>
+          <span class="modal-tag">Custom UI</span>
+        </div>
+        <div class="modal-actions">
+          <a href="https://github.com/Jaat0050/HangMan" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            View Source
+          </a>
+          <button class="btn-secondary" onclick="closeModal('hangman')">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       AI LAB SECTION
+       ================================================================ -->
+  <section id="ailab" aria-labelledby="ailab-heading">
+    <div class="ailab-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="reveal">
+        <span class="section-tag">AI Lab</span>
+        <h2 class="section-title" id="ailab-heading">Building Smarter<br>Mobile <em>Experiences</em></h2>
+        <p class="section-subtitle">My development work increasingly includes AI-powered application experiences — integrating intelligent features that go beyond traditional mobile apps.</p>
+      </div>
+
+      <div class="ailab-grid">
+        <div class="ailab-cards reveal reveal-delay-1">
+          <div class="ailab-card">
+            <div class="ailab-card-icon">🔗</div>
+            <h3 class="ailab-card-title">AI API Integration</h3>
+            <p class="ailab-card-desc">Integrating AI and LLM APIs into production Flutter applications for intelligent mobile experiences.</p>
+          </div>
+          <div class="ailab-card">
+            <div class="ailab-card-icon">💬</div>
+            <h3 class="ailab-card-title">AI Assistants</h3>
+            <p class="ailab-card-desc">Building conversational AI interfaces inside Flutter apps — chat-based user experiences powered by LLMs.</p>
+          </div>
+          <div class="ailab-card">
+            <div class="ailab-card-icon">🔍</div>
+            <h3 class="ailab-card-title">Intelligent Search</h3>
+            <p class="ailab-card-desc">AI-assisted discovery and information retrieval embedded into mobile application workflows.</p>
+          </div>
+          <div class="ailab-card">
+            <div class="ailab-card-icon">✨</div>
+            <h3 class="ailab-card-title">Smart Recommendations</h3>
+            <p class="ailab-card-desc">Using AI systems to personalize user experiences and surface relevant content dynamically.</p>
+          </div>
+          <div class="ailab-card wide">
+            <div class="ailab-card-icon">📱</div>
+            <h3 class="ailab-card-title">AI + Flutter Architecture</h3>
+            <p class="ailab-card-desc">Combining Flutter's cross-platform capability with modern AI APIs — creating the next generation of intelligent mobile applications. My approach: clean architecture, efficient API integration, thoughtful UX around AI responses.</p>
+          </div>
+        </div>
+
+        <div class="ailab-visual reveal reveal-delay-2">
+          <canvas id="ai-canvas" aria-label="AI architecture visualization" role="img"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SERVICES SECTION
+       ================================================================ -->
+  <section id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-tag">Services</span>
+        <h2 class="section-title" id="services-heading">What I Can<br><em>Build</em></h2>
+        <p class="section-subtitle">End-to-end mobile product development, from architecture to App Store deployment.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">📱</div>
+          <h3 class="service-title">Mobile Applications</h3>
+          <p class="service-desc">Production-ready Flutter applications for iOS and Android. Full development lifecycle from architecture to App Store and Play Store deployment.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon" aria-hidden="true">🤖</div>
+          <h3 class="service-title">AI-Powered Applications</h3>
+          <p class="service-desc">Mobile applications enhanced with AI and LLM capabilities — intelligent chat, smart recommendations, and AI-assisted workflows.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon" aria-hidden="true">⚡</div>
+          <h3 class="service-title">API &amp; Backend Integration</h3>
+          <p class="service-desc">REST API integration, Firebase, Supabase, and backend service integrations. Authentication, real-time data, cloud storage and functions.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon" aria-hidden="true">🔄</div>
+          <h3 class="service-title">Real-Time Applications</h3>
+          <p class="service-desc">Chat systems, live updates, WebSocket and STOMP-based communication. Real-time features that scale with your user base.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon" aria-hidden="true">🗺️</div>
+          <h3 class="service-title">Maps &amp; Location Features</h3>
+          <p class="service-desc">Google Maps, Google Places, and location-aware application experiences. Map markers, geofencing, and location-based discovery.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon" aria-hidden="true">🚀</div>
+          <h3 class="service-title">App Store Deployment</h3>
+          <p class="service-desc">App Store Connect, TestFlight, and Google Play Console deployments. Code signing, release builds, and submission support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       DEVELOPMENT PROCESS SECTION
+       ================================================================ -->
+  <section id="process" aria-labelledby="process-heading">
+    <div class="container">
+      <div class="process-header reveal">
+        <span class="section-tag">Approach</span>
+        <h2 class="section-title" id="process-heading">How I <em>Build</em></h2>
+        <p class="section-subtitle" style="margin:0 auto; text-align:center;">A structured, repeatable process for delivering production-quality mobile applications.</p>
+      </div>
+
+      <div class="process-steps" role="list" aria-label="Development process steps">
+        <div class="process-step" role="listitem">
+          <div class="process-number">01</div>
+          <div class="process-label">Understand</div>
+          <p class="process-desc">Define requirements, user stories, and business goals before touching code.</p>
+        </div>
+        <div class="process-step" role="listitem">
+          <div class="process-number">02</div>
+          <div class="process-label">Design</div>
+          <p class="process-desc">UI/UX planning, wireframes, and design system setup with Figma.</p>
+        </div>
+        <div class="process-step" role="listitem">
+          <div class="process-number">03</div>
+          <div class="process-label">Architect</div>
+          <p class="process-desc">Clean Architecture, folder structure, state management strategy.</p>
+        </div>
+        <div class="process-step" role="listitem">
+          <div class="process-number">04</div>
+          <div class="process-label">Develop</div>
+          <p class="process-desc">Flutter implementation with reusable components and best practices.</p>
+        </div>
+        <div class="process-step" role="listitem">
+          <div class="process-number">05</div>
+          <div class="process-label">Integrate</div>
+          <p class="process-desc">REST APIs, Firebase, Supabase, and third-party SDK integration.</p>
+        </div>
+        <div class="process-step" role="listitem">
+          <div class="process-number">06</div>
+          <div class="process-label">Test</div>
+          <p class="process-desc">Testing across devices, OS versions, and edge cases.</p>
+        </div>
+        <div class="process-step" role="listitem">
+          <div class="process-number">07</div>
+          <div class="process-label">Deploy</div>
+          <p class="process-desc">App Store Connect, TestFlight, and Google Play Console submissions.</p>
+        </div>
+        <div class="process-step" role="listitem">
+          <div class="process-number">08</div>
+          <div class="process-label">Improve</div>
+          <p class="process-desc">Post-launch monitoring, user feedback, and iterative improvements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       ARCHITECTURE SECTION
+       ================================================================ -->
+  <section id="architecture" aria-labelledby="arch-heading">
+    <div class="container">
+      <div class="arch-header reveal">
+        <span class="section-tag">Architecture</span>
+        <h2 class="section-title" id="arch-heading">How I <em>Structure</em><br>Applications</h2>
+        <p class="section-subtitle" style="margin:0 auto; text-align:center;">Clean Architecture principles applied to Flutter — click each layer to learn more.</p>
+      </div>
+
+      <div class="arch-diagram reveal reveal-delay-1" role="list" aria-label="Application architecture layers">
+        <div class="arch-layer" onclick="toggleArch(this)" role="listitem" tabindex="0" onkeydown="if(event.key==='Enter')toggleArch(this)">
+          <span class="arch-layer-number">01</span>
+          <span class="arch-layer-icon" aria-hidden="true">📱</span>
+          <div class="arch-layer-content">
+            <div class="arch-layer-name">UI Layer — Widgets &amp; Screens</div>
+            <div class="arch-layer-desc">Flutter widgets, screens, and navigation. Stateless where possible, using reactive patterns for dynamic content.</div>
+          </div>
+          <span class="arch-layer-arrow" aria-hidden="true">›</span>
+        </div>
+        <div class="arch-connector" aria-hidden="true">↓</div>
+        <div class="arch-layer" onclick="toggleArch(this)" role="listitem" tabindex="0" onkeydown="if(event.key==='Enter')toggleArch(this)">
+          <span class="arch-layer-number">02</span>
+          <span class="arch-layer-icon" aria-hidden="true">⚡</span>
+          <div class="arch-layer-content">
+            <div class="arch-layer-name">State Management — BLoC / GetX / Riverpod</div>
+            <div class="arch-layer-desc">Centralized state management using BLoC, GetX, Provider, or Riverpod depending on project needs and scale.</div>
+          </div>
+          <span class="arch-layer-arrow" aria-hidden="true">›</span>
+        </div>
+        <div class="arch-connector" aria-hidden="true">↓</div>
+        <div class="arch-layer" onclick="toggleArch(this)" role="listitem" tabindex="0" onkeydown="if(event.key==='Enter')toggleArch(this)">
+          <span class="arch-layer-number">03</span>
+          <span class="arch-layer-icon" aria-hidden="true">⚙️</span>
+          <div class="arch-layer-content">
+            <div class="arch-layer-name">Business Logic — Use Cases</div>
+            <div class="arch-layer-desc">Pure business logic decoupled from UI and data layers. Testable, single-responsibility use cases.</div>
+          </div>
+          <span class="arch-layer-arrow" aria-hidden="true">›</span>
+        </div>
+        <div class="arch-connector" aria-hidden="true">↓</div>
+        <div class="arch-layer" onclick="toggleArch(this)" role="listitem" tabindex="0" onkeydown="if(event.key==='Enter')toggleArch(this)">
+          <span class="arch-layer-number">04</span>
+          <span class="arch-layer-icon" aria-hidden="true">🗄️</span>
+          <div class="arch-layer-content">
+            <div class="arch-layer-name">Repository — Data Abstraction</div>
+            <div class="arch-layer-desc">Repository pattern abstracts data sources. Business logic never directly touches APIs or databases.</div>
+          </div>
+          <span class="arch-layer-arrow" aria-hidden="true">›</span>
+        </div>
+        <div class="arch-connector" aria-hidden="true">↓</div>
+        <div class="arch-layer" onclick="toggleArch(this)" role="listitem" tabindex="0" onkeydown="if(event.key==='Enter')toggleArch(this)">
+          <span class="arch-layer-number">05</span>
+          <span class="arch-layer-icon" aria-hidden="true">🌐</span>
+          <div class="arch-layer-content">
+            <div class="arch-layer-name">Data Sources — APIs &amp; Local</div>
+            <div class="arch-layer-desc">REST API clients, local database (Hive/Isar), shared preferences, and platform channels.</div>
+          </div>
+          <span class="arch-layer-arrow" aria-hidden="true">›</span>
+        </div>
+        <div class="arch-connector" aria-hidden="true">↓</div>
+        <div class="arch-layer" onclick="toggleArch(this)" role="listitem" tabindex="0" onkeydown="if(event.key==='Enter')toggleArch(this)">
+          <span class="arch-layer-number">06</span>
+          <span class="arch-layer-icon" aria-hidden="true">☁️</span>
+          <div class="arch-layer-content">
+            <div class="arch-layer-name">Cloud — Firebase / Supabase</div>
+            <div class="arch-layer-desc">Firebase Auth, Firestore, Storage, Cloud Functions, FCM push notifications. Supabase for PostgreSQL-backed apps.</div>
+          </div>
+          <span class="arch-layer-arrow" aria-hidden="true">›</span>
+        </div>
+        <div class="arch-connector" aria-hidden="true">↓</div>
+        <div class="arch-layer" onclick="toggleArch(this)" role="listitem" tabindex="0" onkeydown="if(event.key==='Enter')toggleArch(this)">
+          <span class="arch-layer-number">07</span>
+          <span class="arch-layer-icon" aria-hidden="true">🤖</span>
+          <div class="arch-layer-content">
+            <div class="arch-layer-name">AI Layer — LLM / AI APIs</div>
+            <div class="arch-layer-desc">AI API integration layer. Structured prompts, response parsing, and intelligent feature pipelines embedded into the architecture.</div>
+          </div>
+          <span class="arch-layer-arrow" aria-hidden="true">›</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       CONTACT SECTION
+       ================================================================ -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="contact-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="contact-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title" id="contact-heading">Let's Build<br>Something <em>Great</em></h2>
+        <p class="section-subtitle" style="margin:0 auto; text-align:center;">Have an idea, product or application in mind? Let's turn it into a production-ready mobile experience.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-cta-text">
+            Whether you're a startup founder with a product idea, a recruiter looking for a senior Flutter developer, or a business needing a mobile solution — I'd love to hear from you.
+          </p>
+
+          <a href="mailto:rana.arjun62001@gmail.com" class="contact-item">
+            <div class="contact-item-icon" aria-hidden="true">📧</div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value">rana.arjun62001@gmail.com</div>
+            </div>
+          </a>
+
+          <a href="tel:+917417662218" class="contact-item">
+            <div class="contact-item-icon" aria-hidden="true">📞</div>
+            <div>
+              <div class="contact-item-label">Phone</div>
+              <div class="contact-item-value">+91 74176 62218</div>
+            </div>
+          </a>
+
+          <div class="contact-socials" role="list" aria-label="Social media links">
+            <a href="https://www.linkedin.com/in/arjun-rana-738503194" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile" role="listitem">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/Jaat0050" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile" role="listitem">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub
+            </a>
+            <a href="https://wa.me/917417662218" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp" role="listitem">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+            <a href="https://twitter.com/rana_a_005" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter / X Profile" role="listitem">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.259 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Twitter / X
+            </a>
+            <a href="images/Arjun Rana Resume.pdf" download class="social-link" aria-label="Download CV">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download CV
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form reveal reveal-delay-1">
+          <form name="submit-to-google-sheet" id="contactForm" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="contactName">Your Name</label>
+              <input type="text" id="contactName" name="Name" class="form-input" placeholder="Arjun Rana" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" name="Email" class="form-input" placeholder="hello@example.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Your Message</label>
+              <textarea id="contactMessage" name="Message" class="form-input" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="formSubmitBtn">
+              Send Message
+            </button>
+            <div class="form-message" id="formMsg" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer role="contentinfo">
+    <div class="footer-copy">
+      &copy; 2026 <span>Arjun Rana</span>. Crafted with Flutter expertise &amp; ❤️
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="https://github.com/Jaat0050" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/arjun-rana-738503194" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:rana.arjun62001@gmail.com">Email</a>
+    </nav>
+  </footer>
+
+  <!-- ================================================================
+       THREE.JS — CDN
+       ================================================================ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+
+  <!-- ================================================================
+       MAIN SCRIPT
+       ================================================================ -->
+  <script src="script.js" defer></script>
+
 </body>
 </html>
