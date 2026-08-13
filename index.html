@@ -248,8 +248,9 @@
         <section id="about" class="section section-dark">
             <div class="container">
                 <div class="section-heading reveal">
-                    <span>01 — ABOUT</span>
-                    <h2>Engineering with<br><i>purpose.</i></h2>
+                    <span class="sub-kicker">01 — ABOUT ME</span>
+                    <h2 class="main-title">Engineering with<br><span class="lime-text">purpose.</span></h2>
+                    <p class="section-desc">Turning product ideas into reliable, intuitive mobile, cloud and AI experiences.</p>
                 </div>
                 <div class="about-grid">
                     <div class="about-image reveal">
@@ -272,27 +273,156 @@
             </div>
         </section>
 
-        <!-- Technology Universe -->
-        <section id="skills" class="section">
+        <!-- Technology Universe Mindmap -->
+        <section id="skills" class="section mindmap-section">
             <div class="container">
                 <div class="section-heading reveal">
-                    <span>02 — TECHNOLOGY UNIVERSE</span>
-                    <h2>My technology<br><i>universe.</i></h2>
+                    <span class="sub-kicker">02 — TECHNOLOGY UNIVERSE</span>
+                    <h2 class="main-title">My technology<br><span class="lime-text">universe.</span></h2>
+                    <p class="section-desc">A complete map of technologies, tools and platforms I use to build high-performance mobile & AI solutions.</p>
                 </div>
-                <div class="universe reveal">
-                    <div class="universe-core">FLUTTER</div>
-                    <button class="tech-node n1 active" data-title="Dart" data-info="Dart development for scalable Flutter applications, reusable components and production UI.">Dart</button>
-                    <button class="tech-node n2" data-title="Firebase" data-info="Authentication, Firestore, Storage, Cloud Functions, Cloud Messaging, App Check and push notifications.">Firebase</button>
-                    <button class="tech-node n3" data-title="Supabase" data-info="Supabase-backed application workflows with PostgreSQL and modern cloud integration.">Supabase</button>
-                    <button class="tech-node n4" data-title="AI APIs" data-info="AI APIs / LLM integration for AI-powered mobile workflows, assistants and structured responses.">AI APIs</button>
-                    <button class="tech-node n5" data-title="REST APIs" data-info="REST API integration, data handling, authentication flows and backend-connected mobile experiences.">REST API</button>
-                    <button class="tech-node n6" data-title="WebSockets" data-info="WebSockets, STOMP and real-time chat/live-update experiences using stomp_dart_client.">WebSockets</button>
-                    <button class="tech-node n7" data-title="Google Maps" data-info="Google Maps, Places, markers and location-aware discovery experiences.">Maps</button>
-                    <button class="tech-node n8" data-title="iOS + Android" data-info="Cross-platform mobile development with Flutter plus iOS and Android build, testing and deployment workflows.">iOS + Android</button>
-                    <div class="universe-info">
-                        <small id="tech-title">Dart</small>
-                        <h3>Mobile-first engineering</h3>
-                        <p id="tech-info">Dart development for scalable Flutter applications, reusable components and production UI.</p>
+
+                <div class="mindmap-container reveal" id="mindmap-container">
+                    <!-- Dynamic SVG Connector Lines Overlay -->
+                    <svg class="mindmap-svg" id="mindmap-svg">
+                        <defs>
+                            <filter id="glow-line" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="3" result="blur" />
+                                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                            </filter>
+                        </defs>
+                    </svg>
+
+                    <!-- Central Core Hub -->
+                    <div class="mm-core-hub">
+                        <div class="mm-core-ring"></div>
+                        <div class="mm-core-inner">
+                            <svg class="mm-flutter-logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.314 0L2.3 12 7.157 16.857 23.886 0.129h-9.572zM14.314 11.429l-4.857 4.857 4.857 4.857h9.572l-4.857-4.857 4.857-4.857h-9.572z" fill="#54C5F8"/>
+                            </svg>
+                            <h3 class="mm-core-title">FLUTTER</h3>
+                            <span class="mm-core-sub">Cross-platform Excellence</span>
+                        </div>
+                    </div>
+
+                    <!-- Floating Metrics Bar below Core -->
+                    <div class="mm-metrics-bar">
+                        <div class="mm-metric">
+                            <strong>3+</strong>
+                            <span>Years Experience</span>
+                        </div>
+                        <div class="mm-metric">
+                            <strong>25+</strong>
+                            <span>Apps Delivered</span>
+                        </div>
+                        <div class="mm-metric">
+                            <strong>10+</strong>
+                            <span>Industries Served</span>
+                        </div>
+                        <div class="mm-metric">
+                            <strong>100%</strong>
+                            <span>Client Satisfaction</span>
+                        </div>
+                    </div>
+
+                    <!-- 1. Languages (Top) -->
+                    <div class="mm-node-cat cat-lang">
+                        <div class="mm-cat-badge"><i class="fa-solid fa-code"></i> LANGUAGES</div>
+                        <div class="mm-sub-pills">
+                            <span class="mm-pill"><i class="fa-solid fa-gem" style="color:#00B4AB;"></i> Dart</span>
+                        </div>
+                    </div>
+
+                    <!-- 2. State Management (Top Left) -->
+                    <div class="mm-node-cat cat-state">
+                        <div class="mm-cat-badge"><i class="fa-solid fa-layer-group"></i> STATE MANAGEMENT</div>
+                        <div class="mm-sub-pills">
+                            <span class="mm-pill"><i class="fa-solid fa-cube" style="color:#29B6F6;"></i> BLoC</span>
+                            <span class="mm-pill"><i class="fa-solid fa-diagram-project" style="color:#7E57C2;"></i> Provider</span>
+                            <span class="mm-pill"><i class="fa-solid fa-water" style="color:#0288D1;"></i> Riverpod</span>
+                            <span class="mm-pill"><i class="fa-solid fa-bolt" style="color:#4CAF50;"></i> GetX</span>
+                        </div>
+                    </div>
+
+                    <!-- 3. Real-Time Communication (Middle Left) -->
+                    <div class="mm-node-cat cat-realtime">
+                        <div class="mm-cat-badge"><i class="fa-solid fa-comments"></i> REAL-TIME COMMUNICATION</div>
+                        <div class="mm-sub-pills">
+                            <span class="mm-pill"><i class="fa-solid fa-wifi" style="color:#8BC34A;"></i> WebSockets</span>
+                            <span class="mm-pill"><i class="fa-solid fa-network-wired" style="color:#9E9E9E;"></i> STOMP Protocol</span>
+                        </div>
+                    </div>
+
+                    <!-- 4. AI & ML (Lower Left) -->
+                    <div class="mm-node-cat cat-ai">
+                        <div class="mm-cat-badge"><i class="fa-solid fa-brain"></i> AI & ML</div>
+                        <div class="mm-sub-pills">
+                            <span class="mm-pill"><i class="fa-solid fa-robot" style="color:#FFB74D;"></i> AI / LLM APIs</span>
+                            <span class="mm-pill"><i class="fa-solid fa-microchip" style="color:#FF7043;"></i> TFLite</span>
+                        </div>
+                    </div>
+
+                    <!-- 5. Tools & Platforms (Bottom Left) -->
+                    <div class="mm-node-cat cat-tools">
+                        <div class="mm-cat-badge"><i class="fa-solid fa-wrench"></i> TOOLS & PLATFORMS</div>
+                        <div class="mm-sub-pills">
+                            <span class="mm-pill"><i class="fa-brands fa-github"></i> Git / GitHub</span>
+                            <span class="mm-pill"><i class="fa-brands fa-figma" style="color:#F24E1E;"></i> Figma</span>
+                            <span class="mm-pill"><i class="fa-solid fa-code" style="color:#007ACC;"></i> VS Code</span>
+                        </div>
+                    </div>
+
+                    <!-- 6. Backend & Services (Top Right) -->
+                    <div class="mm-node-cat cat-backend">
+                        <div class="mm-cat-badge"><i class="fa-solid fa-cloud"></i> BACKEND & SERVICES</div>
+                        <div class="mm-sub-pills">
+                            <span class="mm-pill"><i class="fa-solid fa-fire" style="color:#FFA000;"></i> Firebase</span>
+                            <span class="mm-pill"><i class="fa-solid fa-bolt" style="color:#3ECF8E;"></i> Supabase</span>
+                            <span class="mm-pill"><i class="fa-solid fa-globe" style="color:#29B6F6;"></i> REST APIs</span>
+                            <span class="mm-pill"><i class="fa-solid fa-leaf" style="color:#6DB33F;"></i> Spring Boot</span>
+                            <span class="mm-pill"><i class="fa-brands fa-node-js" style="color:#68A063;"></i> Node.js</span>
+                        </div>
+                    </div>
+
+                    <!-- 7. Maps & Location (Middle Right) -->
+                    <div class="mm-node-cat cat-maps">
+                        <div class="mm-cat-badge"><i class="fa-solid fa-location-dot"></i> MAPS & LOCATION</div>
+                        <div class="mm-sub-pills">
+                            <span class="mm-pill"><i class="fa-solid fa-map-location-dot" style="color:#4285F4;"></i> Google Maps</span>
+                            <span class="mm-pill"><i class="fa-solid fa-location-arrow" style="color:#EA4335;"></i> Google Places</span>
+                        </div>
+                    </div>
+
+                    <!-- 8. Video & Voice (Lower Right) -->
+                    <div class="mm-node-cat cat-video">
+                        <div class="mm-cat-badge"><i class="fa-solid fa-video"></i> VIDEO & VOICE</div>
+                        <div class="mm-sub-pills">
+                            <span class="mm-pill"><i class="fa-solid fa-circle-play" style="color:#099DFD;"></i> Agora</span>
+                        </div>
+                    </div>
+
+                    <!-- 9. Deployment & Distribution (Bottom Right) -->
+                    <div class="mm-node-cat cat-deploy">
+                        <div class="mm-cat-badge"><i class="fa-solid fa-rocket"></i> DEPLOYMENT & DISTRIBUTION</div>
+                        <div class="mm-sub-pills">
+                            <span class="mm-pill"><i class="fa-solid fa-plane" style="color:#29B6F6;"></i> TestFlight</span>
+                            <span class="mm-pill"><i class="fa-brands fa-app-store-ios" style="color:#157EFB;"></i> App Store</span>
+                            <span class="mm-pill"><i class="fa-brands fa-google-play" style="color:#00C853;"></i> Play Store</span>
+                        </div>
+                    </div>
+
+                    <!-- 10. Analytics & Marketing (Bottom Center) -->
+                    <div class="mm-node-cat cat-analytics">
+                        <div class="mm-cat-badge"><i class="fa-solid fa-chart-line"></i> ANALYTICS & MARKETING</div>
+                        <div class="mm-sub-pills">
+                            <span class="mm-pill"><i class="fa-solid fa-seedling" style="color:#68A063;"></i> AppsFlyer</span>
+                            <span class="mm-pill"><i class="fa-solid fa-code-branch" style="color:#00B4AB;"></i> Branch.io</span>
+                        </div>
+                        <div class="mm-platform-bar">
+                            <span><i class="fa-brands fa-android" style="color:#A4C639;"></i> Android</span>
+                            <span class="divider">|</span>
+                            <span><i class="fa-brands fa-apple"></i> iOS</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -302,70 +432,240 @@
         <section id="experience" class="section section-dark">
             <div class="container">
                 <div class="section-heading reveal">
-                    <span>03 — EXPERIENCE</span>
-                    <h2>A career built<br>around <i>shipping.</i></h2>
+                    <span class="sub-kicker">03 — EXPERIENCE</span>
+                    <h2 class="main-title">A career built<br>around <span class="lime-text">shipping.</span></h2>
+                    <p class="section-desc">Hands-on software development across full-time engineering roles, mobile architecture, and product delivery.</p>
                 </div>
-                <div class="timeline reveal">
-                    <article>
-                        <span>JUNE 2023 — PRESENT</span>
-                        <h3>Flutter Developer</h3>
-                        <p>NextGen Techno Ventures</p>
-                        <p style="margin-top:12px">Production mobile applications, UI implementation, API integrations, cloud services, testing and release workflows.</p>
-                    </article>
-                    <article>
-                        <span>APRIL 2023</span>
-                        <h3>Flutter Developer Intern</h3>
-                        <p>Celebrare</p>
-                        <p style="margin-top:12px">Hands-on Flutter development and mobile application implementation.</p>
-                    </article>
-                    <article>
-                        <span>JUNE 2022 — AUGUST 2022</span>
-                        <h3>Android Developer Intern</h3>
-                        <p>Baoiam Innovations Pvt. Ltd.</p>
-                        <p style="margin-top:12px">Android application development and practical software engineering experience.</p>
-                    </article>
+                <div class="exp-timeline reveal">
+                    <div class="exp-timeline-line"></div>
+
+                    <!-- Role 1 -->
+                    <div class="exp-item">
+                        <div class="exp-dot"></div>
+                        <div class="exp-card">
+                            <div class="exp-header">
+                                <span class="exp-date">APR 2024 — PRESENT</span>
+                                <span class="exp-badge">Full-time · Remote</span>
+                            </div>
+                            <h3>Flutter Developer</h3>
+                            <p class="exp-company">Innovins Softtech Solutions Pvt. Ltd.</p>
+                            <p class="exp-desc">Building production-grade cross-platform mobile applications, scalable application architecture, state management, API integrations, and cloud backend connections.</p>
+                        </div>
+                    </div>
+
+                    <!-- Role 2 -->
+                    <div class="exp-item">
+                        <div class="exp-dot"></div>
+                        <div class="exp-card">
+                            <div class="exp-header">
+                                <span class="exp-date">JUL 2023 — APR 2024 · 10 MOS</span>
+                                <span class="exp-badge">Full-time · Remote</span>
+                            </div>
+                            <h3>Flutter Developer</h3>
+                            <p class="exp-company">Nextgen Techno Ventures Private Limited</p>
+                            <p class="exp-desc">Cross-platform mobile app development with Flutter, custom UI implementation, REST APIs, Firebase cloud services, and production deployment.</p>
+                        </div>
+                    </div>
+
+                    <!-- Role 3 -->
+                    <div class="exp-item">
+                        <div class="exp-dot"></div>
+                        <div class="exp-card">
+                            <div class="exp-header">
+                                <span class="exp-date">MAY 2023 · 1 MO</span>
+                                <span class="exp-badge">Internship · Remote</span>
+                            </div>
+                            <h3>Flutter Developer Intern</h3>
+                            <p class="exp-company">Celebrare</p>
+                            <p class="exp-desc">Hands-on Flutter mobile application development, UI design translation into reusable widgets, and feature building.</p>
+                        </div>
+                    </div>
+
+                    <!-- Role 4 -->
+                    <div class="exp-item">
+                        <div class="exp-dot"></div>
+                        <div class="exp-card">
+                            <div class="exp-header">
+                                <span class="exp-date">MAR 2022 — MAY 2022 · 3 MOS</span>
+                                <span class="exp-badge">Internship · Remote</span>
+                            </div>
+                            <h3>Flutter Developer Intern</h3>
+                            <p class="exp-company">Baoiam Innovations Pvt Ltd</p>
+                            <p class="exp-desc">Mobile application development, Flutter component architecture, UI layout implementation, and engineering workflows.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="tabs-wrap reveal">
                     <div class="tab-titles">
-                        <button class="tab-links active-link" onclick="opentab('skills-tab',this)">Core stack</button>
-                        <button class="tab-links" onclick="opentab('education',this)">Education</button>
-                        <button class="tab-links" onclick="opentab('tooling',this)">Tooling</button>
+                        <button class="tab-links active-link" onclick="opentab('skills-tab',this)"><i class="fa-solid fa-layer-group"></i> Core Stack</button>
+                        <button class="tab-links" onclick="opentab('education',this)"><i class="fa-solid fa-graduation-cap"></i> Education</button>
+                        <button class="tab-links" onclick="opentab('tooling',this)"><i class="fa-solid fa-toolbox"></i> Engineering Tooling</button>
                     </div>
+
+                    <!-- Core Stack Tab -->
                     <div class="tab-contents active-tab" id="skills-tab">
                         <div class="skill-grid">
-                            <div><span>Mobile</span><strong>Flutter · Dart · Android · iOS</strong></div>
-                            <div><span>State</span><strong>BLoC · Provider · Riverpod · GetX</strong></div>
-                            <div><span>Architecture</span><strong>Clean Architecture · Modular structure · Reusable components</strong></div>
-                            <div><span>Backend</span><strong>REST APIs · Firebase · Supabase · Spring Boot · Node.js</strong></div>
-                            <div><span>Database</span><strong>Firestore · PostgreSQL through Supabase</strong></div>
-                            <div><span>Realtime</span><strong>WebSockets · STOMP · Chat · Live updates</strong></div>
+                            <div class="skill-card">
+                                <div class="skill-card-head">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    <span>MOBILE DEVELOPMENT</span>
+                                </div>
+                                <div class="skill-pills">
+                                    <span class="sk-pill"><i class="fa-solid fa-gem" style="color:#00B4AB"></i> Flutter</span>
+                                    <span class="sk-pill"><i class="fa-solid fa-code" style="color:#0288D1"></i> Dart</span>
+                                    <span class="sk-pill"><i class="fa-brands fa-android" style="color:#A4C639"></i> Android</span>
+                                    <span class="sk-pill"><i class="fa-brands fa-apple"></i> iOS</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-card-head">
+                                    <i class="fa-solid fa-cubes"></i>
+                                    <span>STATE MANAGEMENT</span>
+                                </div>
+                                <div class="skill-pills">
+                                    <span class="sk-pill"><i class="fa-solid fa-cube" style="color:#29B6F6"></i> BLoC</span>
+                                    <span class="sk-pill"><i class="fa-solid fa-diagram-project" style="color:#7E57C2"></i> Provider</span>
+                                    <span class="sk-pill"><i class="fa-solid fa-water" style="color:#0288D1"></i> Riverpod</span>
+                                    <span class="sk-pill"><i class="fa-solid fa-bolt" style="color:#4CAF50"></i> GetX</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-card-head">
+                                    <i class="fa-solid fa-sitemap"></i>
+                                    <span>ARCHITECTURE & PATTERNS</span>
+                                </div>
+                                <div class="skill-pills">
+                                    <span class="sk-pill">Clean Architecture</span>
+                                    <span class="sk-pill">Modular Structure</span>
+                                    <span class="sk-pill">Reusable Components</span>
+                                    <span class="sk-pill">SOLID Principles</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-card-head">
+                                    <i class="fa-solid fa-cloud"></i>
+                                    <span>BACKEND & CLOUD</span>
+                                </div>
+                                <div class="skill-pills">
+                                    <span class="sk-pill"><i class="fa-solid fa-globe" style="color:#29B6F6"></i> REST APIs</span>
+                                    <span class="sk-pill"><i class="fa-solid fa-fire" style="color:#FFA000"></i> Firebase</span>
+                                    <span class="sk-pill"><i class="fa-solid fa-bolt" style="color:#3ECF8E"></i> Supabase</span>
+                                    <span class="sk-pill"><i class="fa-solid fa-leaf" style="color:#6DB33F"></i> Spring Boot</span>
+                                    <span class="sk-pill"><i class="fa-brands fa-node-js" style="color:#68A063"></i> Node.js</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-card-head">
+                                    <i class="fa-solid fa-database"></i>
+                                    <span>DATABASES</span>
+                                </div>
+                                <div class="skill-pills">
+                                    <span class="sk-pill"><i class="fa-solid fa-fire" style="color:#FFA000"></i> Firestore</span>
+                                    <span class="sk-pill"><i class="fa-solid fa-database" style="color:#336791"></i> PostgreSQL</span>
+                                    <span class="sk-pill"><i class="fa-solid fa-box-archive"></i> Hive / SQLite</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-card-head">
+                                    <i class="fa-solid fa-bolt"></i>
+                                    <span>REAL-TIME & COMMUNICATION</span>
+                                </div>
+                                <div class="skill-pills">
+                                    <span class="sk-pill"><i class="fa-solid fa-wifi" style="color:#8BC34A"></i> WebSockets</span>
+                                    <span class="sk-pill"><i class="fa-solid fa-network-wired"></i> STOMP Protocol</span>
+                                    <span class="sk-pill"><i class="fa-solid fa-comments"></i> In-App Chat</span>
+                                    <span class="sk-pill"><i class="fa-solid fa-tower-broadcast"></i> Live Updates</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- Education Tab -->
                     <div class="tab-contents" id="education">
-                        <div class="timeline">
-                            <article>
-                                <span>2019 — 2023</span>
-                                <h3>BTech — Computer Science & Engineering</h3>
-                                <p>Uttarakhand Technical University</p>
-                            </article>
-                            <article>
-                                <span>2018 — 2019</span>
-                                <h3>12th</h3>
-                                <p>D.A.V. Public School</p>
-                            </article>
-                            <article>
-                                <span>2016 — 2017</span>
-                                <h3>10th</h3>
-                                <p>D.A.V. Public School</p>
-                            </article>
+                        <div class="edu-grid">
+                            <div class="edu-card">
+                                <span class="edu-year">2019 — 2023</span>
+                                <h3>B.Tech in Computer Science & Engineering</h3>
+                                <p class="edu-school">Uttarakhand Technical University</p>
+                                <p class="edu-desc">Core focus on Software Engineering, Data Structures, Algorithms, Database Management, and Mobile Application Architectures.</p>
+                            </div>
+                            <div class="edu-card">
+                                <span class="edu-year">2018 — 2019</span>
+                                <h3>Senior Secondary Education (12th Class)</h3>
+                                <p class="edu-school">D.A.V. Public School</p>
+                                <p class="edu-desc">Physics, Chemistry, Mathematics (PCM) specialization with Computer Science.</p>
+                            </div>
+                            <div class="edu-card">
+                                <span class="edu-year">2016 — 2017</span>
+                                <h3>Secondary Education (10th Class)</h3>
+                                <p class="edu-school">D.A.V. Public School</p>
+                                <p class="edu-desc">Foundational academic excellence and computer fundamentals.</p>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- Tooling Tab -->
                     <div class="tab-contents" id="tooling">
                         <div class="skill-grid">
-                            <div><span>Development</span><strong>Android Studio · VS Code · Xcode · CocoaPods · Figma</strong></div>
-                            <div><span>Delivery</span><strong>Git · GitHub · TestFlight · App Store Connect · Google Play Console</strong></div>
-                            <div><span>Services</span><strong>Google Maps · Google Places · Agora · AppsFlyer · Branch</strong></div>
-                            <div><span>Flutter ecosystem</span><strong>Notifications · WebViews · Image/File handling · Third-party SDKs</strong></div>
+                            <div class="skill-card">
+                                <div class="skill-card-head">
+                                    <i class="fa-solid fa-code"></i>
+                                    <span>DEVELOPMENT & IDEs</span>
+                                </div>
+                                <div class="skill-pills">
+                                    <span class="sk-pill">Android Studio</span>
+                                    <span class="sk-pill">VS Code</span>
+                                    <span class="sk-pill">Xcode</span>
+                                    <span class="sk-pill">CocoaPods</span>
+                                    <span class="sk-pill">Figma</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-card-head">
+                                    <i class="fa-solid fa-rocket"></i>
+                                    <span>CI/CD & STORE DELIVERY</span>
+                                </div>
+                                <div class="skill-pills">
+                                    <span class="sk-pill">Git / GitHub</span>
+                                    <span class="sk-pill">TestFlight</span>
+                                    <span class="sk-pill">App Store Connect</span>
+                                    <span class="sk-pill">Google Play Console</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-card-head">
+                                    <i class="fa-solid fa-plug"></i>
+                                    <span>SERVICES & INTEGRATIONS</span>
+                                </div>
+                                <div class="skill-pills">
+                                    <span class="sk-pill">Google Maps</span>
+                                    <span class="sk-pill">Google Places</span>
+                                    <span class="sk-pill">Agora Video/Voice</span>
+                                    <span class="sk-pill">AppsFlyer</span>
+                                    <span class="sk-pill">Branch.io</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-card-head">
+                                    <i class="fa-solid fa-shapes"></i>
+                                    <span>FLUTTER ECOSYSTEM</span>
+                                </div>
+                                <div class="skill-pills">
+                                    <span class="sk-pill">Push Notifications</span>
+                                    <span class="sk-pill">Deep Linking</span>
+                                    <span class="sk-pill">WebViews</span>
+                                    <span class="sk-pill">Media & File Handling</span>
+                                    <span class="sk-pill">Native Channels</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -375,12 +675,10 @@
         <!-- Selected Work / Projects -->
         <section id="portfolio" class="section">
             <div class="container">
-                <div class="section-heading split reveal">
-                    <div>
-                        <span>04 — SELECTED WORK</span>
-                        <h2>Built for <i>real users.</i></h2>
-                    </div>
-                    <p>Apps and product work across events, commerce, finance, enterprise and utility experiences.</p>
+                <div class="section-heading reveal">
+                    <span class="sub-kicker">04 — SELECTED WORK</span>
+                    <h2 class="main-title">Built for<br><span class="lime-text">real users.</span></h2>
+                    <p class="section-desc">Apps and product work across fintech, mobile games, commerce, enterprise and utility experiences.</p>
                 </div>
                 <div class="work-list">
                     <article class="work reveal">
@@ -421,46 +719,157 @@
             </div>
         </section>
 
-        <!-- AI Lab -->
-        <section id="ai-lab" class="section ai-lab">
+        <!-- AI Lab Section -->
+        <section id="ai-lab" class="section ai-lab-section">
             <div class="container">
-                <div class="section-heading reveal">
-                    <span>05 — AI LAB</span>
-                    <h2>Building smarter<br>mobile experiences <i>with AI.</i></h2>
+                <!-- AI Lab Header & 3D Visual -->
+                <div class="ai-header-grid reveal">
+                    <div class="ai-header-left">
+                        <span class="sub-kicker">05 — AI LAB</span>
+                        <h2 class="main-title">Building smarter<br>mobile experiences <span class="lime-text">with AI.</span></h2>
+                        <p class="section-desc" style="max-width: 520px; margin-top: 14px;">
+                            AI is treated as a product capability — integrated into mobile workflows through AI APIs / LLMs, structured responses and thoughtful user experiences.
+                        </p>
+                    </div>
+
+                    <div class="ai-3d-visual">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="ai-cube-svg">
+                            <defs>
+                                <filter id="cubeGlow" x="-20%" y="-20%" width="140%" height="140%">
+                                    <feGaussianBlur stdDeviation="4" result="blur" />
+                                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                </filter>
+                            </defs>
+
+                            <!-- Concentric Orbital Rings -->
+                            <ellipse cx="100" cy="135" rx="85" ry="32" stroke="rgba(163, 230, 53, 0.2)" stroke-width="1.5" stroke-dasharray="4,4" />
+                            <ellipse cx="100" cy="135" rx="65" ry="24" stroke="rgba(163, 230, 53, 0.45)" stroke-width="1.5" filter="url(#cubeGlow)" />
+
+                            <!-- 3D Isometric Cube Base & Faces -->
+                            <polygon points="100,30 150,55 100,80 50,55" fill="rgba(22, 28, 36, 0.95)" stroke="#a3e635" stroke-width="2" filter="url(#cubeGlow)" />
+                            <polygon points="50,55 100,80 100,135 50,110" fill="rgba(14, 18, 24, 0.9)" stroke="#a3e635" stroke-width="1.5" />
+                            <polygon points="100,80 150,55 150,110 100,135" fill="rgba(10, 14, 19, 0.95)" stroke="#a3e635" stroke-width="1.5" />
+
+                            <!-- AI Emblem Text on Top Face -->
+                            <text x="100" y="63" fill="#a3e635" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="22" text-anchor="middle" filter="url(#cubeGlow)">AI</text>
+
+                            <!-- Ambient Particle Dots -->
+                            <circle cx="35" cy="65" r="2" fill="#a3e635" opacity="0.8" />
+                            <circle cx="165" cy="85" r="2.5" fill="#a3e635" opacity="0.9" />
+                            <circle cx="140" cy="30" r="1.5" fill="#a3e635" opacity="0.7" />
+                        </svg>
+                    </div>
                 </div>
-                <p class="hero-description reveal">AI is treated as a product capability — integrated into mobile workflows through AI APIs / LLMs, structured responses and thoughtful user experiences.</p>
-                <div class="ai-flow reveal">
-                    <div class="ai-step"><i class="fa-solid fa-mobile-screen"></i><strong>Flutter</strong><span>Mobile UI</span></div>
-                    <div class="ai-arrow">→</div>
-                    <div class="ai-step"><i class="fa-solid fa-code"></i><strong>API</strong><span>Integration layer</span></div>
-                    <div class="ai-arrow">→</div>
-                    <div class="ai-step"><i class="fa-solid fa-brain"></i><strong>AI Model</strong><span>Intelligent response</span></div>
-                    <div class="ai-arrow">→</div>
-                    <div class="ai-step"><i class="fa-solid fa-database"></i><strong>Context</strong><span>Structured data</span></div>
-                    <div class="ai-arrow">→</div>
-                    <div class="ai-step"><i class="fa-solid fa-wand-magic-sparkles"></i><strong>Experience</strong><span>Useful output</span></div>
+
+                <!-- AI Architecture Pipeline Diagram -->
+                <div class="ai-pipeline-box reveal">
+                    <div class="ai-pipeline-main">
+                        <!-- Step 1 -->
+                        <div class="pipe-card">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <h3>Flutter</h3>
+                            <span>Mobile UI</span>
+                        </div>
+
+                        <div class="pipe-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="pipe-card card-api">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>API</h3>
+                            <span>Integration layer</span>
+                        </div>
+
+                        <div class="pipe-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="pipe-card card-aimodel">
+                            <i class="fa-solid fa-brain"></i>
+                            <h3>AI Model</h3>
+                            <span>Intelligent response</span>
+                        </div>
+
+                        <div class="pipe-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="pipe-card">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <h3>Experience</h3>
+                            <span>Useful output</span>
+                        </div>
+                    </div>
+
+                    <!-- Sub-branch Context Node -->
+                    <div class="pipe-context-wrapper">
+                        <svg class="context-connector-svg" viewBox="0 0 1000 50" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 338,0 V 24 H 662 V 0 M 500,24 V 50" stroke="#a3e635" stroke-width="2" stroke-dasharray="5,5" opacity="0.85"/>
+                        </svg>
+                        <div class="pipe-card context-card">
+                            <i class="fa-solid fa-database"></i>
+                            <h3>Context</h3>
+                            <span>Structured data</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="ai-cards reveal">
-                    <article class="ai-card"><span>01</span>
+
+                <!-- 5 Capability Cards Grid -->
+                <div class="ai-cards-grid reveal">
+                    <!-- Card 01 -->
+                    <div class="ai-cap-card">
+                        <span class="cap-num">01</span>
+                        <div class="cap-icon-badge"><i class="fa-solid fa-brain"></i></div>
                         <h3>AI Integration</h3>
                         <p>Integrating AI capabilities into production-oriented mobile application workflows.</p>
-                    </article>
-                    <article class="ai-card"><span>02</span>
+                    </div>
+
+                    <!-- Card 02 -->
+                    <div class="ai-cap-card">
+                        <span class="cap-num">02</span>
+                        <div class="cap-icon-badge"><i class="fa-solid fa-magnifying-glass"></i></div>
                         <h3>Intelligent Search</h3>
                         <p>AI-assisted discovery and information retrieval experiences.</p>
-                    </article>
-                    <article class="ai-card"><span>03</span>
+                    </div>
+
+                    <!-- Card 03 -->
+                    <div class="ai-cap-card">
+                        <span class="cap-num">03</span>
+                        <div class="cap-icon-badge"><i class="fa-solid fa-comments"></i></div>
                         <h3>AI Assistants</h3>
                         <p>Conversational interfaces designed around actual application context.</p>
-                    </article>
-                    <article class="ai-card"><span>04</span>
+                    </div>
+
+                    <!-- Card 04 -->
+                    <div class="ai-cap-card">
+                        <span class="cap-num">04</span>
+                        <div class="cap-icon-badge"><i class="fa-solid fa-star"></i></div>
                         <h3>Recommendations</h3>
-                        <p>Smart, context-aware product experiences where AI adds real value.</p>
-                    </article>
-                    <article class="ai-card"><span>05</span>
+                        <p>Smart, context-aware recommendations that deliver real value.</p>
+                    </div>
+
+                    <!-- Card 05 -->
+                    <div class="ai-cap-card">
+                        <span class="cap-num">05</span>
+                        <div class="cap-icon-badge"><i class="fa-solid fa-mobile"></i></div>
                         <h3>AI + Flutter</h3>
                         <p>Combining cross-platform mobile development with modern AI APIs.</p>
-                    </article>
+                    </div>
+                </div>
+
+                <!-- Bottom Floating Value Bar -->
+                <div class="ai-value-bar reveal">
+                    <div class="val-item"><i class="fa-solid fa-bolt"></i><span>Smarter Workflows</span></div>
+                    <div class="val-divider"></div>
+                    <div class="val-item"><i class="fa-solid fa-user-check"></i><span>Better User Experiences</span></div>
+                    <div class="val-divider"></div>
+                    <div class="val-item"><i class="fa-solid fa-shield-halved"></i><span>Reliable & Scalable</span></div>
+                    <div class="val-divider"></div>
+                    <div class="val-item"><i class="fa-solid fa-crosshairs"></i><span>Real Business Impact</span></div>
                 </div>
             </div>
         </section>
@@ -469,8 +878,9 @@
         <section id="services" class="section">
             <div class="container">
                 <div class="section-heading reveal">
-                    <span>06 — WHAT I CAN BUILD</span>
-                    <h2>From concept<br>to <i>launch.</i></h2>
+                    <span class="sub-kicker">06 — WHAT I CAN BUILD</span>
+                    <h2 class="main-title">From concept<br>to <span class="lime-text">launch.</span></h2>
+                    <p class="section-desc">End-to-end software capabilities ranging from production mobile apps to AI workflows and cloud backends.</p>
                 </div>
                 <div class="services-list">
                     <article class="service-card reveal">
@@ -513,112 +923,627 @@
             </div>
         </section>
 
-        <!-- Process -->
-        <section id="process" class="section section-dark">
+        <!-- Process / HOW I BUILD -->
+        <section id="process" class="section process-section">
             <div class="container">
-                <div class="section-heading reveal">
-                    <span>07 — HOW I BUILD</span>
-                    <h2>A clear path from<br><i>idea to product.</i></h2>
+                <!-- Header Grid with 3D Layered Smartphone Graphic -->
+                <div class="process-header-grid reveal">
+                    <div class="process-header-left">
+                        <span class="sub-kicker">07 — HOW I BUILD</span>
+                        <h2 class="main-title">A clear path from<br><span class="lime-text">idea to product.</span></h2>
+                        <p class="section-desc" style="max-width: 520px; margin-top: 14px;">
+                            Structured, iterative engineering workflow designed for quality, performance, and scalability.
+                        </p>
+                    </div>
+
+                    <div class="process-3d-visual">
+                        <svg viewBox="0 0 240 220" fill="none" xmlns="http://www.w3.org/2000/svg" class="process-phone-svg">
+                            <defs>
+                                <filter id="phoneGlow" x="-20%" y="-20%" width="140%" height="140%">
+                                    <feGaussianBlur stdDeviation="5" result="blur" />
+                                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                </filter>
+                            </defs>
+
+                            <!-- Ambient Glow & Orbital Ring -->
+                            <ellipse cx="120" cy="170" rx="95" ry="36" stroke="rgba(163, 230, 53, 0.3)" stroke-width="1.5" stroke-dasharray="4,4" class="ring-pulse" />
+
+                            <!-- Base Phone Body (Layer 0) -->
+                            <g class="phone-layer base-phone">
+                                <polygon points="120,110 190,145 120,180 50,145" fill="rgba(18, 24, 32, 0.95)" stroke="#a3e635" stroke-width="2" filter="url(#phoneGlow)" />
+                                <polygon points="50,145 120,180 120,190 50,155" fill="rgba(10, 14, 19, 0.95)" stroke="#a3e635" stroke-width="1.5" />
+                                <polygon points="120,180 190,145 190,155 120,190" fill="rgba(6, 9, 12, 0.98)" stroke="#a3e635" stroke-width="1.5" />
+                            </g>
+
+                            <!-- Floating Glass Screen Layer 1 (Lower Screen Plate) -->
+                            <g class="phone-layer mid-screen-1">
+                                <polygon points="120,85 180,115 120,145 60,115" fill="rgba(20, 28, 38, 0.85)" stroke="rgba(163, 230, 53, 0.5)" stroke-width="1.5" />
+                            </g>
+
+                            <!-- Floating Glass Screen Layer 2 (Upper Screen Plate) -->
+                            <g class="phone-layer mid-screen-2">
+                                <polygon points="120,60 172,86 120,112 68,86" fill="rgba(24, 34, 46, 0.88)" stroke="rgba(163, 230, 53, 0.7)" stroke-width="1.5" />
+                            </g>
+
+                            <!-- Floating Glass Code Layer 3 (Top Code Badge) -->
+                            <g class="phone-layer top-code-plate">
+                                <polygon points="120,30 162,51 120,72 78,51" fill="rgba(28, 38, 52, 0.95)" stroke="#a3e635" stroke-width="2" filter="url(#phoneGlow)" />
+                                <text x="120" y="57" fill="#a3e635" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="17" text-anchor="middle" filter="url(#phoneGlow)">&lt;/&gt;</text>
+                            </g>
+
+                            <!-- Ambient Floating Particle Dots -->
+                            <circle cx="35" cy="85" r="2" fill="#a3e635" opacity="0.8" />
+                            <circle cx="210" cy="110" r="2.5" fill="#a3e635" opacity="0.9" />
+                            <circle cx="175" cy="40" r="1.5" fill="#a3e635" opacity="0.7" />
+                        </svg>
+                    </div>
                 </div>
-                <div class="process reveal">
-                    <div class="process-card"><span>01</span>
-                        <h3>Understand</h3>
-                        <p>Clarify product goals, users, constraints and the actual problem.</p>
+
+                <!-- 2-Row Process Loop Grid with Circular Badges -->
+                <div class="process-loop-container reveal">
+                    <!-- Connector Loop Lines Overlay -->
+                    <svg class="process-loop-svg" viewBox="0 0 1000 240" fill="none" preserveAspectRatio="none">
+                        <!-- Top Row Connectors 01 -> 02 -> 03 -> 04 -->
+                        <path d="M 125,45 H 375 M 375,45 H 625 M 625,45 H 875" stroke="#a3e635" stroke-width="2" stroke-dasharray="4,4" opacity="0.7" />
+                        <!-- Right Curved U-Turn (04 -> 08) -->
+                        <path d="M 875,45 C 960,45 960,185 875,185" stroke="#a3e635" stroke-width="2" fill="none" opacity="0.8" />
+                        <!-- Bottom Row Connectors 08 -> 07 -> 06 -> 05 -->
+                        <path d="M 875,185 H 625 M 625,185 H 375 M 375,185 H 125" stroke="#a3e635" stroke-width="2" stroke-dasharray="4,4" opacity="0.7" />
+                        <!-- Left Curved U-Turn (05 -> 01) -->
+                        <path d="M 125,185 C 40,185 40,45 125,45" stroke="#a3e635" stroke-width="2" fill="none" opacity="0.8" />
+                    </svg>
+
+                    <!-- Row 1: Steps 01 to 04 -->
+                    <div class="process-row">
+                        <!-- Step 01 -->
+                        <div class="pr-card">
+                            <div class="pr-badge"><i class="fa-regular fa-lightbulb"></i></div>
+                            <div class="pr-card-header">
+                                <span class="pr-num">01</span>
+                                <h3>Understand</h3>
+                            </div>
+                            <p>Clarify product goals, users, constraints and the actual problem.</p>
+                        </div>
+
+                        <!-- Step 02 -->
+                        <div class="pr-card">
+                            <div class="pr-badge"><i class="fa-solid fa-pen-ruler"></i></div>
+                            <div class="pr-card-header">
+                                <span class="pr-num">02</span>
+                                <h3>Design</h3>
+                            </div>
+                            <p>Translate flows and UI direction into a practical mobile experience.</p>
+                        </div>
+
+                        <!-- Step 03 -->
+                        <div class="pr-card">
+                            <div class="pr-badge"><i class="fa-solid fa-layer-group"></i></div>
+                            <div class="pr-card-header">
+                                <span class="pr-num">03</span>
+                                <h3>Architect</h3>
+                            </div>
+                            <p>Choose structure, state management, APIs and data responsibilities.</p>
+                        </div>
+
+                        <!-- Step 04 -->
+                        <div class="pr-card">
+                            <div class="pr-badge"><i class="fa-solid fa-code"></i></div>
+                            <div class="pr-card-header">
+                                <span class="pr-num">04</span>
+                                <h3>Develop</h3>
+                            </div>
+                            <p>Build reusable Flutter components and production-ready screens.</p>
+                        </div>
                     </div>
-                    <div class="process-card"><span>02</span>
-                        <h3>Design</h3>
-                        <p>Translate flows and UI direction into a practical mobile experience.</p>
+
+                    <!-- Row 2: Steps 05 to 08 -->
+                    <div class="process-row">
+                        <!-- Step 05 -->
+                        <div class="pr-card">
+                            <div class="pr-badge"><i class="fa-solid fa-puzzle-piece"></i></div>
+                            <div class="pr-card-header">
+                                <span class="pr-num">05</span>
+                                <h3>Integrate</h3>
+                            </div>
+                            <p>Connect APIs, cloud services, maps, realtime systems and AI.</p>
+                        </div>
+
+                        <!-- Step 06 -->
+                        <div class="pr-card">
+                            <div class="pr-badge"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="pr-card-header">
+                                <span class="pr-num">06</span>
+                                <h3>Test</h3>
+                            </div>
+                            <p>Validate behavior, edge cases, device layouts and release readiness.</p>
+                        </div>
+
+                        <!-- Step 07 -->
+                        <div class="pr-card">
+                            <div class="pr-badge"><i class="fa-solid fa-rocket"></i></div>
+                            <div class="pr-card-header">
+                                <span class="pr-num">07</span>
+                                <h3>Deploy</h3>
+                            </div>
+                            <p>Prepare builds and move the application through store workflows.</p>
+                        </div>
+
+                        <!-- Step 08 -->
+                        <div class="pr-card">
+                            <div class="pr-badge"><i class="fa-solid fa-chart-line"></i></div>
+                            <div class="pr-card-header">
+                                <span class="pr-num">08</span>
+                                <h3>Improve</h3>
+                            </div>
+                            <p>Iterate based on product feedback, reliability and user needs.</p>
+                        </div>
                     </div>
-                    <div class="process-card"><span>03</span>
-                        <h3>Architect</h3>
-                        <p>Choose structure, state management, APIs and data responsibilities.</p>
+                </div>
+
+                <!-- Bottom Floating Value Pillars Bar -->
+                <div class="process-value-bar reveal">
+                    <div class="proc-val-item">
+                        <div class="p-val-icon"><i class="fa-solid fa-crosshairs"></i></div>
+                        <div class="p-val-text">
+                            <strong>Focused & Structured</strong>
+                            <span>Clear process from start to scale</span>
+                        </div>
                     </div>
-                    <div class="process-card"><span>04</span>
-                        <h3>Develop</h3>
-                        <p>Build reusable Flutter components and production-ready screens.</p>
+                    <div class="proc-val-divider"></div>
+
+                    <div class="proc-val-item">
+                        <div class="p-val-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="p-val-text">
+                            <strong>Quality First</strong>
+                            <span>Built for performance & reliability</span>
+                        </div>
                     </div>
-                    <div class="process-card"><span>05</span>
-                        <h3>Integrate</h3>
-                        <p>Connect APIs, cloud services, maps, realtime systems and AI.</p>
+                    <div class="proc-val-divider"></div>
+
+                    <div class="proc-val-item">
+                        <div class="p-val-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="p-val-text">
+                            <strong>Scalable Solutions</strong>
+                            <span>Architecture that grows with you</span>
+                        </div>
                     </div>
-                    <div class="process-card"><span>06</span>
-                        <h3>Test</h3>
-                        <p>Validate behavior, edge cases, device layouts and release readiness.</p>
-                    </div>
-                    <div class="process-card"><span>07</span>
-                        <h3>Deploy</h3>
-                        <p>Prepare builds and move the application through store workflows.</p>
-                    </div>
-                    <div class="process-card"><span>08</span>
-                        <h3>Improve</h3>
-                        <p>Iterate based on product feedback, reliability and user needs.</p>
+                    <div class="proc-val-divider"></div>
+
+                    <div class="proc-val-item">
+                        <div class="p-val-icon"><i class="fa-solid fa-user-check"></i></div>
+                        <div class="p-val-text">
+                            <strong>User Centric</strong>
+                            <span>Impactful experiences that matter</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Architecture -->
-        <section id="architecture" class="section">
+        <!-- Section 08: Application Architecture -->
+        <section id="architecture" class="section arch-section">
             <div class="container">
-                <div class="section-heading reveal">
-                    <span>08 — APPLICATION ARCHITECTURE</span>
-                    <h2>Thinking in<br><i>layers.</i></h2>
+                <div class="arch-grid reveal">
+                    <!-- Left Column (40%): Heading & Interactive 3D Stack -->
+                    <div class="arch-left-col">
+                        <div class="section-heading">
+                            <span class="sub-kicker">08 — APPLICATION ARCHITECTURE</span>
+                            <h2 class="main-title">Thinking in<br><span class="lime-text">layers.</span></h2>
+                            <p class="section-desc">
+                                I don't just build screens. I build systems that scale — separating UI, state management, business logic, data, services, and intelligence.
+                            </p>
+                        </div>
+
+                        <!-- 3D Interactive Layer Stack Visual -->
+                        <div class="arch-3d-visual" id="arch3dContainer">
+                            <svg viewBox="0 0 240 380" fill="none" xmlns="http://www.w3.org/2000/svg" class="arch-stack-svg">
+                                <defs>
+                                    <filter id="archGlow" x="-30%" y="-30%" width="160%" height="160%">
+                                        <feGaussianBlur stdDeviation="6" result="blur" />
+                                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                    </filter>
+                                </defs>
+
+                                <!-- Glowing Orbital Base -->
+                                <ellipse cx="120" cy="340" rx="100" ry="36" stroke="rgba(163, 230, 53, 0.2)" stroke-width="1.5" stroke-dasharray="4,4" />
+                                <ellipse cx="120" cy="340" rx="80" ry="26" stroke="rgba(163, 230, 53, 0.5)" stroke-width="1.5" filter="url(#archGlow)" />
+
+                                <!-- Vertical Connecting Laser Beam -->
+                                <line x1="120" y1="35" x2="120" y2="335" stroke="rgba(163, 230, 53, 0.3)" stroke-width="1.5" stroke-dasharray="4,4" />
+
+                                <!-- Plate 6 (Intelligence & Realtime) -->
+                                <g class="stack-plate plate-6" data-layer="6">
+                                    <polygon points="120,270 195,305 120,340 45,305" class="plate-poly" fill="rgba(17, 22, 30, 0.95)" stroke="#a3e635" stroke-width="2" filter="url(#archGlow)" />
+                                    <path d="M 112 302 a 5 5 0 0 1 9 -3 a 6 6 0 0 1 10 4 a 4.5 4.5 0 0 1 -2 8 h -17 a 4.5 4.5 0 0 1 0 -9 z" fill="none" stroke="#a3e635" stroke-width="1.8" />
+                                </g>
+
+                                <!-- Plate 5 (Services & Backend) -->
+                                <g class="stack-plate plate-5" data-layer="5">
+                                    <polygon points="120,220 190,252 120,285 50,252" class="plate-poly" fill="rgba(19, 25, 34, 0.92)" stroke="rgba(163, 230, 53, 0.75)" stroke-width="1.5" />
+                                    <rect x="108" y="247" width="24" height="6" rx="2" fill="none" stroke="#a3e635" stroke-width="1.5" />
+                                    <rect x="108" y="255" width="24" height="6" rx="2" fill="none" stroke="#a3e635" stroke-width="1.5" />
+                                </g>
+
+                                <!-- Plate 4 (Data Layer) -->
+                                <g class="stack-plate plate-4" data-layer="4">
+                                    <polygon points="120,170 185,200 120,230 55,200" class="plate-poly" fill="rgba(21, 28, 38, 0.92)" stroke="rgba(163, 230, 53, 0.8)" stroke-width="1.5" />
+                                    <ellipse cx="120" cy="195" rx="10" ry="4" fill="none" stroke="#a3e635" stroke-width="1.5" />
+                                    <path d="M 110 195 v 6 c 0 2 4.5 4 10 4 s 10 -2 10 -4 v -6" fill="none" stroke="#a3e635" stroke-width="1.5" />
+                                </g>
+
+                                <!-- Plate 3 (Domain / Business Logic) -->
+                                <g class="stack-plate plate-3" data-layer="3">
+                                    <polygon points="120,120 180,148 120,175 60,148" class="plate-poly" fill="rgba(23, 31, 42, 0.94)" stroke="rgba(163, 230, 53, 0.85)" stroke-width="1.5" />
+                                    <circle cx="120" cy="146" r="6" fill="none" stroke="#a3e635" stroke-width="2" />
+                                </g>
+
+                                <!-- Plate 2 (State Management) -->
+                                <g class="stack-plate plate-2" data-layer="2">
+                                    <polygon points="120,70 175,96 120,122 65,96" class="plate-poly" fill="rgba(25, 34, 46, 0.95)" stroke="rgba(163, 230, 53, 0.9)" stroke-width="1.5" />
+                                    <circle cx="114" cy="94" r="2.5" fill="#a3e635" />
+                                    <circle cx="126" cy="90" r="2.5" fill="#a3e635" />
+                                    <circle cx="126" cy="98" r="2.5" fill="#a3e635" />
+                                    <line x1="114" y1="94" x2="126" y2="90" stroke="#a3e635" stroke-width="1.5" />
+                                    <line x1="114" y1="94" x2="126" y2="98" stroke="#a3e635" stroke-width="1.5" />
+                                </g>
+
+                                <!-- Plate 1 (Presentation / UI) -->
+                                <g class="stack-plate plate-1" data-layer="1">
+                                    <polygon points="120,20 170,44 120,68 70,44" class="plate-poly" fill="rgba(27, 37, 50, 0.98)" stroke="#a3e635" stroke-width="2" filter="url(#archGlow)" />
+                                    <rect x="110" y="36" width="20" height="14" rx="2" fill="none" stroke="#a3e635" stroke-width="1.5" filter="url(#archGlow)" />
+                                </g>
+
+                                <!-- Ambient Particle Floaters -->
+                                <circle cx="35" cy="160" r="2" fill="#a3e635" opacity="0.8" />
+                                <circle cx="215" cy="220" r="2.5" fill="#a3e635" opacity="0.9" />
+                                <circle cx="180" cy="80" r="1.5" fill="#a3e635" opacity="0.7" />
+                            </svg>
+                        </div>
+
+                        <!-- Live Layer Inspector Box -->
+                        <div class="arch-inspector-box" id="archInspector">
+                            <span class="insp-label">ACTIVE LAYER</span>
+                            <strong id="inspTitle">01 PRESENTATION</strong>
+                            <p id="inspTech">Flutter · Dart · Custom Widgets · Responsive UI</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column (60%): 6 Distinct System Architecture Layer Cards -->
+                    <div class="arch-right-col">
+                        <!-- Card 01: PRESENTATION -->
+                        <div class="arch-card" data-layer="1">
+                            <div class="arch-card-icon"><i class="fa-solid fa-desktop"></i></div>
+                            <div class="arch-card-body">
+                                <div class="arch-num-badge">01</div>
+                                <div class="arch-card-info">
+                                    <h3>PRESENTATION</h3>
+                                    <p>Screens, UI components and UX that users interact with.</p>
+                                </div>
+                            </div>
+                            <div class="arch-card-tags">
+                                <span class="tag-bullet">•</span> Flutter · Dart · Custom Widgets · Responsive UI
+                            </div>
+                        </div>
+
+                        <div class="arch-connector-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+
+                        <!-- Card 02: STATE -->
+                        <div class="arch-card" data-layer="2">
+                            <div class="arch-card-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                            <div class="arch-card-body">
+                                <div class="arch-num-badge">02</div>
+                                <div class="arch-card-info">
+                                    <h3>STATE MANAGEMENT</h3>
+                                    <p>Manage and persist application state efficiently.</p>
+                                </div>
+                            </div>
+                            <div class="arch-card-tags">
+                                <span class="tag-bullet">•</span> BLoC · Riverpod · Provider · GetX
+                            </div>
+                        </div>
+
+                        <div class="arch-connector-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+
+                        <!-- Card 03: DOMAIN -->
+                        <div class="arch-card" data-layer="3">
+                            <div class="arch-card-icon"><i class="fa-solid fa-gear"></i></div>
+                            <div class="arch-card-body">
+                                <div class="arch-num-badge">03</div>
+                                <div class="arch-card-info">
+                                    <h3>DOMAIN & LOGIC</h3>
+                                    <p>Business rules, use cases and core orchestration.</p>
+                                </div>
+                            </div>
+                            <div class="arch-card-tags">
+                                <span class="tag-bullet">•</span> Business Logic · Use Cases · Entities
+                            </div>
+                        </div>
+
+                        <div class="arch-connector-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+
+                        <!-- Card 04: DATA -->
+                        <div class="arch-card" data-layer="4">
+                            <div class="arch-card-icon"><i class="fa-solid fa-database"></i></div>
+                            <div class="arch-card-body">
+                                <div class="arch-num-badge">04</div>
+                                <div class="arch-card-info">
+                                    <h3>DATA LAYER</h3>
+                                    <p>Repository pattern & single source of truth for app data.</p>
+                                </div>
+                            </div>
+                            <div class="arch-card-tags">
+                                <span class="tag-bullet">•</span> Repository · REST APIs · Local Storage · SQLite
+                            </div>
+                        </div>
+
+                        <div class="arch-connector-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+
+                        <!-- Card 05: SERVICES & BACKEND -->
+                        <div class="arch-card" data-layer="5">
+                            <div class="arch-card-icon"><i class="fa-solid fa-server"></i></div>
+                            <div class="arch-card-body">
+                                <div class="arch-num-badge">05</div>
+                                <div class="arch-card-info">
+                                    <h3>SERVICES & BACKEND</h3>
+                                    <p>Cloud backends, database services and server integrations.</p>
+                                </div>
+                            </div>
+                            <div class="arch-card-tags">
+                                <span class="tag-bullet">•</span> REST · Firebase · Supabase · Spring Boot · Node.js
+                            </div>
+                        </div>
+
+                        <div class="arch-connector-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+
+                        <!-- Card 06: INTELLIGENCE & REALTIME -->
+                        <div class="arch-card" data-layer="6">
+                            <div class="arch-card-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div class="arch-card-body">
+                                <div class="arch-num-badge">06</div>
+                                <div class="arch-card-info">
+                                    <h3>INTELLIGENCE & REALTIME</h3>
+                                    <p>AI integrations, LLM workflows & real-time messaging.</p>
+                                </div>
+                            </div>
+                            <div class="arch-card-tags">
+                                <span class="tag-bullet">•</span> AI APIs · LLMs · TFLite · WebSockets · STOMP
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="architecture reveal">
-                    <div class="arch-layer"><strong>UI / Presentation</strong><span>screens · components · UX</span></div>
-                    <div class="arch-arrow">↓</div>
-                    <div class="arch-layer"><strong>State Management</strong><span>BLoC · Provider · Riverpod · GetX</span></div>
-                    <div class="arch-arrow">↓</div>
-                    <div class="arch-layer"><strong>Business Logic</strong><span>rules · use cases · orchestration</span></div>
-                    <div class="arch-arrow">↓</div>
-                    <div class="arch-layer"><strong>Repository</strong><span>data abstraction · services</span></div>
-                    <div class="arch-arrow">↓</div>
-                    <div class="arch-layer"><strong>API / Database</strong><span>REST · Firestore · PostgreSQL</span></div>
-                    <div class="arch-arrow">↓</div>
-                    <div class="arch-layer"><strong>Cloud + AI</strong><span>Firebase · Supabase · AI APIs / LLMs</span></div>
+
+                <!-- Unidirectional Flutter System Architecture Flow Diagram Bar -->
+                <div class="arch-system-bar reveal">
+                    <div class="sys-step"><i class="fa-solid fa-mobile-screen-button"></i><span>PRESENTATION</span></div>
+                    <div class="sys-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="sys-step"><i class="fa-solid fa-diagram-project"></i><span>STATE</span></div>
+                    <div class="sys-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="sys-step"><i class="fa-solid fa-gear"></i><span>DOMAIN</span></div>
+                    <div class="sys-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="sys-step"><i class="fa-solid fa-database"></i><span>DATA</span></div>
+                    <div class="sys-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="sys-step"><i class="fa-solid fa-server"></i><span>SERVICES</span></div>
+                    <div class="sys-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="sys-step"><i class="fa-solid fa-brain"></i><span>AI & REALTIME</span></div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Section 09: Contact Section Redesign -->
         <section id="contact" class="section contact-section">
             <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-left reveal">
-                        <span class="eyebrow">09 — CONTACT</span>
-                        <h2>Let's build<br><i>something great.</i></h2>
-                        <p>Have an idea, product or application in mind? Let's turn it into a production-ready experience.</p>
-                        <div class="contact-links">
-                            <a href="mailto:rana.arjun62001@gmail.com"><i class="fa-solid fa-envelope"></i> rana.arjun62001@gmail.com</a>
-                            <a href="tel:+917417662218"><i class="fa-solid fa-phone"></i> +91 74176 62218</a>
+                <div class="contact-grid reveal">
+                    <!-- Left Column: Contact Details & Social Links -->
+                    <div class="contact-left">
+                        <span class="sub-kicker">09 — CONTACT</span>
+                        <h2 class="main-title">Let's build<br><span class="lime-text">something great.</span></h2>
+                        <p class="section-desc">
+                            Have an idea, product or application in mind?<br>Let's turn it into a production-ready experience.
+                        </p>
+
+                        <!-- Contact Details Items -->
+                        <div class="contact-details-list">
+                            <!-- Email Item -->
+                            <div class="contact-detail-item">
+                                <div class="c-icon-tile"><i class="fa-regular fa-envelope"></i></div>
+                                <div class="c-info">
+                                    <span class="c-label">Email</span>
+                                    <a href="mailto:rana.arjun62001@gmail.com" class="c-val">rana.arjun62001@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <!-- Phone Item -->
+                            <div class="contact-detail-item">
+                                <div class="c-icon-tile"><i class="fa-solid fa-phone"></i></div>
+                                <div class="c-info">
+                                    <span class="c-label">Phone</span>
+                                    <a href="tel:+917417662218" class="c-val">+91 74176 62218</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/arjun-rana-jaat0050/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="https://github.com/Jaat0050" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://www.instagram.com/rana.a_005/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://wa.me/917417662218" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+                        <!-- Let's Connect Social Tiles -->
+                        <div class="contact-social-wrap">
+                            <span class="social-label">Let's connect</span>
+                            <div class="social-tiles-grid">
+                                <a href="https://www.linkedin.com/in/arjun-rana-jaat0050/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-tile">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/Jaat0050" target="_blank" rel="noopener" aria-label="GitHub" class="social-tile">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://www.instagram.com/rana.a_005/" target="_blank" rel="noopener" aria-label="Instagram" class="social-tile">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://wa.me/917417662218" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-tile">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
                         </div>
-                        <a href="images/Arjun Rana Resume.pdf" download class="outline-btn resume-btn">Download CV <i class="fa-solid fa-arrow-down"></i></a>
+
+                        <!-- Download CV Card Button -->
+                        <a href="images/Arjun Rana Resume.pdf" download class="cv-card-btn">
+                            <div class="cv-tile-icon"><i class="fa-solid fa-download"></i></div>
+                            <div class="cv-info">
+                                <strong>Download CV</strong>
+                                <span>Get my resume</span>
+                            </div>
+                            <div class="cv-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
+                        </a>
                     </div>
-                    <div class="contact-right reveal">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your name" required>
-                            <input type="email" name="Email" placeholder="Your email" required>
-                            <textarea name="Message" rows="6" placeholder="Tell me about your project"></textarea>
-                            <button type="submit" class="primary-btn">Let's talk <i class="fa-solid fa-paper-plane"></i></button>
-                        </form>
-                        <span id="msg"></span>
+
+                    <!-- Right Column: Interactive Glass Contact Form Card -->
+                    <div class="contact-right">
+                        <div class="contact-form-card">
+                            <div class="form-card-header">
+                                <div class="form-icon-tile"><i class="fa-solid fa-paper-plane"></i></div>
+                                <div class="form-header-text">
+                                    <h3>Send a message</h3>
+                                    <p>I'll get back to you as soon as possible.</p>
+                                </div>
+                            </div>
+
+                            <form name="submit-to-google-sheet">
+                                <!-- Name Input -->
+                                <div class="input-wrap">
+                                    <i class="fa-regular fa-user input-icon"></i>
+                                    <input type="text" name="Name" placeholder="Your name" required>
+                                </div>
+
+                                <!-- Email Input -->
+                                <div class="input-wrap">
+                                    <i class="fa-regular fa-envelope input-icon"></i>
+                                    <input type="email" name="Email" placeholder="Your email" required>
+                                </div>
+
+                                <!-- Message Textarea -->
+                                <div class="input-wrap textarea-wrap">
+                                    <i class="fa-regular fa-comment-dots input-icon"></i>
+                                    <textarea name="Message" rows="5" placeholder="Tell me about your project" required></textarea>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <button type="submit" class="form-submit-btn">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    <span>Let's talk</span>
+                                    <div class="btn-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
+                                </button>
+                            </form>
+
+                            <span id="msg"></span>
+
+                            <!-- Security Note -->
+                            <div class="form-security-note">
+                                <i class="fa-solid fa-lock"></i>
+                                <span>Your information is 100% safe and secure.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
         <div class="container">
-            <span>ARJUN RANA</span>
-            <p>Mobile Application Developer · Flutter · AI</p>
-            <small>© 2026 Arjun Rana. Built with curiosity & code.</small>
+            <div class="footer-card reveal">
+                <!-- Top Main Grid -->
+                <div class="footer-top-grid">
+                    <!-- Column 1: Brand & Bio -->
+                    <div class="footer-col f-brand-col">
+                        <div class="f-brand-header">
+                            <span class="f-logo-mark">AR.</span>
+                            <div class="f-brand-title">
+                                <h3>ARJUN RANA</h3>
+                                <span>Flutter Developer</span>
+                            </div>
+                        </div>
+                        <p class="f-bio">
+                            I build cross-platform mobile applications that are fast, scalable and user-centric.
+                        </p>
+                        <a href="images/Arjun Rana Resume.pdf" download class="f-cv-btn">
+                            <i class="fa-solid fa-download"></i> Download CV
+                        </a>
+                    </div>
+
+                    <!-- Column 2: Explore -->
+                    <div class="footer-col">
+                        <h4 class="f-kicker">EXPLORE</h4>
+                        <ul class="f-links">
+                            <li><a href="#about">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Services -->
+                    <div class="footer-col">
+                        <h4 class="f-kicker">SERVICES</h4>
+                        <ul class="f-links">
+                            <li><a href="#services">Flutter Development</a></li>
+                            <li><a href="#ai-lab">AI Integration</a></li>
+                            <li><a href="#services">Firebase Solutions</a></li>
+                            <li><a href="#architecture">App Architecture</a></li>
+                            <li><a href="#contact">Consulting</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Tech Stack -->
+                    <div class="footer-col">
+                        <h4 class="f-kicker">TECH STACK</h4>
+                        <ul class="f-links">
+                            <li><a href="#skills">Flutter</a></li>
+                            <li><a href="#skills">Firebase</a></li>
+                            <li><a href="#skills">Supabase</a></li>
+                            <li><a href="#skills">REST APIs</a></li>
+                            <li><a href="#ai-lab">AI / LLMs</a></li>
+                            <li><a href="#skills">& More</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 5: Let's Connect & Project Box -->
+                    <div class="footer-col f-connect-col">
+                        <h4 class="f-kicker">LET'S CONNECT</h4>
+                        <div class="f-social-row">
+                            <a href="https://www.linkedin.com/in/arjun-rana-jaat0050/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Jaat0050" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/rana.a_005/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/917417662218" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+
+                        <!-- Have a project in mind callout box -->
+                        <a href="#contact" class="f-project-card">
+                            <div class="f-proj-icon"><i class="fa-regular fa-envelope"></i></div>
+                            <div class="f-proj-text">
+                                <strong>Have a project in mind?</strong>
+                                <span>Let's turn your idea into something amazing.</span>
+                            </div>
+                            <div class="f-proj-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bottom Bar Divider Line & Credits -->
+                <div class="footer-bottom-bar">
+                    <div class="f-status">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Available for new opportunities</span>
+                    </div>
+
+                    <div class="f-copyright">
+                        © 2026 Arjun Rana. All rights reserved.
+                    </div>
+
+                    <div class="f-location-email">
+                        <span class="f-loc"><i class="fa-solid fa-location-dot"></i> India (IST)</span>
+                        <span class="f-sep">|</span>
+                        <a href="mailto:rana.arjun62001@gmail.com" class="f-email-link">Email: rana.arjun62001@gmail.com</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
