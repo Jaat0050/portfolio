@@ -1,21 +1,151 @@
-window.addEventListener('load',()=>document.getElementById('preloader')?.classList.add('done'));
-const botbloxStyle=document.createElement('link');botbloxStyle.rel='stylesheet';botbloxStyle.href='botblox-inspired.css';document.head.appendChild(botbloxStyle);
-const menu=document.getElementById('sidemenu');function openmenu(){if(menu)menu.style.right='0'}function closemenu(){if(menu)menu.style.right='-100%'}document.querySelectorAll('#sidemenu a').forEach(a=>a.addEventListener('click',closemenu));
-function opentab(tabname,button){document.querySelectorAll('.tab-links').forEach(t=>t.classList.remove('active-link'));document.querySelectorAll('.tab-contents').forEach(t=>t.classList.remove('active-tab'));button.classList.add('active-link');document.getElementById(tabname)?.classList.add('active-tab')}
-const cursor=document.querySelector('.cursor-glow');if(cursor)window.addEventListener('pointermove',e=>{cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px'});
-const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-const techTitle=document.getElementById('tech-title'),techInfo=document.getElementById('tech-info');document.querySelectorAll('.tech-node').forEach(node=>node.addEventListener('click',()=>{document.querySelectorAll('.tech-node').forEach(n=>n.classList.remove('active'));node.classList.add('active');if(techTitle)techTitle.textContent=node.dataset.title||'';if(techInfo)techInfo.textContent=node.dataset.info||''}));
+/* ===================================================================
+   Arjun Rana — Portfolio Script
+   Clean, no extra dependencies
+   =================================================================== */
 
-/* Existing portfolio storytelling additions. */
-const main=document.querySelector('main'),skills=document.getElementById('skills'),portfolio=document.getElementById('portfolio');
-if(main&&!document.getElementById('bb-mission')){const mission=document.createElement('section');mission.id='bb-mission';mission.className='bb-mission';mission.innerHTML=`<div class="bb-mission-inner"><span class="bb-kicker">ARJUN RANA · MOBILE · FLUTTER · AI</span><h2>I build digital products that feel <em>engineered.</em></h2><p>From product architecture to polished mobile interfaces, I combine Flutter engineering, cloud services, APIs and AI capabilities to turn complex ideas into dependable user experiences.</p><div class="bb-line"></div></div>`;main.insertBefore(mission,skills||main.firstElementChild)}
-if(skills&&!document.getElementById('bb-capabilities')){const caps=document.createElement('div');caps.id='bb-capabilities';caps.className='bb-capabilities';caps.innerHTML=`<article class="bb-capability"><b>01 · MOBILE</b><h3>Flutter products</h3><p>Cross-platform iOS and Android experiences with reusable architecture, responsive UI and production-ready delivery.</p></article><article class="bb-capability"><b>02 · BACKEND</b><h3>Connected systems</h3><p>Firebase, Supabase, REST APIs, realtime communication and cloud-connected application workflows.</p></article><article class="bb-capability"><b>03 · INTELLIGENCE</b><h3>AI experiences</h3><p>AI-powered application flows, model/API integration and smart product experiences designed around real use cases.</p></article>`;skills.querySelector('.container')?.appendChild(caps)}
-if(portfolio){portfolio.classList.add('cinematic-projects');portfolio.querySelectorAll('.work').forEach((work,i)=>{if(!work.querySelector('.project-index-large')){const index=document.createElement('span');index.className='project-index-large';index.textContent=String(i+1).padStart(2,'0');work.querySelector('.work-image,.work-visual')?.appendChild(index)}})}
+/* ── Preloader ─────────────────────────────────────────────────── */
+window.addEventListener('load', () => {
+  document.getElementById('preloader')?.classList.add('done');
+});
 
-/* Experience timeline. */
-const experienceSection=document.getElementById('experience'),experienceTimeline=experienceSection?.querySelector('.timeline');if(experienceTimeline){experienceSection.classList.add('experience-redesign');experienceTimeline.className='experience-timeline';experienceTimeline.innerHTML=`<div class="experience-line" aria-hidden="true"><span></span></div><article class="experience-card current reveal visible"><div class="experience-marker"></div><div class="experience-period"><span>01</span><b>APR 2024 — PRESENT</b><em>CURRENT ROLE</em></div><div class="experience-main"><div class="experience-company-row"><div class="company-monogram">IS</div><div><h3>Flutter Developer</h3><p>Innovins Softtech Solutions Pvt. Ltd.</p></div><strong class="experience-duration">2 yrs 5 mos</strong></div><div class="experience-meta"><span>FULL-TIME</span><span>REMOTE</span><span>FLUTTER</span></div><p class="experience-note">Building and delivering production-focused Flutter applications across the mobile product lifecycle.</p></div></article><article class="experience-card reveal visible"><div class="experience-marker"></div><div class="experience-period"><span>02</span><b>JUL 2023 — APR 2024</b></div><div class="experience-main"><div class="experience-company-row"><div class="company-monogram">NT</div><div><h3>Flutter</h3><p>Nextgen Techno Ventures Private Limited</p></div><strong class="experience-duration">10 mos</strong></div><div class="experience-meta"><span>FULL-TIME</span><span>REMOTE</span><span>FLUTTER</span></div><p class="experience-note">Worked on Flutter application development and production mobile experiences.</p></div></article><article class="experience-card reveal visible"><div class="experience-marker"></div><div class="experience-period"><span>03</span><b>MAY 2023</b></div><div class="experience-main"><div class="experience-company-row"><div class="company-monogram">CE</div><div><h3>Flutter Developer</h3><p>Celebrare</p></div><strong class="experience-duration">1 mo</strong></div><div class="experience-meta"><span>INTERNSHIP</span><span>REMOTE</span><span>FLUTTER</span></div><p class="experience-note">Hands-on Flutter development experience in a remote internship environment.</p></div></article><article class="experience-card reveal visible"><div class="experience-marker"></div><div class="experience-period"><span>04</span><b>MAR 2022 — MAY 2022</b></div><div class="experience-main"><div class="experience-company-row"><div class="company-monogram">BI</div><div><h3>Flutter Developer</h3><p>Baoiam Innovations Pvt Ltd</p></div><strong class="experience-duration">3 mos</strong></div><div class="experience-meta"><span>INTERNSHIP</span><span>REMOTE</span><span>FLUTTER</span></div><p class="experience-note">Early Flutter development experience building practical mobile application skills.</p></div></article>`}
+/* ── Mobile navigation ──────────────────────────────────────────── */
+const menu = document.getElementById('sidemenu');
+function openmenu() { if (menu) menu.style.right = '0'; }
+function closemenu() { if (menu) menu.style.right = '-100%'; }
+document.querySelectorAll('#sidemenu a').forEach(a => a.addEventListener('click', closemenu));
 
-/* Load the reference-matched hero after the existing DOM is ready. */
-const heroScript=document.createElement('script');heroScript.src='hero-reference.js';document.body.appendChild(heroScript);
+/* ── Navbar scroll glass effect ─────────────────────────────────── */
+const nav = document.querySelector('nav');
+if (nav) {
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('nav-scrolled', window.scrollY > 60);
+  }, { passive: true });
+}
 
-const canvas=document.getElementById('scene'),reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches,small=window.matchMedia('(max-width:800px)').matches;if(window.THREE&&canvas&&!reduced){const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:!small});renderer.setPixelRatio(Math.min(devicePixelRatio,small?1.25:1.7));const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(45,innerWidth/innerHeight,.1,100);camera.position.z=7;const group=new THREE.Group();scene.add(group);const points=[],count=small?380:700;for(let i=0;i<count;i++){const r=3.1+Math.random()*1.8,a=Math.random()*Math.PI*2,y=(Math.random()-.5)*4.5;points.push(Math.cos(a)*r,y,Math.sin(a)*r)}const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.Float32BufferAttribute(points,3));group.add(new THREE.Points(geo,new THREE.PointsMaterial({color:0xb8ff3d,size:small?.024:.018,transparent:true,opacity:.48})));function resize(){renderer.setSize(innerWidth,innerHeight,false);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix()}addEventListener('resize',resize);resize();function animate(){requestAnimationFrame(animate);group.rotation.y+=small?.001:.0016;renderer.render(scene,camera)}animate()}
+/* ── Cursor glow ────────────────────────────────────────────────── */
+const cursor = document.querySelector('.cursor-glow');
+if (cursor && !('ontouchstart' in window)) {
+  window.addEventListener('pointermove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top  = e.clientY + 'px';
+  }, { passive: true });
+} else if (cursor) {
+  cursor.style.display = 'none';
+}
+
+/* ── Scroll reveal ──────────────────────────────────────────────── */
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* ── Tab system (Experience section) ────────────────────────────── */
+function opentab(tabname, button) {
+  document.querySelectorAll('.tab-links').forEach(t => t.classList.remove('active-link'));
+  document.querySelectorAll('.tab-contents').forEach(t => t.classList.remove('active-tab'));
+  button.classList.add('active-link');
+  document.getElementById(tabname)?.classList.add('active-tab');
+}
+
+/* ── Technology Universe — click node to show info ──────────────── */
+const techTitle = document.getElementById('tech-title');
+const techInfo  = document.getElementById('tech-info');
+
+document.querySelectorAll('.tech-node').forEach(node => {
+  node.addEventListener('click', () => {
+    document.querySelectorAll('.tech-node').forEach(n => n.classList.remove('active'));
+    node.classList.add('active');
+    if (techTitle) techTitle.textContent = node.dataset.title || '';
+    if (techInfo)  techInfo.textContent  = node.dataset.info  || '';
+  });
+});
+
+/* ── Contact form → Google Sheets ───────────────────────────────── */
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyDanjzL5W9wfoXg-QixhMNWHqXovLbfQzAOQLD8syzXeF2jAlDDA4Cyr7dNTDSbAJEag/exec';
+
+const contactForm = document.querySelector('form[name="submit-to-google-sheet"]');
+const formMsg     = document.getElementById('msg');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const btn = contactForm.querySelector('button[type="submit"]');
+    const origText = btn.innerHTML;
+    btn.innerHTML = 'Sending…';
+    btn.disabled  = true;
+
+    fetch(SHEET_URL, { method: 'POST', body: new FormData(contactForm) })
+      .then(() => {
+        formMsg.textContent = '✓ Message sent! I\'ll get back to you soon.';
+        formMsg.style.color = '#76d5a2';
+        contactForm.reset();
+      })
+      .catch(() => {
+        formMsg.textContent = 'Something went wrong. Email me at rana.arjun62001@gmail.com';
+        formMsg.style.color = '#f87171';
+      })
+      .finally(() => {
+        btn.innerHTML = origText;
+        btn.disabled  = false;
+        setTimeout(() => { formMsg.textContent = ''; }, 7000);
+      });
+  });
+}
+
+/* ── Three.js background particle field ─────────────────────────── */
+(function initScene() {
+  const canvas  = document.getElementById('scene');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const small   = window.matchMedia('(max-width:800px)').matches;
+
+  if (!window.THREE || !canvas || reduced) return;
+
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: !small });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, small ? 1.25 : 1.7));
+
+  const scene  = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 100);
+  camera.position.z = 7;
+
+  const group  = new THREE.Group();
+  scene.add(group);
+
+  const positions = [];
+  const count = small ? 380 : 700;
+  for (let i = 0; i < count; i++) {
+    const r = 3.1 + Math.random() * 1.8;
+    const a = Math.random() * Math.PI * 2;
+    const y = (Math.random() - 0.5) * 4.5;
+    positions.push(Math.cos(a) * r, y, Math.sin(a) * r);
+  }
+
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+  group.add(new THREE.Points(geo, new THREE.PointsMaterial({
+    color: 0xb8ff3d,
+    size: small ? 0.024 : 0.018,
+    transparent: true,
+    opacity: 0.48
+  })));
+
+  function resize() {
+    renderer.setSize(innerWidth, innerHeight, false);
+    camera.aspect = innerWidth / innerHeight;
+    camera.updateProjectionMatrix();
+  }
+  addEventListener('resize', resize, { passive: true });
+  resize();
+
+  function animate() {
+    requestAnimationFrame(animate);
+    group.rotation.y += small ? 0.001 : 0.0016;
+    renderer.render(scene, camera);
+  }
+  animate();
+})();
