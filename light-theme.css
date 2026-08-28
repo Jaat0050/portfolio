@@ -1,0 +1,309 @@
+/* ===================================================================
+   Arjun Rana — Light Grey Portfolio Theme
+   Keeps the existing layout, interactions and animations intact.
+   =================================================================== */
+
+:root {
+    --bg-dark: #f3f4f6;
+    --card-bg: #ffffff;
+    --card-bg-hover: #f8f9fa;
+    --lime: #84b82b;
+    --lime-glow: rgba(132, 184, 43, 0.24);
+    --text-white: #15181d;
+    --text-muted: #5f6670;
+    --text-subtle: #7a828d;
+    --border-subtle: rgba(24, 29, 36, 0.10);
+    --border-lime: rgba(132, 184, 43, 0.48);
+}
+
+html, body {
+    background: #f3f4f6;
+    color: #15181d;
+}
+
+body {
+    color: #15181d;
+}
+
+/* Preloader */
+#preloader {
+    background: #f3f4f6;
+    color: #5f6670;
+}
+.loader-ring {
+    border-color: rgba(21, 24, 29, 0.12);
+    border-top-color: var(--lime);
+}
+
+/* Header */
+#site-header {
+    background: rgba(243, 244, 246, 0.94);
+    border-bottom: 1px solid rgba(21, 24, 29, 0.07);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+.logo-text,
+.hero-heading,
+.build-title,
+.main-title,
+.section-heading h2,
+.b-card-body h3,
+.work-content h3,
+.exp-card h3,
+.skill-card-head span,
+.edu-card h3,
+.ai-cap-card h3,
+.pipe-card h3,
+.pr-card h3,
+.arch-card h3 {
+    color: #15181d;
+}
+.nav-link { color: #68707b; }
+.nav-link:hover { color: #15181d; }
+.nav-link.active { color: #6d991f; }
+.nav-cta-btn {
+    border-color: #7cae27;
+    color: #5e851b;
+}
+.nav-cta-btn:hover {
+    background: var(--lime);
+    color: #fff;
+}
+
+/* Hero */
+.hero-section,
+.build-section {
+    background: #f3f4f6;
+}
+.hero-photo-gradient-left {
+    background: linear-gradient(to right,
+        #f3f4f6 0%,
+        #f3f4f6 10%,
+        rgba(243, 244, 246, 0.90) 28%,
+        rgba(243, 244, 246, 0.42) 55%,
+        transparent 100%);
+}
+.hero-photo-gradient-bottom {
+    background: linear-gradient(to top, #f3f4f6 0%, rgba(243,244,246,0.28) 48%, transparent 100%);
+}
+.hero-photo-gradient-top {
+    background: linear-gradient(to bottom, #f3f4f6 0%, transparent 100%);
+}
+.hero-greeting,
+.lime-text,
+.build-kicker,
+.sub-kicker,
+.stat-icon,
+.b-card-icon {
+    color: #6f9d20;
+}
+.hero-subtext,
+.build-subtitle,
+.section-desc,
+.b-card-body p,
+.stat-label,
+.work-content p,
+.exp-desc,
+.edu-desc,
+.about-copy p,
+.ai-lab-section .section-desc,
+.pr-card p {
+    color: #626a75;
+}
+.btn-primary-lime {
+    background: #84b82b;
+    color: #fff;
+}
+.btn-primary-lime:hover { box-shadow: 0 10px 25px rgba(132,184,43,.24); }
+.btn-secondary-glass {
+    background: rgba(255,255,255,.72);
+    border-color: rgba(21,24,29,.13);
+    color: #252a31;
+    box-shadow: 0 6px 22px rgba(21,24,29,.06);
+}
+.btn-secondary-glass:hover {
+    background: #fff;
+    border-color: rgba(21,24,29,.20);
+}
+.hero-stat-bar-floating,
+.mm-metrics-bar {
+    background: rgba(255,255,255,.78);
+    border-color: rgba(21,24,29,.10);
+    box-shadow: 0 15px 40px rgba(21,24,29,.10);
+}
+.stat-number,
+.mm-metric strong { color: #15181d; }
+.stat-divider { background: rgba(21,24,29,.12); }
+
+/* General section surfaces */
+.section-dark {
+    background: #eceef1;
+    border-color: rgba(21,24,29,.09);
+}
+.section {
+    background-color: #f3f4f6;
+}
+.section-dark .exp-card,
+.section-dark .skill-card,
+.section-dark .edu-card {
+    background: #fff;
+}
+
+/* Cards */
+.b-card,
+.work,
+.ai-pipeline-box,
+.ai-cap-card,
+.pr-card,
+.arch-card,
+.skill-card,
+.edu-card,
+.exp-card,
+.contact-card,
+.context-card,
+.pipe-card,
+.mm-pill,
+.mm-cat-badge {
+    background: #fff;
+    border-color: rgba(21,24,29,.10);
+    color: #15181d;
+    box-shadow: 0 8px 24px rgba(21,24,29,.045);
+}
+.b-card:hover,
+.work:hover,
+.ai-cap-card:hover,
+.pr-card:hover,
+.arch-card:hover,
+.skill-card:hover,
+.edu-card:hover,
+.exp-card:hover {
+    background: #fff;
+    border-color: rgba(132,184,43,.48);
+    box-shadow: 0 14px 32px rgba(21,24,29,.09);
+}
+.b-card-tags span,
+.sk-pill,
+.mm-pill,
+.exp-badge,
+.tab-links,
+.work-content small {
+    background: #f0f2f4;
+    border-color: rgba(21,24,29,.09);
+    color: #626a75;
+}
+
+/* About / stats */
+.about-copy .lead,
+.about-copy .lead + p { color: #3f4650; }
+.stat strong,
+.exp-date,
+.edu-year,
+.cap-num,
+.sub-kicker { color: #6f9d20; }
+
+/* Tabs */
+.tab-links { color: #626a75; }
+.tab-links:hover,
+.tab-links.active-link { color: #15181d; border-color: rgba(132,184,43,.45); }
+.tab-links.active-link { background: rgba(132,184,43,.12); }
+
+/* Mindmap */
+.mindmap-section,
+.mindmap-container { background: transparent; }
+.mm-core-inner {
+    background: #fff;
+    border-color: rgba(132,184,43,.50);
+    box-shadow: 0 12px 35px rgba(21,24,29,.12);
+}
+.mm-core-title { color: #15181d; }
+.mm-core-sub { color: #68707b; }
+.mm-cat-badge { color: #3d444d; }
+.mm-platform-bar { color: #626a75; }
+.mindmap-svg path,
+.mindmap-svg line { stroke: rgba(111,157,32,.48) !important; }
+.mindmap-svg circle { fill: #7cae27 !important; }
+
+/* Experience */
+.exp-timeline-line { background: rgba(21,24,29,.12); }
+.exp-dot { background: #84b82b; border-color: #f3f4f6; box-shadow: 0 0 0 4px rgba(132,184,43,.14); }
+.exp-company { color: #4d5560; }
+
+/* Projects */
+.work-image { background: #e8eaed; }
+.outline-btn,
+.contact-btn,
+.contact-link {
+    color: #5f861d;
+    border-color: rgba(132,184,43,.55);
+}
+.outline-btn:hover,
+.contact-btn:hover { background: #84b82b; color: #fff; }
+
+/* AI Lab */
+.ai-lab-section { background: #f3f4f6; }
+.ai-pipeline-box { background: rgba(255,255,255,.72); }
+.pipe-card span,
+.ai-cap-card span,
+.pr-card span { color: #68707b; }
+.pipe-card i,
+.cap-icon-badge,
+.pr-badge { color: #6f9d20; }
+.ai-cube-svg polygon { stroke: #7cae27 !important; }
+.ai-cube-svg ellipse { stroke: rgba(124,174,39,.38) !important; }
+.ai-cube-svg text,
+.ai-cube-svg circle { fill: #7cae27 !important; }
+.context-connector-svg path,
+.process-loop-svg path { stroke: #7cae27 !important; }
+.process-loop-svg circle { fill: #7cae27 !important; }
+
+/* Architecture / process visuals */
+.arch3d-container,
+.process-loop-container { background: transparent; }
+.stack-plate { background: #fff; border-color: rgba(21,24,29,.10); }
+.stack-plate.active-plate { border-color: rgba(132,184,43,.60); box-shadow: 0 12px 30px rgba(21,24,29,.10); }
+.insp-title { color: #15181d; }
+.insp-tech { color: #626a75; }
+
+/* Contact / footer */
+.contact-section,
+footer { background: #e8eaed; color: #15181d; }
+footer p,
+footer span { color: #68707b; }
+
+/* Replace common dark hard-coded surfaces from the original theme */
+.work-content a,
+.exp-company,
+.skill-card-head i,
+.b-card i,
+.ai-cap-card i,
+.pr-card i,
+.contact-icon { color: #6f9d20; }
+
+/* Mobile menu */
+@media (max-width: 1024px) {
+    .nav-menu {
+        background: #f3f4f6 !important;
+        border-left: 1px solid rgba(21,24,29,.10);
+        box-shadow: -15px 0 35px rgba(21,24,29,.10);
+    }
+    .nav-menu .nav-link { color: #4f5762; }
+    .nav-menu .nav-link.active { color: #6f9d20; }
+    .menu-icon,
+    .close-menu { color: #252a31; }
+}
+
+@media (max-width: 768px) {
+    .hero-photo-gradient-left {
+        background: linear-gradient(to bottom, rgba(243,244,246,.05) 0%, rgba(243,244,246,.82) 72%, #f3f4f6 100%);
+    }
+    .hero-photo-gradient-bottom {
+        background: linear-gradient(to top, #f3f4f6 0%, transparent 100%);
+    }
+}
+
+/* Accessibility / selection */
+::selection { background: rgba(132,184,43,.24); color: #15181d; }
+
+/* Keep existing SVG/connector effects visible on light surfaces */
+svg path[stroke="#a3e635"],
+svg path[stroke="#a3e635"] { stroke: #7cae27 !important; }
