@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arjun Rana | Flutter & AI Application Developer</title>
+    <title>Arjun Rana | Flutter Developer · Mobile Architecture &amp; AI Integration</title>
     <meta name="description"
-        content="Arjun Rana — Mobile Application Developer, Flutter Expert and AI Application Developer building production-ready iOS and Android experiences.">
+        content="Arjun Rana — Flutter Developer with 3.6+ years experience building scalable, high-performance cross-platform mobile apps across Fintech, Healthcare, and E-commerce. Delivered 15+ production applications with expertise in Clean Architecture, BLoC, Riverpod, and AI/LLM integrations (OpenAI &amp; Gemini APIs).">
     <meta name="keywords"
-        content="Arjun Rana Flutter Developer, Flutter Developer India, Mobile Application Developer, Flutter Expert, AI Application Developer, Flutter AI Developer, iOS Android Developer">
+        content="Arjun Rana, Flutter Developer, Mobile Architecture, AI Integration, Cross-Platform Engineer, Mobile Product Engineer, Flutter Expert, Clean Architecture, BLoC, Riverpod, OpenAI API, Gemini API, Dio, Hive, WebSockets, Healthcare Telemedicine, Fintech, E-Commerce">
     <meta name="author" content="Arjun Rana">
-    <meta name="theme-color" content="#0a0c0e">
+    <meta name="theme-color" content="#1e1e28">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Arjun Rana | Flutter & AI Application Developer">
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="Arjun Rana | Flutter Developer · Mobile Architecture &amp; AI Integration">
     <meta property="og:description"
-        content="3+ years building production-ready mobile applications with Flutter, cloud technologies, APIs and AI-powered experiences.">
+        content="3.6+ years experience building scalable, high-performance mobile apps across Fintech, Healthcare, and E-commerce. Delivered 15+ production applications with Clean Architecture, BLoC, and AI integrations.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jaat0050.github.io/portfolio/">
     <link rel="canonical" href="https://jaat0050.github.io/portfolio/">
@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/icon.png" type="image/png">
@@ -32,1520 +32,1634 @@
 </head>
 
 <body>
+    <!-- Preloader -->
     <div id="preloader">
         <div class="loader-ring"></div>
-        <span>ARJUN RANA · MOBILE · FLUTTER · AI</span>
+        <span>ARJUN RANA · FLUTTER · ARCHITECTURE · AI · PRODUCTION</span>
     </div>
 
-    <!-- Navigation Bar -->
-    <header id="site-header">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2L2 19H8L12 11L16 19H22L12 2Z" fill="#b8ff3d" />
-                </svg>
-                <span class="logo-text">Arjun Rana</span>
-            </a>
+    <!-- Mobile Sidebar Backdrop Overlay -->
+    <div id="sidebar-overlay" class="sidebar-overlay" onclick="closeSidebar()"></div>
 
-            <nav class="nav-menu" id="sidemenu">
-                <a href="#hero" class="nav-link active">Home<span class="active-indicator"></span></a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#portfolio" class="nav-link">Projects</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#ai-lab" class="nav-link">Blog</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <i class="fa-solid fa-xmark close-menu" onclick="closemenu()" aria-label="Close menu"></i>
-            </nav>
+    <!-- Arter Fixed Left Profile Sidebar -->
+    <aside id="profile-sidebar" class="arter-sidebar">
+        <!-- Close button for mobile / small screens -->
+        <button class="sidebar-close-btn" onclick="closeSidebar()" aria-label="Close Profile Sidebar">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
 
-            <a href="#contact" class="nav-cta-btn">
-                Let's Connect <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-
-            <i class="fa-solid fa-bars menu-icon" onclick="openmenu()" aria-label="Open menu"></i>
-        </div>
-    </header>
-
-    <!-- Main Hero Section -->
-    <section id="hero" class="hero-section">
-        <!-- Hero Right Background Photo with Blending -->
-        <div class="hero-bg-photo">
-            <img src="images/arjun-rana.png" alt="Arjun Rana — Flutter Developer" class="arjun-photo">
-            <div class="hero-photo-gradient-left"></div>
-            <div class="hero-photo-gradient-bottom"></div>
-            <div class="hero-photo-gradient-top"></div>
-        </div>
-
-        <div class="hero-content-container">
-            <div class="hero-left-col">
-                <span class="hero-greeting">Hi, I'm Arjun Rana</span>
-                <h1 class="hero-heading">
-                    Building Digital<br>
-                    Products That<br>
-                    <span class="lime-text">Make Impact.</span>
-                </h1>
-                <p class="hero-subtext">
-                    Flutter Developer with 3+ years of experience building high-performance cross-platform mobile apps with Firebase, AI, and modern architectures.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#portfolio" class="btn-primary-lime">
-                        View Projects <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                    <a href="images/Arjun Rana Resume.pdf" download class="btn-secondary-glass">
-                        Download Resume <i class="fa-solid fa-download"></i>
-                    </a>
+        <div class="sidebar-scrollable-content">
+            <!-- Profile Header Card -->
+            <div class="profile-header-card">
+                <div class="profile-avatar-wrap">
+                    <img src="images/arjun-about.jpg" alt="Arjun Rana — Flutter Developer &amp; Mobile Architect"
+                        class="profile-avatar">
+                    <span class="status-indicator" title="Available for hire"></span>
+                </div>
+                <h2 class="profile-name">Arjun Rana</h2>
+                <div class="profile-role-badge">
+                    <span class="role-primary">Flutter Developer</span>
+                    <span class="role-secondary">Mobile Architecture &amp; AI Integration</span>
                 </div>
             </div>
 
-            <!-- Floating Glass Stat Bar Overlapping Hero -->
-            <div class="hero-stat-bar-floating">
-                <div class="stat-item">
-                    <div class="stat-icon"><i class="fa-solid fa-bolt"></i></div>
-                    <div class="stat-content">
-                        <span class="stat-number">3+</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
+            <!-- Personal Info Table -->
+            <div class="sidebar-section profile-info-list">
+                <div class="info-row">
+                    <span class="info-label">Residence:</span>
+                    <span class="info-value">India</span>
                 </div>
-
-                <div class="stat-divider"></div>
-
-                <div class="stat-item">
-                    <div class="stat-icon"><i class="fa-solid fa-mobile-screen"></i></div>
-                    <div class="stat-content">
-                        <span class="stat-number">25+</span>
-                        <span class="stat-label">Apps Delivered</span>
-                    </div>
+                <div class="info-row">
+                    <span class="info-label">Location:</span>
+                    <span class="info-value">Saharanpur, UP</span>
                 </div>
-
-                <div class="stat-divider"></div>
-
-                <div class="stat-item">
-                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
-                    <div class="stat-content">
-                        <span class="stat-number">Happy</span>
-                        <span class="stat-label">Clients</span>
-                    </div>
+                <div class="info-row">
+                    <span class="info-label">Experience:</span>
+                    <span class="info-value highlight-gold">3.6+ Years</span>
                 </div>
+                <div class="info-row">
+                    <span class="info-label">Delivered:</span>
+                    <span class="info-value">15+ Prod Apps</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Focus:</span>
+                    <span class="info-value">Fintech · Health · AI</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Status:</span>
+                    <span class="info-value highlight-gold">Available for Hire</span>
+                </div>
+            </div>
 
-                <div class="stat-divider"></div>
+            <div class="sidebar-divider"></div>
 
-                <div class="stat-item">
-                    <div class="stat-icon"><i class="fa-solid fa-rocket"></i></div>
-                    <div class="stat-content">
-                        <span class="stat-number">Ships</span>
-                        <span class="stat-label">Production Apps</span>
+            <!-- Languages / Circular Gauges -->
+            <div class="sidebar-section">
+                <h4 class="sidebar-heading">Languages</h4>
+                <div class="lang-gauges-grid">
+                    <div class="lang-gauge-item">
+                        <div class="circular-progress">
+                            <svg viewBox="0 0 60 60">
+                                <circle class="circle-bg" cx="30" cy="30" r="25"></circle>
+                                <circle class="circle-fill fill-90" cx="30" cy="30" r="25"></circle>
+                            </svg>
+                            <span class="progress-val">90%</span>
+                        </div>
+                        <span class="lang-name">English</span>
+                    </div>
+                    <div class="lang-gauge-item">
+                        <div class="circular-progress">
+                            <svg viewBox="0 0 60 60">
+                                <circle class="circle-bg" cx="30" cy="30" r="25"></circle>
+                                <circle class="circle-fill fill-100" cx="30" cy="30" r="25"></circle>
+                            </svg>
+                            <span class="progress-val">100%</span>
+                        </div>
+                        <span class="lang-name">Hindi</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- WHAT I DO / Where I Build Section -->
-    <section id="where-i-build" class="build-section">
-        <div class="build-container">
-            <div class="build-header">
-                <div class="build-header-left">
-                    <span class="build-kicker">WHAT I DO</span>
-                    <h2 class="build-title">Where I Build</h2>
+            <div class="sidebar-divider"></div>
+
+            <!-- Hard Skills / Linear Progress Bars -->
+            <div class="sidebar-section">
+                <h4 class="sidebar-heading">Core Competencies</h4>
+                <div class="skill-bars-list">
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header">
+                            <span>Flutter &amp; Dart (Cross-Platform)</span>
+                            <span class="skill-pct">96%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" style="width: 96%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header">
+                            <span>Clean Architecture, BLoC &amp; Riverpod</span>
+                            <span class="skill-pct">95%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header">
+                            <span>AI &amp; LLM (OpenAI, Gemini, SSE)</span>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header">
+                            <span>Backend &amp; Data (REST/Dio, Firebase, Hive)</span>
+                            <span class="skill-pct">92%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" style="width: 92%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header">
+                            <span>Profiling &amp; Optimization (DevTools)</span>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header">
+                            <span>Deployment (Play Console, CI/CD, Stores)</span>
+                            <span class="skill-pct">92%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" style="width: 92%;"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="build-header-right">
-                    <p class="build-subtitle">
-                        End-to-end mobile development with modern technologies, powerful backends, and AI-driven solutions.
+            </div>
+
+            <div class="sidebar-divider"></div>
+
+            <!-- Extra Knowledge Checklist -->
+            <div class="sidebar-section">
+                <h4 class="sidebar-heading">Engineering Checklist</h4>
+                <ul class="knowledge-checklist">
+                    <li><i class="fa-solid fa-check"></i> Clean Architecture, MVVM &amp; SOLID</li>
+                    <li><i class="fa-solid fa-check"></i> BLoC / Cubit, Riverpod &amp; Offline-First</li>
+                    <li><i class="fa-solid fa-check"></i> OpenAI &amp; Google Gemini Multimodal APIs</li>
+                    <li><i class="fa-solid fa-check"></i> Real-Time SSE Token Streaming &amp; Prompts</li>
+                    <li><i class="fa-solid fa-check"></i> Dio Interceptors &amp; Token Refresh Flows</li>
+                    <li><i class="fa-solid fa-check"></i> Hive &amp; SQLite Local Data Persistence</li>
+                    <li><i class="fa-solid fa-check"></i> WebSockets &amp; Real-Time Video Calls</li>
+                    <li><i class="fa-solid fa-check"></i> Flutter DevTools &amp; Memory Profiling</li>
+                    <li><i class="fa-solid fa-check"></i> Google ML Kit &amp; On-Device Vision</li>
+                    <li><i class="fa-solid fa-check"></i> Razorpay &amp; Stripe Payment SDKs</li>
+                    <li><i class="fa-solid fa-check"></i> CI/CD Pipelines, GitHub Actions &amp; TestFlight</li>
+                    <li><i class="fa-solid fa-check"></i> Play Console &amp; App Store Deployment</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sidebar Fixed Action Footer -->
+        <div class="sidebar-footer">
+            <a href="images/Arjun Rana Resume.pdf" download class="sidebar-cv-btn">
+                <span>DOWNLOAD CV</span>
+                <i class="fa-solid fa-download"></i>
+            </a>
+            <div class="sidebar-socials">
+                <a href="https://www.linkedin.com/in/arjun-rana" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Jaat0050" target="_blank" rel="noopener" aria-label="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/rana.a_005/" target="_blank" rel="noopener" aria-label="Instagram"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/917417662218" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Canvas -->
+    <div class="arter-main-canvas">
+        <!-- Top Navigation Bar -->
+        <header id="site-header">
+            <div class="nav-container">
+                <div class="nav-left-group">
+                    <button class="profile-toggle-btn" onclick="toggleSidebar()" aria-label="Toggle Profile Sidebar">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                        <span>PROFILE</span>
+                    </button>
+                    <a href="#hero" class="nav-logo">
+                        <span class="logo-text">Arjun<span class="gold-dot">.</span></span>
+                    </a>
+                </div>
+
+                <nav class="nav-menu" id="sidemenu">
+                    <a href="#hero" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#flutter-expertise" class="nav-link">Flutter</a>
+                    <a href="#ai-systems" class="nav-link">AI &amp; Vision</a>
+                    <a href="#backend-cloud" class="nav-link">Backend &amp; Cloud</a>
+                    <a href="#realtime-integrations" class="nav-link">Real-Time</a>
+                    <a href="#architecture-quality" class="nav-link">Architecture</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#tech-stack" class="nav-link">Stack</a>
+                    <a href="#portfolio" class="nav-link">Works</a>
+                    <a href="#history" class="nav-link">History</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <i class="fa-solid fa-xmark close-menu" onclick="closemenu()" aria-label="Close menu"></i>
+                </nav>
+
+                <div class="nav-right-actions">
+                    <a href="#contact" class="nav-cta-btn">
+                        <span>Let's Talk</span> <i class="fa-solid fa-paper-plane"></i>
+                    </a>
+                    <button class="mobile-menu-btn" onclick="openmenu()" aria-label="Open Navigation Menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Section 1: Hero Banner -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-photo">
+                <img src="images/arjun-rana.png" alt="Arjun Rana — Flutter Developer" class="arjun-photo">
+                <div class="hero-photo-gradient-left"></div>
+                <div class="hero-photo-gradient-bottom"></div>
+                <div class="hero-photo-gradient-top"></div>
+            </div>
+
+            <div class="hero-content-container">
+                <div class="hero-left-col">
+                    <span class="hero-greeting">Senior Mobile &amp; AI Engineering</span>
+                    <h1 class="hero-heading">
+                        Building Scalable<br>
+                        Mobile Products &amp;<br>
+                        <span class="lime-text">&lt;Intelligent AI/&gt;</span>
+                    </h1>
+
+                    <!-- Professional Positioning Badges -->
+                    <div class="hero-role-pills">
+                        <span class="role-pill primary-pill"><i class="fa-solid fa-mobile-screen"></i> Flutter
+                            Developer</span>
+                        <span class="role-pill"><i class="fa-solid fa-layer-group"></i> Mobile Architecture</span>
+                        <span class="role-pill"><i class="fa-solid fa-brain"></i> AI / LLM Integration</span>
+                        <span class="role-pill"><i class="fa-solid fa-users-gear"></i> Technical Team Lead</span>
+                    </div>
+
+                    <p class="hero-subtext">
+                        Flutter Developer with <strong>3.6+ years of experience</strong> building scalable,
+                        high-performance cross-platform mobile applications across <strong>Fintech, Healthcare, and
+                            E-commerce</strong>. Delivered <strong>15+ production applications</strong> with expertise
+                        in Clean Architecture, BLoC, Riverpod, and multimodal AI workflows.
                     </p>
-                </div>
-            </div>
 
-            <!-- 6-Column Card Grid -->
-            <div class="build-grid">
-                <!-- Card 1 -->
-                <div class="b-card">
-                    <div class="b-card-icon"><i class="fa-solid fa-mobile-screen"></i></div>
-                    <div class="b-card-body">
-                        <h3>Cross-Platform Mobile</h3>
-                        <p>Flutter & Dart apps for iOS & Android</p>
-                    </div>
-                    <div class="b-card-tags">
-                        <span>Flutter</span>
-                        <span>Dart</span>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn-primary-lime">
+                            Explore Works <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn-secondary-glass">
+                            Hire Me / Let's Talk <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                        <a href="images/Arjun Rana Resume.pdf" download class="btn-secondary-glass">
+                            CV <i class="fa-solid fa-download"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="b-card">
-                    <div class="b-card-icon"><i class="fa-solid fa-cloud"></i></div>
-                    <div class="b-card-body">
-                        <h3>Firebase & Backend</h3>
-                        <p>Firestore, Cloud Functions, Auth, FCM & more</p>
-                    </div>
-                    <div class="b-card-tags">
-                        <span>Firebase</span>
-                        <span>Cloud</span>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="b-card">
-                    <div class="b-card-icon"><i class="fa-solid fa-brain"></i></div>
-                    <div class="b-card-body">
-                        <h3>AI / LLM Integration</h3>
-                        <p>Gemini API, TFLite, EfficientDet & more</p>
-                    </div>
-                    <div class="b-card-tags">
-                        <span>AI</span>
-                        <span>Machine Learning</span>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="b-card">
-                    <div class="b-card-icon"><i class="fa-solid fa-database"></i></div>
-                    <div class="b-card-body">
-                        <h3>Offline-First Architecture</h3>
-                        <p>Local-first data with smart sync engines</p>
-                    </div>
-                    <div class="b-card-tags">
-                        <span>SQFLite</span>
-                        <span>Hive</span>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="b-card">
-                    <div class="b-card-icon"><i class="fa-solid fa-wifi"></i></div>
-                    <div class="b-card-body">
-                        <h3>Real-Time Systems</h3>
-                        <p>Agora, Multiplayer, Live Streaming</p>
-                    </div>
-                    <div class="b-card-tags">
-                        <span>Agora</span>
-                        <span>WebSocket</span>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="b-card">
-                    <div class="b-card-icon"><i class="fa-solid fa-pen-to-square"></i></div>
-                    <div class="b-card-body">
-                        <h3>Community & Writing</h3>
-                        <p>Medium series, Flutter Siliguri talks & more</p>
-                    </div>
-                    <div class="b-card-tags">
-                        <span>Medium</span>
-                        <span>Talks</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bottom Lime Glow Line matching mockup -->
-        <div class="build-bottom-glow"></div>
-    </section>
-
-    <!-- Additional Portfolio Sections -->
-    <main>
-        <!-- About Section -->
-        <section id="about" class="section section-dark">
-            <div class="container">
-                <div class="section-heading reveal">
-                    <span class="sub-kicker">01 — ABOUT ME</span>
-                    <h2 class="main-title">Engineering with<br><span class="lime-text">purpose.</span></h2>
-                    <p class="section-desc">Turning product ideas into reliable, intuitive mobile, cloud and AI experiences.</p>
-                </div>
-                <div class="about-grid">
-                    <div class="about-image reveal">
-                        <div class="image-frame">
-                            <img src="images/arjun-about.jpg" alt="Arjun Rana portrait">
-                            <span class="frame-number">AR / 2026</span>
+                <!-- Arter 4-Item Floating Stats Row -->
+                <div class="hero-stat-bar-floating">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="stat-content">
+                            <span class="stat-number">3.6+</span>
+                            <span class="stat-label">Years Experience</span>
                         </div>
                     </div>
-                    <div class="about-copy reveal">
-                        <p class="lead">I turn product ideas into reliable, intuitive experiences across mobile, cloud and AI.</p>
-                        <p>My core strength is Flutter and Dart, with hands-on experience across application architecture, UI implementation, API integration, Firebase, Supabase, real-time communication, maps, testing and store delivery. I focus on building products that are maintainable, responsive and ready for real users.</p>
-                        <div class="stats">
-                            <div class="stat"><strong>3+</strong><span>Years experience</span></div>
-                            <div class="stat"><strong>iOS</strong><span>Android + iOS</span></div>
-                            <div class="stat"><strong>API</strong><span>Cloud integration</span></div>
-                            <div class="stat"><strong>AI</strong><span>Smart experiences</span></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                        <div class="stat-content">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Production Apps</span>
+                        </div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+                        <div class="stat-content">
+                            <span class="stat-number">4.5★</span>
+                            <span class="stat-label">Store Ratings</span>
+                        </div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                        <div class="stat-content">
+                            <span class="stat-number">Fintech · Health</span>
+                            <span class="stat-label">AI &amp; E-Commerce</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Technology Universe Mindmap -->
-        <section id="skills" class="section mindmap-section">
+        <!-- Section 2: Executive Profile & Product Lifecycle -->
+        <section id="about" class="section about-section">
             <div class="container">
-                <div class="section-heading reveal">
-                    <span class="sub-kicker">02 — TECHNOLOGY UNIVERSE</span>
-                    <h2 class="main-title">My technology<br><span class="lime-text">universe.</span></h2>
-                    <p class="section-desc">A complete map of technologies, tools and platforms I use to build high-performance mobile & AI solutions.</p>
+                <div class="section-heading">
+                    <span class="sub-kicker">EXECUTIVE PROFILE</span>
+                    <h2 class="main-title">About <span class="lime-text">Me</span></h2>
+                    <p class="section-desc">Engineering philosophy blending robust mobile architecture, agile
+                        leadership, and practical AI integrations.</p>
                 </div>
 
-                <div class="mindmap-container reveal" id="mindmap-container">
-                    <!-- Dynamic SVG Connector Lines Overlay -->
-                    <svg class="mindmap-svg" id="mindmap-svg">
-                        <defs>
-                            <filter id="glow-line" x="-20%" y="-20%" width="140%" height="140%">
-                                <feGaussianBlur stdDeviation="3" result="blur" />
-                                <feComposite in="SourceGraphic" in2="blur" operator="over" />
-                            </filter>
-                        </defs>
-                    </svg>
-
-                    <!-- Central Core Hub -->
-                    <div class="mm-core-hub">
-                        <div class="mm-core-ring"></div>
-                        <div class="mm-core-inner">
-                            <svg class="mm-flutter-logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.314 0L2.3 12 7.157 16.857 23.886 0.129h-9.572zM14.314 11.429l-4.857 4.857 4.857 4.857h9.572l-4.857-4.857 4.857-4.857h-9.572z" fill="#54C5F8"/>
-                            </svg>
-                            <h3 class="mm-core-title">FLUTTER</h3>
-                            <span class="mm-core-sub">Cross-platform Excellence</span>
-                        </div>
-                    </div>
-
-                    <!-- Floating Metrics Bar below Core -->
-                    <div class="mm-metrics-bar">
-                        <div class="mm-metric">
-                            <strong>3+</strong>
-                            <span>Years Experience</span>
-                        </div>
-                        <div class="mm-metric">
-                            <strong>25+</strong>
-                            <span>Apps Delivered</span>
-                        </div>
-                        <div class="mm-metric">
-                            <strong>10+</strong>
-                            <span>Industries Served</span>
-                        </div>
-                        <div class="mm-metric">
-                            <strong>100%</strong>
-                            <span>Client Satisfaction</span>
-                        </div>
-                    </div>
-
-                    <!-- 1. Languages (Top) -->
-                    <div class="mm-node-cat cat-lang">
-                        <div class="mm-cat-badge"><i class="fa-solid fa-code"></i> LANGUAGES</div>
-                        <div class="mm-sub-pills">
-                            <span class="mm-pill"><i class="fa-solid fa-gem" style="color:#00B4AB;"></i> Dart</span>
-                        </div>
-                    </div>
-
-                    <!-- 2. State Management (Top Left) -->
-                    <div class="mm-node-cat cat-state">
-                        <div class="mm-cat-badge"><i class="fa-solid fa-layer-group"></i> STATE MANAGEMENT</div>
-                        <div class="mm-sub-pills">
-                            <span class="mm-pill"><i class="fa-solid fa-cube" style="color:#29B6F6;"></i> BLoC</span>
-                            <span class="mm-pill"><i class="fa-solid fa-diagram-project" style="color:#7E57C2;"></i> Provider</span>
-                            <span class="mm-pill"><i class="fa-solid fa-water" style="color:#0288D1;"></i> Riverpod</span>
-                            <span class="mm-pill"><i class="fa-solid fa-bolt" style="color:#4CAF50;"></i> GetX</span>
-                        </div>
-                    </div>
-
-                    <!-- 3. Real-Time Communication (Middle Left) -->
-                    <div class="mm-node-cat cat-realtime">
-                        <div class="mm-cat-badge"><i class="fa-solid fa-comments"></i> REAL-TIME COMMUNICATION</div>
-                        <div class="mm-sub-pills">
-                            <span class="mm-pill"><i class="fa-solid fa-wifi" style="color:#8BC34A;"></i> WebSockets</span>
-                            <span class="mm-pill"><i class="fa-solid fa-network-wired" style="color:#9E9E9E;"></i> STOMP Protocol</span>
-                        </div>
-                    </div>
-
-                    <!-- 4. AI & ML (Lower Left) -->
-                    <div class="mm-node-cat cat-ai">
-                        <div class="mm-cat-badge"><i class="fa-solid fa-brain"></i> AI & ML</div>
-                        <div class="mm-sub-pills">
-                            <span class="mm-pill"><i class="fa-solid fa-robot" style="color:#FFB74D;"></i> AI / LLM APIs</span>
-                            <span class="mm-pill"><i class="fa-solid fa-microchip" style="color:#FF7043;"></i> TFLite</span>
-                        </div>
-                    </div>
-
-                    <!-- 5. Tools & Platforms (Bottom Left) -->
-                    <div class="mm-node-cat cat-tools">
-                        <div class="mm-cat-badge"><i class="fa-solid fa-wrench"></i> TOOLS & PLATFORMS</div>
-                        <div class="mm-sub-pills">
-                            <span class="mm-pill"><i class="fa-brands fa-github"></i> Git / GitHub</span>
-                            <span class="mm-pill"><i class="fa-brands fa-figma" style="color:#F24E1E;"></i> Figma</span>
-                            <span class="mm-pill"><i class="fa-solid fa-code" style="color:#007ACC;"></i> VS Code</span>
-                        </div>
-                    </div>
-
-                    <!-- 6. Backend & Services (Top Right) -->
-                    <div class="mm-node-cat cat-backend">
-                        <div class="mm-cat-badge"><i class="fa-solid fa-cloud"></i> BACKEND & SERVICES</div>
-                        <div class="mm-sub-pills">
-                            <span class="mm-pill"><i class="fa-solid fa-fire" style="color:#FFA000;"></i> Firebase</span>
-                            <span class="mm-pill"><i class="fa-solid fa-bolt" style="color:#3ECF8E;"></i> Supabase</span>
-                            <span class="mm-pill"><i class="fa-solid fa-globe" style="color:#29B6F6;"></i> REST APIs</span>
-                            <span class="mm-pill"><i class="fa-solid fa-leaf" style="color:#6DB33F;"></i> Spring Boot</span>
-                            <span class="mm-pill"><i class="fa-brands fa-node-js" style="color:#68A063;"></i> Node.js</span>
-                        </div>
-                    </div>
-
-                    <!-- 7. Maps & Location (Middle Right) -->
-                    <div class="mm-node-cat cat-maps">
-                        <div class="mm-cat-badge"><i class="fa-solid fa-location-dot"></i> MAPS & LOCATION</div>
-                        <div class="mm-sub-pills">
-                            <span class="mm-pill"><i class="fa-solid fa-map-location-dot" style="color:#4285F4;"></i> Google Maps</span>
-                            <span class="mm-pill"><i class="fa-solid fa-location-arrow" style="color:#EA4335;"></i> Google Places</span>
-                        </div>
-                    </div>
-
-                    <!-- 8. Video & Voice (Lower Right) -->
-                    <div class="mm-node-cat cat-video">
-                        <div class="mm-cat-badge"><i class="fa-solid fa-video"></i> VIDEO & VOICE</div>
-                        <div class="mm-sub-pills">
-                            <span class="mm-pill"><i class="fa-solid fa-circle-play" style="color:#099DFD;"></i> Agora</span>
-                        </div>
-                    </div>
-
-                    <!-- 9. Deployment & Distribution (Bottom Right) -->
-                    <div class="mm-node-cat cat-deploy">
-                        <div class="mm-cat-badge"><i class="fa-solid fa-rocket"></i> DEPLOYMENT & DISTRIBUTION</div>
-                        <div class="mm-sub-pills">
-                            <span class="mm-pill"><i class="fa-solid fa-plane" style="color:#29B6F6;"></i> TestFlight</span>
-                            <span class="mm-pill"><i class="fa-brands fa-app-store-ios" style="color:#157EFB;"></i> App Store</span>
-                            <span class="mm-pill"><i class="fa-brands fa-google-play" style="color:#00C853;"></i> Play Store</span>
-                        </div>
-                    </div>
-
-                    <!-- 10. Analytics & Marketing (Bottom Center) -->
-                    <div class="mm-node-cat cat-analytics">
-                        <div class="mm-cat-badge"><i class="fa-solid fa-chart-line"></i> ANALYTICS & MARKETING</div>
-                        <div class="mm-sub-pills">
-                            <span class="mm-pill"><i class="fa-solid fa-seedling" style="color:#68A063;"></i> AppsFlyer</span>
-                            <span class="mm-pill"><i class="fa-solid fa-code-branch" style="color:#00B4AB;"></i> Branch.io</span>
-                        </div>
-                        <div class="mm-platform-bar">
-                            <span><i class="fa-brands fa-android" style="color:#A4C639;"></i> Android</span>
-                            <span class="divider">|</span>
-                            <span><i class="fa-brands fa-apple"></i> iOS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Timeline -->
-        <section id="experience" class="section section-dark">
-            <div class="container">
-                <div class="section-heading reveal">
-                    <span class="sub-kicker">03 — EXPERIENCE</span>
-                    <h2 class="main-title">A career built<br>around <span class="lime-text">shipping.</span></h2>
-                    <p class="section-desc">Hands-on software development across full-time engineering roles, mobile architecture, and product delivery.</p>
-                </div>
-                <div class="exp-timeline reveal">
-                    <div class="exp-timeline-line"></div>
-
-                    <!-- Role 1 -->
-                    <div class="exp-item">
-                        <div class="exp-dot"></div>
-                        <div class="exp-card">
-                            <div class="exp-header">
-                                <span class="exp-date">APR 2024 — PRESENT</span>
-                                <span class="exp-badge">Full-time · Remote</span>
-                            </div>
-                            <h3>Flutter Developer</h3>
-                            <p class="exp-company">Innovins Softtech Solutions Pvt. Ltd.</p>
-                            <p class="exp-desc">Building production-grade cross-platform mobile applications, scalable application architecture, state management, API integrations, and cloud backend connections.</p>
-                        </div>
-                    </div>
-
-                    <!-- Role 2 -->
-                    <div class="exp-item">
-                        <div class="exp-dot"></div>
-                        <div class="exp-card">
-                            <div class="exp-header">
-                                <span class="exp-date">JUL 2023 — APR 2024 · 10 MOS</span>
-                                <span class="exp-badge">Full-time · Remote</span>
-                            </div>
-                            <h3>Flutter Developer</h3>
-                            <p class="exp-company">Nextgen Techno Ventures Private Limited</p>
-                            <p class="exp-desc">Cross-platform mobile app development with Flutter, custom UI implementation, REST APIs, Firebase cloud services, and production deployment.</p>
-                        </div>
-                    </div>
-
-                    <!-- Role 3 -->
-                    <div class="exp-item">
-                        <div class="exp-dot"></div>
-                        <div class="exp-card">
-                            <div class="exp-header">
-                                <span class="exp-date">MAY 2023 · 1 MO</span>
-                                <span class="exp-badge">Internship · Remote</span>
-                            </div>
-                            <h3>Flutter Developer Intern</h3>
-                            <p class="exp-company">Celebrare</p>
-                            <p class="exp-desc">Hands-on Flutter mobile application development, UI design translation into reusable widgets, and feature building.</p>
-                        </div>
-                    </div>
-
-                    <!-- Role 4 -->
-                    <div class="exp-item">
-                        <div class="exp-dot"></div>
-                        <div class="exp-card">
-                            <div class="exp-header">
-                                <span class="exp-date">MAR 2022 — MAY 2022 · 3 MOS</span>
-                                <span class="exp-badge">Internship · Remote</span>
-                            </div>
-                            <h3>Flutter Developer Intern</h3>
-                            <p class="exp-company">Baoiam Innovations Pvt Ltd</p>
-                            <p class="exp-desc">Mobile application development, Flutter component architecture, UI layout implementation, and engineering workflows.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="tabs-wrap reveal">
-                    <div class="tab-titles">
-                        <button class="tab-links active-link" onclick="opentab('skills-tab',this)"><i class="fa-solid fa-layer-group"></i> Core Stack</button>
-                        <button class="tab-links" onclick="opentab('education',this)"><i class="fa-solid fa-graduation-cap"></i> Education</button>
-                        <button class="tab-links" onclick="opentab('tooling',this)"><i class="fa-solid fa-toolbox"></i> Engineering Tooling</button>
-                    </div>
-
-                    <!-- Core Stack Tab -->
-                    <div class="tab-contents active-tab" id="skills-tab">
-                        <div class="skill-grid">
-                            <div class="skill-card">
-                                <div class="skill-card-head">
-                                    <i class="fa-solid fa-mobile-screen"></i>
-                                    <span>MOBILE DEVELOPMENT</span>
-                                </div>
-                                <div class="skill-pills">
-                                    <span class="sk-pill"><i class="fa-solid fa-gem" style="color:#00B4AB"></i> Flutter</span>
-                                    <span class="sk-pill"><i class="fa-solid fa-code" style="color:#0288D1"></i> Dart</span>
-                                    <span class="sk-pill"><i class="fa-brands fa-android" style="color:#A4C639"></i> Android</span>
-                                    <span class="sk-pill"><i class="fa-brands fa-apple"></i> iOS</span>
-                                </div>
-                            </div>
-
-                            <div class="skill-card">
-                                <div class="skill-card-head">
-                                    <i class="fa-solid fa-cubes"></i>
-                                    <span>STATE MANAGEMENT</span>
-                                </div>
-                                <div class="skill-pills">
-                                    <span class="sk-pill"><i class="fa-solid fa-cube" style="color:#29B6F6"></i> BLoC</span>
-                                    <span class="sk-pill"><i class="fa-solid fa-diagram-project" style="color:#7E57C2"></i> Provider</span>
-                                    <span class="sk-pill"><i class="fa-solid fa-water" style="color:#0288D1"></i> Riverpod</span>
-                                    <span class="sk-pill"><i class="fa-solid fa-bolt" style="color:#4CAF50"></i> GetX</span>
-                                </div>
-                            </div>
-
-                            <div class="skill-card">
-                                <div class="skill-card-head">
-                                    <i class="fa-solid fa-sitemap"></i>
-                                    <span>ARCHITECTURE & PATTERNS</span>
-                                </div>
-                                <div class="skill-pills">
-                                    <span class="sk-pill">Clean Architecture</span>
-                                    <span class="sk-pill">Modular Structure</span>
-                                    <span class="sk-pill">Reusable Components</span>
-                                    <span class="sk-pill">SOLID Principles</span>
-                                </div>
-                            </div>
-
-                            <div class="skill-card">
-                                <div class="skill-card-head">
-                                    <i class="fa-solid fa-cloud"></i>
-                                    <span>BACKEND & CLOUD</span>
-                                </div>
-                                <div class="skill-pills">
-                                    <span class="sk-pill"><i class="fa-solid fa-globe" style="color:#29B6F6"></i> REST APIs</span>
-                                    <span class="sk-pill"><i class="fa-solid fa-fire" style="color:#FFA000"></i> Firebase</span>
-                                    <span class="sk-pill"><i class="fa-solid fa-bolt" style="color:#3ECF8E"></i> Supabase</span>
-                                    <span class="sk-pill"><i class="fa-solid fa-leaf" style="color:#6DB33F"></i> Spring Boot</span>
-                                    <span class="sk-pill"><i class="fa-brands fa-node-js" style="color:#68A063"></i> Node.js</span>
-                                </div>
-                            </div>
-
-                            <div class="skill-card">
-                                <div class="skill-card-head">
-                                    <i class="fa-solid fa-database"></i>
-                                    <span>DATABASES</span>
-                                </div>
-                                <div class="skill-pills">
-                                    <span class="sk-pill"><i class="fa-solid fa-fire" style="color:#FFA000"></i> Firestore</span>
-                                    <span class="sk-pill"><i class="fa-solid fa-database" style="color:#336791"></i> PostgreSQL</span>
-                                    <span class="sk-pill"><i class="fa-solid fa-box-archive"></i> Hive / SQLite</span>
-                                </div>
-                            </div>
-
-                            <div class="skill-card">
-                                <div class="skill-card-head">
-                                    <i class="fa-solid fa-bolt"></i>
-                                    <span>REAL-TIME & COMMUNICATION</span>
-                                </div>
-                                <div class="skill-pills">
-                                    <span class="sk-pill"><i class="fa-solid fa-wifi" style="color:#8BC34A"></i> WebSockets</span>
-                                    <span class="sk-pill"><i class="fa-solid fa-network-wired"></i> STOMP Protocol</span>
-                                    <span class="sk-pill"><i class="fa-solid fa-comments"></i> In-App Chat</span>
-                                    <span class="sk-pill"><i class="fa-solid fa-tower-broadcast"></i> Live Updates</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Education Tab -->
-                    <div class="tab-contents" id="education">
-                        <div class="edu-grid">
-                            <div class="edu-card">
-                                <span class="edu-year">2019 — 2023</span>
-                                <h3>B.Tech in Computer Science & Engineering</h3>
-                                <p class="edu-school">Uttarakhand Technical University</p>
-                                <p class="edu-desc">Core focus on Software Engineering, Data Structures, Algorithms, Database Management, and Mobile Application Architectures.</p>
-                            </div>
-                            <div class="edu-card">
-                                <span class="edu-year">2018 — 2019</span>
-                                <h3>Senior Secondary Education (12th Class)</h3>
-                                <p class="edu-school">D.A.V. Public School</p>
-                                <p class="edu-desc">Physics, Chemistry, Mathematics (PCM) specialization with Computer Science.</p>
-                            </div>
-                            <div class="edu-card">
-                                <span class="edu-year">2016 — 2017</span>
-                                <h3>Secondary Education (10th Class)</h3>
-                                <p class="edu-school">D.A.V. Public School</p>
-                                <p class="edu-desc">Foundational academic excellence and computer fundamentals.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tooling Tab -->
-                    <div class="tab-contents" id="tooling">
-                        <div class="skill-grid">
-                            <div class="skill-card">
-                                <div class="skill-card-head">
-                                    <i class="fa-solid fa-code"></i>
-                                    <span>DEVELOPMENT & IDEs</span>
-                                </div>
-                                <div class="skill-pills">
-                                    <span class="sk-pill">Android Studio</span>
-                                    <span class="sk-pill">VS Code</span>
-                                    <span class="sk-pill">Xcode</span>
-                                    <span class="sk-pill">CocoaPods</span>
-                                    <span class="sk-pill">Figma</span>
-                                </div>
-                            </div>
-
-                            <div class="skill-card">
-                                <div class="skill-card-head">
-                                    <i class="fa-solid fa-rocket"></i>
-                                    <span>CI/CD & STORE DELIVERY</span>
-                                </div>
-                                <div class="skill-pills">
-                                    <span class="sk-pill">Git / GitHub</span>
-                                    <span class="sk-pill">TestFlight</span>
-                                    <span class="sk-pill">App Store Connect</span>
-                                    <span class="sk-pill">Google Play Console</span>
-                                </div>
-                            </div>
-
-                            <div class="skill-card">
-                                <div class="skill-card-head">
-                                    <i class="fa-solid fa-plug"></i>
-                                    <span>SERVICES & INTEGRATIONS</span>
-                                </div>
-                                <div class="skill-pills">
-                                    <span class="sk-pill">Google Maps</span>
-                                    <span class="sk-pill">Google Places</span>
-                                    <span class="sk-pill">Agora Video/Voice</span>
-                                    <span class="sk-pill">AppsFlyer</span>
-                                    <span class="sk-pill">Branch.io</span>
-                                </div>
-                            </div>
-
-                            <div class="skill-card">
-                                <div class="skill-card-head">
-                                    <i class="fa-solid fa-shapes"></i>
-                                    <span>FLUTTER ECOSYSTEM</span>
-                                </div>
-                                <div class="skill-pills">
-                                    <span class="sk-pill">Push Notifications</span>
-                                    <span class="sk-pill">Deep Linking</span>
-                                    <span class="sk-pill">WebViews</span>
-                                    <span class="sk-pill">Media & File Handling</span>
-                                    <span class="sk-pill">Native Channels</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Selected Work / Projects -->
-        <section id="portfolio" class="section">
-            <div class="container">
-                <div class="section-heading reveal">
-                    <span class="sub-kicker">04 — SELECTED WORK</span>
-                    <h2 class="main-title">Built for<br><span class="lime-text">real users.</span></h2>
-                    <p class="section-desc">Apps and product work across fintech, mobile games, commerce, enterprise and utility experiences.</p>
-                </div>
-                <div class="work-list">
-                    <article class="work reveal">
-                        <div class="work-image"><img src="images/ph1.png" alt="Expense tracker project"><span>01</span></div>
-                        <div class="work-content">
-                            <div>
-                                <small>FINTECH / MOBILE</small>
-                                <h3>Expense Tracker</h3>
-                            </div>
-                            <p>A focused finance experience for tracking spending and making better budgeting decisions.</p>
-                            <a href="https://github.com/Jaat0050/CipherSchools-Flutter-Assignment" target="_blank" rel="noopener">View project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </article>
-                    <article class="work reveal">
-                        <div class="work-image"><img src="images/ph2.png" alt="Loan facilitator project"><span>02</span></div>
-                        <div class="work-content">
-                            <div>
-                                <small>FINTECH / MOBILE</small>
-                                <h3>Loan Facilitator</h3>
-                            </div>
-                            <p>A streamlined mobile experience for navigating lending options and financial decisions.</p>
-                            <a href="https://github.com/Jaat0050" target="_blank" rel="noopener">View GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </article>
-                    <article class="work reveal">
-                        <div class="work-image"><img src="images/ph3.png" alt="Hangman game project"><span>03</span></div>
-                        <div class="work-content">
-                            <div>
-                                <small>GAME / MOBILE</small>
-                                <h3>Hangman</h3>
-                            </div>
-                            <p>A lightweight word game focused on simple interaction, responsive UI and engaging gameplay.</p>
-                            <a href="https://github.com/Jaat0050/HangMan" target="_blank" rel="noopener">View project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </article>
-                </div>
-                <a href="https://github.com/Jaat0050" class="outline-btn" target="_blank" rel="noopener">See more on GitHub <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-        </section>
-
-        <!-- AI Lab Section -->
-        <section id="ai-lab" class="section ai-lab-section">
-            <div class="container">
-                <!-- AI Lab Header & 3D Visual -->
-                <div class="ai-header-grid reveal">
-                    <div class="ai-header-left">
-                        <span class="sub-kicker">05 — AI LAB</span>
-                        <h2 class="main-title">Building smarter<br>mobile experiences <span class="lime-text">with AI.</span></h2>
-                        <p class="section-desc" style="max-width: 520px; margin-top: 14px;">
-                            AI is treated as a product capability — integrated into mobile workflows through AI APIs / LLMs, structured responses and thoughtful user experiences.
+                <div class="about-overview-card">
+                    <div class="about-bio-text">
+                        <p class="lead-bio">
+                            I'm a <strong>Flutter Developer &amp; Mobile Architect</strong> with <strong>3.6+ years of
+                                experience</strong> building scalable, high-performance cross-platform mobile
+                            applications across <strong>Fintech, Healthcare, and E-commerce</strong>.
+                        </p>
+                        <p>
+                            I have delivered <strong>15+ production applications</strong> with a relentless focus on
+                            reliability, performance, and user-centric design. My core expertise centers on Flutter,
+                            Dart, Clean Architecture, MVVM, BLoC / Cubit, Riverpod, and offline-first data
+                            synchronization.
+                        </p>
+                        <p>
+                            Beyond mobile UI, I design resilient systems: architecting unified networking layers with
+                            Dio interceptors, integrating multimodal AI with OpenAI and Google Gemini APIs (real-time
+                            SSE streaming, voice/image reasoning), eliminating frame drops via Flutter DevTools (+60%
+                            rendering speedup), and directing cross-functional engineering squads from concept to store
+                            release.
                         </p>
                     </div>
 
-                    <div class="ai-3d-visual">
-                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="ai-cube-svg">
-                            <defs>
-                                <filter id="cubeGlow" x="-20%" y="-20%" width="140%" height="140%">
-                                    <feGaussianBlur stdDeviation="4" result="blur" />
-                                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
-                                </filter>
-                            </defs>
-
-                            <!-- Concentric Orbital Rings -->
-                            <ellipse cx="100" cy="135" rx="85" ry="32" stroke="rgba(163, 230, 53, 0.2)" stroke-width="1.5" stroke-dasharray="4,4" />
-                            <ellipse cx="100" cy="135" rx="65" ry="24" stroke="rgba(163, 230, 53, 0.45)" stroke-width="1.5" filter="url(#cubeGlow)" />
-
-                            <!-- 3D Isometric Cube Base & Faces -->
-                            <polygon points="100,30 150,55 100,80 50,55" fill="rgba(22, 28, 36, 0.95)" stroke="#a3e635" stroke-width="2" filter="url(#cubeGlow)" />
-                            <polygon points="50,55 100,80 100,135 50,110" fill="rgba(14, 18, 24, 0.9)" stroke="#a3e635" stroke-width="1.5" />
-                            <polygon points="100,80 150,55 150,110 100,135" fill="rgba(10, 14, 19, 0.95)" stroke="#a3e635" stroke-width="1.5" />
-
-                            <!-- AI Emblem Text on Top Face -->
-                            <text x="100" y="63" fill="#a3e635" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="22" text-anchor="middle" filter="url(#cubeGlow)">AI</text>
-
-                            <!-- Ambient Particle Dots -->
-                            <circle cx="35" cy="65" r="2" fill="#a3e635" opacity="0.8" />
-                            <circle cx="165" cy="85" r="2.5" fill="#a3e635" opacity="0.9" />
-                            <circle cx="140" cy="30" r="1.5" fill="#a3e635" opacity="0.7" />
-                        </svg>
-                    </div>
-                </div>
-
-                <!-- AI Architecture Pipeline Diagram -->
-                <div class="ai-pipeline-box reveal">
-                    <div class="ai-pipeline-main">
-                        <!-- Step 1 -->
-                        <div class="pipe-card">
-                            <i class="fa-solid fa-mobile-screen-button"></i>
-                            <h3>Flutter</h3>
-                            <span>Mobile UI</span>
+                    <div class="about-highlights-grid">
+                        <div class="highlight-box">
+                            <i class="fa-solid fa-users-gear"></i>
+                            <div class="hl-content">
+                                <strong>Technical Leadership</strong>
+                                <span>Directed agile squad of 4 with 95% sprint completion; mentored 3 junior
+                                    developers</span>
+                            </div>
                         </div>
-
-                        <div class="pipe-arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-
-                        <!-- Step 2 -->
-                        <div class="pipe-card card-api">
-                            <i class="fa-solid fa-code"></i>
-                            <h3>API</h3>
-                            <span>Integration layer</span>
-                        </div>
-
-                        <div class="pipe-arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-
-                        <!-- Step 3 -->
-                        <div class="pipe-card card-aimodel">
+                        <div class="highlight-box">
                             <i class="fa-solid fa-brain"></i>
-                            <h3>AI Model</h3>
-                            <span>Intelligent response</span>
+                            <div class="hl-content">
+                                <strong>Multimodal AI &amp; SSE</strong>
+                                <span>Integrating OpenAI and Google Gemini APIs with real-time SSE streaming &amp;
+                                    vision</span>
+                            </div>
                         </div>
-
-                        <div class="pipe-arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
+                        <div class="highlight-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <div class="hl-content">
+                                <strong>Clean Architecture &amp; SOLID</strong>
+                                <span>Decoupled domain layers, BLoC state, repository patterns, and offline-first
+                                    Hive/SQLite</span>
+                            </div>
                         </div>
-
-                        <!-- Step 4 -->
-                        <div class="pipe-card">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i>
-                            <h3>Experience</h3>
-                            <span>Useful output</span>
-                        </div>
-                    </div>
-
-                    <!-- Sub-branch Context Node -->
-                    <div class="pipe-context-wrapper">
-                        <svg class="context-connector-svg" viewBox="0 0 1000 50" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M 338,0 V 24 H 662 V 0 M 500,24 V 50" stroke="#a3e635" stroke-width="2" stroke-dasharray="5,5" opacity="0.85"/>
-                        </svg>
-                        <div class="pipe-card context-card">
-                            <i class="fa-solid fa-database"></i>
-                            <h3>Context</h3>
-                            <span>Structured data</span>
+                        <div class="highlight-box">
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <div class="hl-content">
+                                <strong>High-Impact Optimization</strong>
+                                <span>+60% frame rendering speedup via DevTools; -40% API failure reduction via
+                                    Dio</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 5 Capability Cards Grid -->
-                <div class="ai-cards-grid reveal">
-                    <!-- Card 01 -->
-                    <div class="ai-cap-card">
-                        <span class="cap-num">01</span>
-                        <div class="cap-icon-badge"><i class="fa-solid fa-brain"></i></div>
-                        <h3>AI Integration</h3>
-                        <p>Integrating AI capabilities into production-oriented mobile application workflows.</p>
+                <!-- Product Engineering Lifecycle Pipeline -->
+                <div class="lifecycle-container">
+                    <div class="sub-section-header">
+                        <span class="sub-kicker">END-TO-END OWNERSHIP</span>
+                        <h3 class="sub-title">Product Engineering <span class="lime-text">Lifecycle</span></h3>
+                        <p class="sub-desc">How I guide mobile applications from initial concept to store release and
+                            production scaling:</p>
                     </div>
 
-                    <!-- Card 02 -->
-                    <div class="ai-cap-card">
-                        <span class="cap-num">02</span>
-                        <div class="cap-icon-badge"><i class="fa-solid fa-magnifying-glass"></i></div>
-                        <h3>Intelligent Search</h3>
-                        <p>AI-assisted discovery and information retrieval experiences.</p>
-                    </div>
-
-                    <!-- Card 03 -->
-                    <div class="ai-cap-card">
-                        <span class="cap-num">03</span>
-                        <div class="cap-icon-badge"><i class="fa-solid fa-comments"></i></div>
-                        <h3>AI Assistants</h3>
-                        <p>Conversational interfaces designed around actual application context.</p>
-                    </div>
-
-                    <!-- Card 04 -->
-                    <div class="ai-cap-card">
-                        <span class="cap-num">04</span>
-                        <div class="cap-icon-badge"><i class="fa-solid fa-star"></i></div>
-                        <h3>Recommendations</h3>
-                        <p>Smart, context-aware recommendations that deliver real value.</p>
-                    </div>
-
-                    <!-- Card 05 -->
-                    <div class="ai-cap-card">
-                        <span class="cap-num">05</span>
-                        <div class="cap-icon-badge"><i class="fa-solid fa-mobile"></i></div>
-                        <h3>AI + Flutter</h3>
-                        <p>Combining cross-platform mobile development with modern AI APIs.</p>
-                    </div>
-                </div>
-
-                <!-- Bottom Floating Value Bar -->
-                <div class="ai-value-bar reveal">
-                    <div class="val-item"><i class="fa-solid fa-bolt"></i><span>Smarter Workflows</span></div>
-                    <div class="val-divider"></div>
-                    <div class="val-item"><i class="fa-solid fa-user-check"></i><span>Better User Experiences</span></div>
-                    <div class="val-divider"></div>
-                    <div class="val-item"><i class="fa-solid fa-shield-halved"></i><span>Reliable & Scalable</span></div>
-                    <div class="val-divider"></div>
-                    <div class="val-item"><i class="fa-solid fa-crosshairs"></i><span>Real Business Impact</span></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services -->
-        <section id="services" class="section">
-            <div class="container">
-                <div class="section-heading reveal">
-                    <span class="sub-kicker">06 — WHAT I CAN BUILD</span>
-                    <h2 class="main-title">From concept<br>to <span class="lime-text">launch.</span></h2>
-                    <p class="section-desc">End-to-end software capabilities ranging from production mobile apps to AI workflows and cloud backends.</p>
-                </div>
-                <div class="services-list">
-                    <article class="service-card reveal">
-                        <div class="service-index">01</div><i class="fa-solid fa-mobile-screen-button"></i>
-                        <h3>Mobile Applications</h3>
-                        <p>Production-ready Flutter applications for iOS and Android with scalable architecture and polished interfaces.</p>
-                        <div class="service-tags">FLUTTER / DART / BLoC</div>
-                    </article>
-                    <article class="service-card reveal">
-                        <div class="service-index">02</div><i class="fa-solid fa-brain"></i>
-                        <h3>AI-Powered Applications</h3>
-                        <p>Mobile experiences enhanced with AI APIs / LLM integration and intelligent application workflows.</p>
-                        <div class="service-tags">AI / LLM / FLUTTER</div>
-                    </article>
-                    <article class="service-card reveal">
-                        <div class="service-index">03</div><i class="fa-solid fa-cloud"></i>
-                        <h3>API & Cloud Integration</h3>
-                        <p>REST APIs, Firebase, Supabase and backend-connected application experiences.</p>
-                        <div class="service-tags">REST / FIREBASE / SUPABASE</div>
-                    </article>
-                    <article class="service-card reveal">
-                        <div class="service-index">04</div><i class="fa-solid fa-comments"></i>
-                        <h3>Real-Time Applications</h3>
-                        <p>Chat, live updates, WebSockets and STOMP-based communication.</p>
-                        <div class="service-tags">WEBSOCKETS / STOMP</div>
-                    </article>
-                    <article class="service-card reveal">
-                        <div class="service-index">05</div><i class="fa-solid fa-location-dot"></i>
-                        <h3>Maps & Location</h3>
-                        <p>Google Maps, Places, markers and location-aware discovery experiences.</p>
-                        <div class="service-tags">MAPS / PLACES / LOCATION</div>
-                    </article>
-                    <article class="service-card reveal">
-                        <div class="service-index">06</div><i class="fa-solid fa-rocket"></i>
-                        <h3>App Deployment</h3>
-                        <p>Testing, signing and deployment workflows for TestFlight, App Store Connect and Google Play.</p>
-                        <div class="service-tags">IOS / ANDROID / STORES</div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Process / HOW I BUILD -->
-        <section id="process" class="section process-section">
-            <div class="container">
-                <!-- Header Grid with 3D Layered Smartphone Graphic -->
-                <div class="process-header-grid reveal">
-                    <div class="process-header-left">
-                        <span class="sub-kicker">07 — HOW I BUILD</span>
-                        <h2 class="main-title">A clear path from<br><span class="lime-text">idea to product.</span></h2>
-                        <p class="section-desc" style="max-width: 520px; margin-top: 14px;">
-                            Structured, iterative engineering workflow designed for quality, performance, and scalability.
-                        </p>
-                    </div>
-
-                    <div class="process-3d-visual">
-                        <svg viewBox="0 0 240 220" fill="none" xmlns="http://www.w3.org/2000/svg" class="process-phone-svg">
-                            <defs>
-                                <filter id="phoneGlow" x="-20%" y="-20%" width="140%" height="140%">
-                                    <feGaussianBlur stdDeviation="5" result="blur" />
-                                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
-                                </filter>
-                            </defs>
-
-                            <!-- Ambient Glow & Orbital Ring -->
-                            <ellipse cx="120" cy="170" rx="95" ry="36" stroke="rgba(163, 230, 53, 0.3)" stroke-width="1.5" stroke-dasharray="4,4" class="ring-pulse" />
-
-                            <!-- Base Phone Body (Layer 0) -->
-                            <g class="phone-layer base-phone">
-                                <polygon points="120,110 190,145 120,180 50,145" fill="rgba(18, 24, 32, 0.95)" stroke="#a3e635" stroke-width="2" filter="url(#phoneGlow)" />
-                                <polygon points="50,145 120,180 120,190 50,155" fill="rgba(10, 14, 19, 0.95)" stroke="#a3e635" stroke-width="1.5" />
-                                <polygon points="120,180 190,145 190,155 120,190" fill="rgba(6, 9, 12, 0.98)" stroke="#a3e635" stroke-width="1.5" />
-                            </g>
-
-                            <!-- Floating Glass Screen Layer 1 (Lower Screen Plate) -->
-                            <g class="phone-layer mid-screen-1">
-                                <polygon points="120,85 180,115 120,145 60,115" fill="rgba(20, 28, 38, 0.85)" stroke="rgba(163, 230, 53, 0.5)" stroke-width="1.5" />
-                            </g>
-
-                            <!-- Floating Glass Screen Layer 2 (Upper Screen Plate) -->
-                            <g class="phone-layer mid-screen-2">
-                                <polygon points="120,60 172,86 120,112 68,86" fill="rgba(24, 34, 46, 0.88)" stroke="rgba(163, 230, 53, 0.7)" stroke-width="1.5" />
-                            </g>
-
-                            <!-- Floating Glass Code Layer 3 (Top Code Badge) -->
-                            <g class="phone-layer top-code-plate">
-                                <polygon points="120,30 162,51 120,72 78,51" fill="rgba(28, 38, 52, 0.95)" stroke="#a3e635" stroke-width="2" filter="url(#phoneGlow)" />
-                                <text x="120" y="57" fill="#a3e635" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="17" text-anchor="middle" filter="url(#phoneGlow)">&lt;/&gt;</text>
-                            </g>
-
-                            <!-- Ambient Floating Particle Dots -->
-                            <circle cx="35" cy="85" r="2" fill="#a3e635" opacity="0.8" />
-                            <circle cx="210" cy="110" r="2.5" fill="#a3e635" opacity="0.9" />
-                            <circle cx="175" cy="40" r="1.5" fill="#a3e635" opacity="0.7" />
-                        </svg>
-                    </div>
-                </div>
-
-                <!-- 2-Row Process Loop Grid with Circular Badges -->
-                <div class="process-loop-container reveal">
-                    <!-- Connector Loop Lines Overlay -->
-                    <svg class="process-loop-svg" viewBox="0 0 1000 240" fill="none" preserveAspectRatio="none">
-                        <!-- Top Row Connectors 01 -> 02 -> 03 -> 04 -->
-                        <path d="M 125,45 H 375 M 375,45 H 625 M 625,45 H 875" stroke="#a3e635" stroke-width="2" stroke-dasharray="4,4" opacity="0.7" />
-                        <!-- Right Curved U-Turn (04 -> 08) -->
-                        <path d="M 875,45 C 960,45 960,185 875,185" stroke="#a3e635" stroke-width="2" fill="none" opacity="0.8" />
-                        <!-- Bottom Row Connectors 08 -> 07 -> 06 -> 05 -->
-                        <path d="M 875,185 H 625 M 625,185 H 375 M 375,185 H 125" stroke="#a3e635" stroke-width="2" stroke-dasharray="4,4" opacity="0.7" />
-                        <!-- Left Curved U-Turn (05 -> 01) -->
-                        <path d="M 125,185 C 40,185 40,45 125,45" stroke="#a3e635" stroke-width="2" fill="none" opacity="0.8" />
-                    </svg>
-
-                    <!-- Row 1: Steps 01 to 04 -->
-                    <div class="process-row">
-                        <!-- Step 01 -->
-                        <div class="pr-card">
-                            <div class="pr-badge"><i class="fa-regular fa-lightbulb"></i></div>
-                            <div class="pr-card-header">
-                                <span class="pr-num">01</span>
-                                <h3>Understand</h3>
-                            </div>
-                            <p>Clarify product goals, users, constraints and the actual problem.</p>
+                    <div class="product-lifecycle-grid">
+                        <div class="lifecycle-step-card">
+                            <div class="step-num">01</div>
+                            <h4>Technical Planning</h4>
+                            <p>Requirement scoping, edge-case analysis, architectural blueprints, and data schema
+                                design.</p>
+                            <span class="step-tag">Specs &amp; Domain</span>
                         </div>
-
-                        <!-- Step 02 -->
-                        <div class="pr-card">
-                            <div class="pr-badge"><i class="fa-solid fa-pen-ruler"></i></div>
-                            <div class="pr-card-header">
-                                <span class="pr-num">02</span>
-                                <h3>Design</h3>
-                            </div>
-                            <p>Translate flows and UI direction into a practical mobile experience.</p>
-                        </div>
-
-                        <!-- Step 03 -->
-                        <div class="pr-card">
-                            <div class="pr-badge"><i class="fa-solid fa-layer-group"></i></div>
-                            <div class="pr-card-header">
-                                <span class="pr-num">03</span>
-                                <h3>Architect</h3>
-                            </div>
-                            <p>Choose structure, state management, APIs and data responsibilities.</p>
-                        </div>
-
-                        <!-- Step 04 -->
-                        <div class="pr-card">
-                            <div class="pr-badge"><i class="fa-solid fa-code"></i></div>
-                            <div class="pr-card-header">
-                                <span class="pr-num">04</span>
-                                <h3>Develop</h3>
-                            </div>
-                            <p>Build reusable Flutter components and production-ready screens.</p>
-                        </div>
-                    </div>
-
-                    <!-- Row 2: Steps 05 to 08 -->
-                    <div class="process-row">
-                        <!-- Step 05 -->
-                        <div class="pr-card">
-                            <div class="pr-badge"><i class="fa-solid fa-puzzle-piece"></i></div>
-                            <div class="pr-card-header">
-                                <span class="pr-num">05</span>
-                                <h3>Integrate</h3>
-                            </div>
-                            <p>Connect APIs, cloud services, maps, realtime systems and AI.</p>
-                        </div>
-
-                        <!-- Step 06 -->
-                        <div class="pr-card">
-                            <div class="pr-badge"><i class="fa-solid fa-shield-halved"></i></div>
-                            <div class="pr-card-header">
-                                <span class="pr-num">06</span>
-                                <h3>Test</h3>
-                            </div>
-                            <p>Validate behavior, edge cases, device layouts and release readiness.</p>
-                        </div>
-
-                        <!-- Step 07 -->
-                        <div class="pr-card">
-                            <div class="pr-badge"><i class="fa-solid fa-rocket"></i></div>
-                            <div class="pr-card-header">
-                                <span class="pr-num">07</span>
-                                <h3>Deploy</h3>
-                            </div>
-                            <p>Prepare builds and move the application through store workflows.</p>
-                        </div>
-
-                        <!-- Step 08 -->
-                        <div class="pr-card">
-                            <div class="pr-badge"><i class="fa-solid fa-chart-line"></i></div>
-                            <div class="pr-card-header">
-                                <span class="pr-num">08</span>
-                                <h3>Improve</h3>
-                            </div>
-                            <p>Iterate based on product feedback, reliability and user needs.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bottom Floating Value Pillars Bar -->
-                <div class="process-value-bar reveal">
-                    <div class="proc-val-item">
-                        <div class="p-val-icon"><i class="fa-solid fa-crosshairs"></i></div>
-                        <div class="p-val-text">
-                            <strong>Focused & Structured</strong>
-                            <span>Clear process from start to scale</span>
-                        </div>
-                    </div>
-                    <div class="proc-val-divider"></div>
-
-                    <div class="proc-val-item">
-                        <div class="p-val-icon"><i class="fa-solid fa-bolt"></i></div>
-                        <div class="p-val-text">
-                            <strong>Quality First</strong>
-                            <span>Built for performance & reliability</span>
-                        </div>
-                    </div>
-                    <div class="proc-val-divider"></div>
-
-                    <div class="proc-val-item">
-                        <div class="p-val-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                        <div class="p-val-text">
-                            <strong>Scalable Solutions</strong>
-                            <span>Architecture that grows with you</span>
-                        </div>
-                    </div>
-                    <div class="proc-val-divider"></div>
-
-                    <div class="proc-val-item">
-                        <div class="p-val-icon"><i class="fa-solid fa-user-check"></i></div>
-                        <div class="p-val-text">
-                            <strong>User Centric</strong>
-                            <span>Impactful experiences that matter</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 08: Application Architecture -->
-        <section id="architecture" class="section arch-section">
-            <div class="container">
-                <div class="arch-grid reveal">
-                    <!-- Left Column (40%): Heading & Interactive 3D Stack -->
-                    <div class="arch-left-col">
-                        <div class="section-heading">
-                            <span class="sub-kicker">08 — APPLICATION ARCHITECTURE</span>
-                            <h2 class="main-title">Thinking in<br><span class="lime-text">layers.</span></h2>
-                            <p class="section-desc">
-                                I don't just build screens. I build systems that scale — separating UI, state management, business logic, data, services, and intelligence.
+                        <div class="lifecycle-step-card">
+                            <div class="step-num">02</div>
+                            <h4>Pixel-Perfect UI</h4>
+                            <p>Translating Figma systems into modular, responsive Flutter widgets with 60fps animations.
                             </p>
+                            <span class="step-tag">Figma to Flutter</span>
                         </div>
-
-                        <!-- 3D Interactive Layer Stack Visual -->
-                        <div class="arch-3d-visual" id="arch3dContainer">
-                            <svg viewBox="0 0 240 380" fill="none" xmlns="http://www.w3.org/2000/svg" class="arch-stack-svg">
-                                <defs>
-                                    <filter id="archGlow" x="-30%" y="-30%" width="160%" height="160%">
-                                        <feGaussianBlur stdDeviation="6" result="blur" />
-                                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
-                                    </filter>
-                                </defs>
-
-                                <!-- Glowing Orbital Base -->
-                                <ellipse cx="120" cy="340" rx="100" ry="36" stroke="rgba(163, 230, 53, 0.2)" stroke-width="1.5" stroke-dasharray="4,4" />
-                                <ellipse cx="120" cy="340" rx="80" ry="26" stroke="rgba(163, 230, 53, 0.5)" stroke-width="1.5" filter="url(#archGlow)" />
-
-                                <!-- Vertical Connecting Laser Beam -->
-                                <line x1="120" y1="35" x2="120" y2="335" stroke="rgba(163, 230, 53, 0.3)" stroke-width="1.5" stroke-dasharray="4,4" />
-
-                                <!-- Plate 6 (Intelligence & Realtime) -->
-                                <g class="stack-plate plate-6" data-layer="6">
-                                    <polygon points="120,270 195,305 120,340 45,305" class="plate-poly" fill="rgba(17, 22, 30, 0.95)" stroke="#a3e635" stroke-width="2" filter="url(#archGlow)" />
-                                    <path d="M 112 302 a 5 5 0 0 1 9 -3 a 6 6 0 0 1 10 4 a 4.5 4.5 0 0 1 -2 8 h -17 a 4.5 4.5 0 0 1 0 -9 z" fill="none" stroke="#a3e635" stroke-width="1.8" />
-                                </g>
-
-                                <!-- Plate 5 (Services & Backend) -->
-                                <g class="stack-plate plate-5" data-layer="5">
-                                    <polygon points="120,220 190,252 120,285 50,252" class="plate-poly" fill="rgba(19, 25, 34, 0.92)" stroke="rgba(163, 230, 53, 0.75)" stroke-width="1.5" />
-                                    <rect x="108" y="247" width="24" height="6" rx="2" fill="none" stroke="#a3e635" stroke-width="1.5" />
-                                    <rect x="108" y="255" width="24" height="6" rx="2" fill="none" stroke="#a3e635" stroke-width="1.5" />
-                                </g>
-
-                                <!-- Plate 4 (Data Layer) -->
-                                <g class="stack-plate plate-4" data-layer="4">
-                                    <polygon points="120,170 185,200 120,230 55,200" class="plate-poly" fill="rgba(21, 28, 38, 0.92)" stroke="rgba(163, 230, 53, 0.8)" stroke-width="1.5" />
-                                    <ellipse cx="120" cy="195" rx="10" ry="4" fill="none" stroke="#a3e635" stroke-width="1.5" />
-                                    <path d="M 110 195 v 6 c 0 2 4.5 4 10 4 s 10 -2 10 -4 v -6" fill="none" stroke="#a3e635" stroke-width="1.5" />
-                                </g>
-
-                                <!-- Plate 3 (Domain / Business Logic) -->
-                                <g class="stack-plate plate-3" data-layer="3">
-                                    <polygon points="120,120 180,148 120,175 60,148" class="plate-poly" fill="rgba(23, 31, 42, 0.94)" stroke="rgba(163, 230, 53, 0.85)" stroke-width="1.5" />
-                                    <circle cx="120" cy="146" r="6" fill="none" stroke="#a3e635" stroke-width="2" />
-                                </g>
-
-                                <!-- Plate 2 (State Management) -->
-                                <g class="stack-plate plate-2" data-layer="2">
-                                    <polygon points="120,70 175,96 120,122 65,96" class="plate-poly" fill="rgba(25, 34, 46, 0.95)" stroke="rgba(163, 230, 53, 0.9)" stroke-width="1.5" />
-                                    <circle cx="114" cy="94" r="2.5" fill="#a3e635" />
-                                    <circle cx="126" cy="90" r="2.5" fill="#a3e635" />
-                                    <circle cx="126" cy="98" r="2.5" fill="#a3e635" />
-                                    <line x1="114" y1="94" x2="126" y2="90" stroke="#a3e635" stroke-width="1.5" />
-                                    <line x1="114" y1="94" x2="126" y2="98" stroke="#a3e635" stroke-width="1.5" />
-                                </g>
-
-                                <!-- Plate 1 (Presentation / UI) -->
-                                <g class="stack-plate plate-1" data-layer="1">
-                                    <polygon points="120,20 170,44 120,68 70,44" class="plate-poly" fill="rgba(27, 37, 50, 0.98)" stroke="#a3e635" stroke-width="2" filter="url(#archGlow)" />
-                                    <rect x="110" y="36" width="20" height="14" rx="2" fill="none" stroke="#a3e635" stroke-width="1.5" filter="url(#archGlow)" />
-                                </g>
-
-                                <!-- Ambient Particle Floaters -->
-                                <circle cx="35" cy="160" r="2" fill="#a3e635" opacity="0.8" />
-                                <circle cx="215" cy="220" r="2.5" fill="#a3e635" opacity="0.9" />
-                                <circle cx="180" cy="80" r="1.5" fill="#a3e635" opacity="0.7" />
-                            </svg>
+                        <div class="lifecycle-step-card">
+                            <div class="step-num">03</div>
+                            <h4>Architecture &amp; State</h4>
+                            <p>Clean Architecture separation, BLoC/Riverpod state isolation, and repository
+                                abstractions.</p>
+                            <span class="step-tag">Clean Architecture</span>
                         </div>
-
-                        <!-- Live Layer Inspector Box -->
-                        <div class="arch-inspector-box" id="archInspector">
-                            <span class="insp-label">ACTIVE LAYER</span>
-                            <strong id="inspTitle">01 PRESENTATION</strong>
-                            <p id="inspTech">Flutter · Dart · Custom Widgets · Responsive UI</p>
+                        <div class="lifecycle-step-card">
+                            <div class="step-num">04</div>
+                            <h4>Cloud &amp; API Layer</h4>
+                            <p>RESTful integrations, token handling, Firebase/Supabase setup, and offline caching
+                                engines.</p>
+                            <span class="step-tag">APIs &amp; BaaS</span>
+                        </div>
+                        <div class="lifecycle-step-card">
+                            <div class="step-num">05</div>
+                            <h4>AI &amp; Real-Time</h4>
+                            <p>Embedding Gemini LLMs, WebSockets, STOMP chat, Agora video/audio, and TFLite vision.</p>
+                            <span class="step-tag">AI &amp; Sockets</span>
+                        </div>
+                        <div class="lifecycle-step-card">
+                            <div class="step-num">06</div>
+                            <h4>Testing &amp; Profiling</h4>
+                            <p>Unit &amp; widget testing, memory leak triage, rebuild profiling, and battery audits.</p>
+                            <span class="step-tag">QA &amp; Tuning</span>
+                        </div>
+                        <div class="lifecycle-step-card">
+                            <div class="step-num">07</div>
+                            <h4>Store Release &amp; CI</h4>
+                            <p>AAB/APK generation, iOS signing, TestFlight staging, and Play Console / App Store
+                                publishing.</p>
+                            <span class="step-tag">Production Ship</span>
                         </div>
                     </div>
-
-                    <!-- Right Column (60%): 6 Distinct System Architecture Layer Cards -->
-                    <div class="arch-right-col">
-                        <!-- Card 01: PRESENTATION -->
-                        <div class="arch-card" data-layer="1">
-                            <div class="arch-card-icon"><i class="fa-solid fa-desktop"></i></div>
-                            <div class="arch-card-body">
-                                <div class="arch-num-badge">01</div>
-                                <div class="arch-card-info">
-                                    <h3>PRESENTATION</h3>
-                                    <p>Screens, UI components and UX that users interact with.</p>
-                                </div>
-                            </div>
-                            <div class="arch-card-tags">
-                                <span class="tag-bullet">•</span> Flutter · Dart · Custom Widgets · Responsive UI
-                            </div>
-                        </div>
-
-                        <div class="arch-connector-arrow"><i class="fa-solid fa-arrow-down"></i></div>
-
-                        <!-- Card 02: STATE -->
-                        <div class="arch-card" data-layer="2">
-                            <div class="arch-card-icon"><i class="fa-solid fa-diagram-project"></i></div>
-                            <div class="arch-card-body">
-                                <div class="arch-num-badge">02</div>
-                                <div class="arch-card-info">
-                                    <h3>STATE MANAGEMENT</h3>
-                                    <p>Manage and persist application state efficiently.</p>
-                                </div>
-                            </div>
-                            <div class="arch-card-tags">
-                                <span class="tag-bullet">•</span> BLoC · Riverpod · Provider · GetX
-                            </div>
-                        </div>
-
-                        <div class="arch-connector-arrow"><i class="fa-solid fa-arrow-down"></i></div>
-
-                        <!-- Card 03: DOMAIN -->
-                        <div class="arch-card" data-layer="3">
-                            <div class="arch-card-icon"><i class="fa-solid fa-gear"></i></div>
-                            <div class="arch-card-body">
-                                <div class="arch-num-badge">03</div>
-                                <div class="arch-card-info">
-                                    <h3>DOMAIN & LOGIC</h3>
-                                    <p>Business rules, use cases and core orchestration.</p>
-                                </div>
-                            </div>
-                            <div class="arch-card-tags">
-                                <span class="tag-bullet">•</span> Business Logic · Use Cases · Entities
-                            </div>
-                        </div>
-
-                        <div class="arch-connector-arrow"><i class="fa-solid fa-arrow-down"></i></div>
-
-                        <!-- Card 04: DATA -->
-                        <div class="arch-card" data-layer="4">
-                            <div class="arch-card-icon"><i class="fa-solid fa-database"></i></div>
-                            <div class="arch-card-body">
-                                <div class="arch-num-badge">04</div>
-                                <div class="arch-card-info">
-                                    <h3>DATA LAYER</h3>
-                                    <p>Repository pattern & single source of truth for app data.</p>
-                                </div>
-                            </div>
-                            <div class="arch-card-tags">
-                                <span class="tag-bullet">•</span> Repository · REST APIs · Local Storage · SQLite
-                            </div>
-                        </div>
-
-                        <div class="arch-connector-arrow"><i class="fa-solid fa-arrow-down"></i></div>
-
-                        <!-- Card 05: SERVICES & BACKEND -->
-                        <div class="arch-card" data-layer="5">
-                            <div class="arch-card-icon"><i class="fa-solid fa-server"></i></div>
-                            <div class="arch-card-body">
-                                <div class="arch-num-badge">05</div>
-                                <div class="arch-card-info">
-                                    <h3>SERVICES & BACKEND</h3>
-                                    <p>Cloud backends, database services and server integrations.</p>
-                                </div>
-                            </div>
-                            <div class="arch-card-tags">
-                                <span class="tag-bullet">•</span> REST · Firebase · Supabase · Spring Boot · Node.js
-                            </div>
-                        </div>
-
-                        <div class="arch-connector-arrow"><i class="fa-solid fa-arrow-down"></i></div>
-
-                        <!-- Card 06: INTELLIGENCE & REALTIME -->
-                        <div class="arch-card" data-layer="6">
-                            <div class="arch-card-icon"><i class="fa-solid fa-brain"></i></div>
-                            <div class="arch-card-body">
-                                <div class="arch-num-badge">06</div>
-                                <div class="arch-card-info">
-                                    <h3>INTELLIGENCE & REALTIME</h3>
-                                    <p>AI integrations, LLM workflows & real-time messaging.</p>
-                                </div>
-                            </div>
-                            <div class="arch-card-tags">
-                                <span class="tag-bullet">•</span> AI APIs · LLMs · TFLite · WebSockets · STOMP
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Unidirectional Flutter System Architecture Flow Diagram Bar -->
-                <div class="arch-system-bar reveal">
-                    <div class="sys-step"><i class="fa-solid fa-mobile-screen-button"></i><span>PRESENTATION</span></div>
-                    <div class="sys-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                    <div class="sys-step"><i class="fa-solid fa-diagram-project"></i><span>STATE</span></div>
-                    <div class="sys-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                    <div class="sys-step"><i class="fa-solid fa-gear"></i><span>DOMAIN</span></div>
-                    <div class="sys-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                    <div class="sys-step"><i class="fa-solid fa-database"></i><span>DATA</span></div>
-                    <div class="sys-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                    <div class="sys-step"><i class="fa-solid fa-server"></i><span>SERVICES</span></div>
-                    <div class="sys-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                    <div class="sys-step"><i class="fa-solid fa-brain"></i><span>AI & REALTIME</span></div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 09: Contact Section Redesign -->
+        <!-- Section 3: Core Flutter Expertise -->
+        <section id="flutter-expertise" class="section flutter-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="sub-kicker">PRIMARY SPECIALIZATION</span>
+                    <h2 class="main-title">Core <span class="lime-text">Flutter Expertise</span></h2>
+                    <p class="section-desc">Flutter &amp; Dart is my primary engineering foundation. I build
+                        pixel-perfect, cross-platform mobile apps engineered for fluid 60fps performance and long-term
+                        maintainability.</p>
+                </div>
+
+                <div class="flutter-pillars-grid">
+                    <!-- Pillar 1: UI & Animation Engine -->
+                    <div class="flutter-pillar-card">
+                        <div class="pillar-header">
+                            <div class="pillar-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                            <div>
+                                <h3>Advanced UI &amp; Motion Engine</h3>
+                                <span class="pillar-subtitle">Pixel-perfect, adaptive, and fluid interactions</span>
+                            </div>
+                        </div>
+                        <ul class="pillar-bullets">
+                            <li><strong>Figma to Flutter:</strong> Translating design tokens, typographic scales, and
+                                complex layouts into production-ready widgets.</li>
+                            <li><strong>Motion Systems:</strong> Hero transitions, explicit AnimationControllers,
+                                staggered animations, and implicit curves.</li>
+                            <li><strong>Custom Graphics:</strong> CustomPainter canvas rendering, vector paths, custom
+                                clip paths, and responsive shaders.</li>
+                            <li><strong>Adaptive Layouts:</strong> Dynamic breakpoints, foldable screen adaptation,
+                                tablet layouts, and platform-specific ergonomics.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pillar 2: Component Architecture -->
+                    <div class="flutter-pillar-card">
+                        <div class="pillar-header">
+                            <div class="pillar-icon"><i class="fa-solid fa-shapes"></i></div>
+                            <div>
+                                <h3>Component &amp; Widget Architecture</h3>
+                                <span class="pillar-subtitle">Reusable, modular design systems</span>
+                            </div>
+                        </div>
+                        <ul class="pillar-bullets">
+                            <li><strong>Modular Widgets:</strong> Atomic component libraries with configurable styling,
+                                zero hardcoded magic numbers, and strict type safety.</li>
+                            <li><strong>Stateful Resilience:</strong> Consistent UI states across Empty, Loading
+                                (shimmer), Error, and Offline scenarios.</li>
+                            <li><strong>Form Engineering:</strong> Deep form validation, asynchronous input
+                                sanitization, custom formatters, and focus management.</li>
+                            <li><strong>App Lifecycle &amp; Navigation:</strong> Deep linking, declarative routing
+                                (GoRouter), and background/foreground lifecycle observers.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- State Management Architecture Strategy -->
+                <div class="state-mgmt-container">
+                    <div class="sub-section-header">
+                        <span class="sub-kicker">ARCHITECTURAL DECISION MAKING</span>
+                        <h3 class="sub-title">State Management <span class="lime-text">Selection Strategy</span></h3>
+                        <p class="sub-desc">Rather than blindly enforcing a single framework, I select state
+                            architectures based on team scale, testability requirements, and feature isolation:</p>
+                    </div>
+
+                    <div class="state-mgmt-cards-grid">
+                        <div class="state-mgmt-card">
+                            <div class="state-card-header">
+                                <span class="state-badge">Enterprise / Complex</span>
+                                <h4>BLoC &amp; Cubit</h4>
+                            </div>
+                            <p>Strict event-to-state separation. Unidirectional data flow ideal for enterprise apps,
+                                audit trails, and decoupled unit testing.</p>
+                            <div class="state-meta"><strong>Use case:</strong> Fintech, high-concurrency apps,
+                                multi-developer teams</div>
+                        </div>
+
+                        <div class="state-mgmt-card">
+                            <div class="state-card-header">
+                                <span class="state-badge">Modern / Reactive</span>
+                                <h4>Riverpod</h4>
+                            </div>
+                            <p>Compile-safe, decoupled from the Flutter widget tree. Zero BuildContext requirements for
+                                state access, with great caching and async providers.</p>
+                            <div class="state-meta"><strong>Use case:</strong> Complex reactive feeds, asynchronous
+                                streams, multi-provider apps</div>
+                        </div>
+
+                        <div class="state-mgmt-card">
+                            <div class="state-card-header">
+                                <span class="state-badge">Lightweight / Standard</span>
+                                <h4>Provider</h4>
+                            </div>
+                            <p>Officially recommended standard for scoped dependency injection and straightforward
+                                reactive UI binding with minimal boilerplate.</p>
+                            <div class="state-meta"><strong>Use case:</strong> Mid-sized applications, theme/auth state
+                                propagation</div>
+                        </div>
+
+                        <div class="state-mgmt-card">
+                            <div class="state-card-header">
+                                <span class="state-badge">Rapid Prototyping</span>
+                                <h4>GetX</h4>
+                            </div>
+                            <p>High-velocity micro-controllers with decoupled route management, reactive observables,
+                                and snackbar/dialog triggers without context.</p>
+                            <div class="state-meta"><strong>Use case:</strong> Fast-turnaround MVPs, utility apps,
+                                lightweight widgets</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Domains Built -->
+                <div class="domains-built-wrap">
+                    <span class="domains-label">Application Domains Engineered:</span>
+                    <div class="domains-tags">
+                        <span class="domain-tag">Fintech &amp; Banking</span>
+                        <span class="domain-tag">AI &amp; Multimodal Assistants</span>
+                        <span class="domain-tag">SaaS &amp; Business Mobile</span>
+                        <span class="domain-tag">Marketplace &amp; E-Commerce</span>
+                        <span class="domain-tag">Real-Time Chat &amp; Social</span>
+                        <span class="domain-tag">Location &amp; Maps Tracking</span>
+                        <span class="domain-tag">Interactive Gaming &amp; Media</span>
+                        <span class="domain-tag">Offline-First Utilities</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: AI & Intelligent Applications -->
+        <section id="ai-systems" class="section ai-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="sub-kicker">AI APPLICATION DEVELOPER</span>
+                    <h2 class="main-title">AI &amp; Intelligent <span class="lime-text">Mobile Systems</span></h2>
+                    <p class="section-desc">I bridge foundation AI models into real-world production mobile products. My
+                        focus is engineering useful, context-aware AI experiences with low latency, structured parsing,
+                        and on-device vision.</p>
+                </div>
+
+                <!-- AI Dual Engine Hero Card -->
+                <div class="ai-dual-engine-box">
+                    <div class="ai-engine-col">
+                        <div class="engine-badge"><i class="fa-solid fa-cloud"></i> Cloud Generative AI</div>
+                        <h3>OpenAI &amp; Google Gemini API Orchestration</h3>
+                        <p>Integrating state-of-the-art LLMs into production mobile products: real-time Server-Sent
+                            Events (SSE) token streaming, multimodal voice/image reasoning, dynamic prompt engineering,
+                            and strict structured JSON parsing.</p>
+                        <div class="engine-tags">OPENAI API · GEMINI API · SSE STREAMING · MULTIMODAL VISION ·
+                            STRUCTURED JSON</div>
+                    </div>
+
+                    <div class="engine-divider"></div>
+
+                    <div class="ai-engine-col">
+                        <div class="engine-badge"><i class="fa-solid fa-microchip"></i> On-Device AI / Edge</div>
+                        <h3>Google ML Kit &amp; Computer Vision</h3>
+                        <p>Deploying efficient edge models directly on Android and iOS devices: instant zero-latency
+                            camera stream processing, document edge detection, auto-cropping, OCR text extraction, and
+                            offline privacy-preserving inference.</p>
+                        <div class="engine-tags">GOOGLE ML KIT · TFLITE · AUTO-CROP · DOCUMENT SCAN · EDGE INFERENCE
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Product Capabilities Grid -->
+                <div class="sub-section-header" style="margin-top: 36px;">
+                    <span class="sub-kicker">PRODUCTION AI CAPABILITIES</span>
+                    <h3 class="sub-title">What I Build with <span class="lime-text">AI &amp; Mobile</span></h3>
+                    <p class="sub-desc">Real-world AI features designed for immediate business and user utility:</p>
+                </div>
+
+                <div class="ai-capabilities-grid">
+                    <div class="ai-card">
+                        <div class="ai-card-icon"><i class="fa-solid fa-comments"></i></div>
+                        <h4>AI Conversational Agents</h4>
+                        <p>Multi-turn streaming chatbots with dynamic system prompts, markdown rendering, chat memory,
+                            and persona tuning.</p>
+                        <span class="ai-tech-tag">Gemini · Streams · Markdown</span>
+                    </div>
+
+                    <div class="ai-card">
+                        <div class="ai-card-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <h4>Semantic &amp; Smart Search</h4>
+                        <p>Intent-driven search workflows that understand natural language queries, synonyms, and
+                            context beyond simple keyword matching.</p>
+                        <span class="ai-tech-tag">Vector Search · Intent Parsing</span>
+                    </div>
+
+                    <div class="ai-card">
+                        <div class="ai-card-icon"><i class="fa-solid fa-wand-magic"></i></div>
+                        <h4>Content &amp; Copy Generation</h4>
+                        <p>In-app drafting of product descriptions, emails, summaries, and personalized messages with
+                            prompt templates.</p>
+                        <span class="ai-tech-tag">Prompt Engineering · Synthesis</span>
+                    </div>
+
+                    <div class="ai-card">
+                        <div class="ai-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h4>Smart Recommendations</h4>
+                        <p>Contextual suggestion engines matching user behavior, transaction history, and preferences to
+                            relevant catalog items.</p>
+                        <span class="ai-tech-tag">Personalization · Scoring</span>
+                    </div>
+
+                    <div class="ai-card">
+                        <div class="ai-card-icon"><i class="fa-solid fa-file-invoice"></i></div>
+                        <h4>Document &amp; Receipt Vision</h4>
+                        <p>Extracting structured key-value data, line items, and totals from user camera snaps and
+                            uploaded documents.</p>
+                        <span class="ai-tech-tag">Multimodal · JSON Extraction</span>
+                    </div>
+
+                    <div class="ai-card">
+                        <div class="ai-card-icon"><i class="fa-solid fa-eye"></i></div>
+                        <h4>On-Device Object Detection</h4>
+                        <p>Real-time bounding box detection and classification running locally at 30fps using TensorFlow
+                            Lite and EfficientDet.</p>
+                        <span class="ai-tech-tag">TFLite · EfficientDet · Camera</span>
+                    </div>
+
+                    <div class="ai-card">
+                        <div class="ai-card-icon"><i class="fa-solid fa-list-check"></i></div>
+                        <h4>AI Form Assistance</h4>
+                        <p>Automated input completion, address normalization, intelligent error recovery, and
+                            context-guided form fills.</p>
+                        <span class="ai-tech-tag">Smart UX · Error Recovery</span>
+                    </div>
+
+                    <div class="ai-card">
+                        <div class="ai-card-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <h4>AI + Database Orchestration</h4>
+                        <p>Connecting LLM outputs directly with Firestore and PostgreSQL databases to trigger business
+                            transactions securely.</p>
+                        <span class="ai-tech-tag">Tool Calling · Cloud Functions</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Backend, Cloud & Database Systems -->
+        <section id="backend-cloud" class="section cloud-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="sub-kicker">BACKEND, BAAS &amp; DATA STORAGE</span>
+                    <h2 class="main-title">Cloud Infrastructure &amp; <span class="lime-text">Databases</span></h2>
+                    <p class="section-desc">Full-spectrum data flow: from scalable cloud services down to device-level
+                        offline caches.</p>
+                </div>
+
+                <div class="cloud-pillars-grid">
+                    <!-- Pillar 1: Firebase -->
+                    <div class="cloud-card">
+                        <div class="cloud-card-header">
+                            <i class="fa-solid fa-fire cloud-icon gold-icon"></i>
+                            <div>
+                                <h3>Firebase Cloud Suite</h3>
+                                <span class="cloud-subtitle">Production Serverless Ecosystem</span>
+                            </div>
+                        </div>
+                        <p>Deep experience engineering secure, scalable Firebase-backed mobile architectures:</p>
+                        <ul class="cloud-check-list">
+                            <li><strong>Firebase Authentication:</strong> Email/password, Google OAuth, phone SMS, JWT
+                                token refreshes, and security rule enforcement.</li>
+                            <li><strong>Cloud Firestore:</strong> Real-time snapshot listeners, compound indexes,
+                                pagination, offline data persistence, and security rules.</li>
+                            <li><strong>Cloud Functions:</strong> Server-side triggers, automated webhook handlers,
+                                payment verification, and data sanitation.</li>
+                            <li><strong>Cloud Messaging (FCM):</strong> High-reliability push notifications, device
+                                token management, and deep-link routing.</li>
+                            <li><strong>App Check &amp; Crashlytics:</strong> API request attestation, real-time crash
+                                triage, non-fatal logging, and release tracking.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pillar 2: Supabase & PostgreSQL -->
+                    <div class="cloud-card">
+                        <div class="cloud-card-header">
+                            <i class="fa-solid fa-database cloud-icon gold-icon"></i>
+                            <div>
+                                <h3>Supabase &amp; PostgreSQL</h3>
+                                <span class="cloud-subtitle">Modern Relational BaaS</span>
+                            </div>
+                        </div>
+                        <p>Building relational database-driven mobile apps with Supabase:</p>
+                        <ul class="cloud-check-list">
+                            <li><strong>PostgreSQL Relational Design:</strong> Foreign key constraints, indexed queries,
+                                joins, and transactional consistency.</li>
+                            <li><strong>Supabase Auth &amp; RLS:</strong> Row-Level Security policies enforcing data
+                                privacy directly at the database engine.</li>
+                            <li><strong>Realtime Listeners:</strong> Postgres CDC (Change Data Capture) WebSocket
+                                streams powering live mobile feeds.</li>
+                            <li><strong>Storage Buckets:</strong> Secure asset uploads with presigned URLs and granular
+                                access permissions.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pillar 3: REST APIs & Backend Comprehension -->
+                    <div class="cloud-card">
+                        <div class="cloud-card-header">
+                            <i class="fa-solid fa-server cloud-icon gold-icon"></i>
+                            <div>
+                                <h3>RESTful APIs, Dio &amp; Networking</h3>
+                                <span class="cloud-subtitle">Resilient HTTP / JSON Communication</span>
+                            </div>
+                        </div>
+                        <p>Enterprise-grade mobile networking reducing API failure rates by 40%:</p>
+                        <ul class="cloud-check-list">
+                            <li><strong>Dio Interceptors:</strong> Automated auth header injection, seamless 401 token
+                                refresh queues, and central error handling.</li>
+                            <li><strong>Data Resilience:</strong> Intelligent retry policies, exponential backoff,
+                                network connectivity listeners, and response caching.</li>
+                            <li><strong>Transfer Optimization:</strong> Lazy cursor pagination, multipart chunked
+                                uploads, SSE streaming, and typed JSON DTO mapping.</li>
+                            <li><strong>Payment Gateways:</strong> Production checkout workflows integrated with
+                                <strong>Razorpay</strong> and <strong>Stripe</strong>.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pillar 4: Offline-First & Local Storage -->
+                    <div class="cloud-card">
+                        <div class="cloud-card-header">
+                            <i class="fa-solid fa-hard-drive cloud-icon gold-icon"></i>
+                            <div>
+                                <h3>Databases &amp; Offline-First</h3>
+                                <span class="cloud-subtitle">Hive, SQLite &amp; Secure Storage</span>
+                            </div>
+                        </div>
+                        <p>Architectures that ensure your app works flawlessly even with zero internet connectivity:</p>
+                        <ul class="cloud-check-list">
+                            <li><strong>Hive (NoSQL):</strong> Ultra-fast, lightweight key-value local storage for
+                                offline cache, feed caching, and user sessions.</li>
+                            <li><strong>SQLite / SQFLite:</strong> Relational mobile persistence, complex local queries,
+                                relational filters, and indexing.</li>
+                            <li><strong>Flutter Secure Storage:</strong> Keychain &amp; Keystore encrypted storage for
+                                sensitive auth tokens and biometric data.</li>
+                            <li><strong>Repository Pattern:</strong> Abstracting local vs remote data sources behind
+                                clean, testable interfaces.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Real-Time Systems, Location & Integrations -->
+        <section id="realtime-integrations" class="section realtime-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="sub-kicker">REAL-TIME &amp; THIRD-PARTY ECOSYSTEM</span>
+                    <h2 class="main-title">Real-Time Systems &amp; <span class="lime-text">Integrations</span></h2>
+                    <p class="section-desc">Creating live interactive experiences and integrating mission-critical SDKs,
+                        maps, and communication pipelines.</p>
+                </div>
+
+                <div class="realtime-grid">
+                    <!-- Item 1: WebSockets & STOMP -->
+                    <div class="realtime-card">
+                        <div class="rt-icon-wrap"><i class="fa-solid fa-bolt"></i></div>
+                        <h3>WebSockets &amp; STOMP Messaging</h3>
+                        <p>High-concurrency bi-directional socket connections using <code>stomp_dart_client</code> for
+                            live chat, presence tracking, typing indicators, and instant status dashboards.</p>
+                        <div class="rt-badges">
+                            <span>WebSockets</span> <span>STOMP</span> <span>Live Chat</span> <span>Event Driven</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Agora Audio/Video -->
+                    <div class="realtime-card">
+                        <div class="rt-icon-wrap"><i class="fa-solid fa-video"></i></div>
+                        <h3>Agora Real-Time Audio &amp; Video</h3>
+                        <p>Integrating ultra-low latency RTC audio/video streaming, 1-on-1 calls, group audio rooms,
+                            live broadcasting, and token-based media channel authentication.</p>
+                        <div class="rt-badges">
+                            <span>Agora RTC</span> <span>Video Calling</span> <span>Audio Rooms</span> <span>Live
+                                Streams</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Google Maps & Geolocation -->
+                    <div class="realtime-card">
+                        <div class="rt-icon-wrap"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <h3>Google Maps &amp; Location Intelligence</h3>
+                        <p>Interactive Google Maps integration, custom map styles &amp; markers, live location tracking,
+                            distance calculations, Google Places autocomplete, and geocoding.</p>
+                        <div class="rt-badges">
+                            <span>Google Maps</span> <span>Places API</span> <span>Geocoding</span> <span>Location
+                                Tracking</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Push Notifications & Deep Linking -->
+                    <div class="realtime-card">
+                        <div class="rt-icon-wrap"><i class="fa-solid fa-bell"></i></div>
+                        <h3>Push Notifications &amp; Deep Links</h3>
+                        <p>FCM foreground, background, and terminated push notification handling. Deep-link routing
+                            directing users to specific screens from notifications or marketing campaigns.</p>
+                        <div class="rt-badges">
+                            <span>FCM</span> <span>Deep Links</span> <span>Topic Messaging</span> <span>Background
+                                Handlers</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Attribution & Analytics SDKs -->
+                    <div class="realtime-card">
+                        <div class="rt-icon-wrap"><i class="fa-solid fa-chart-pie"></i></div>
+                        <h3>Attribution: AppsFlyer &amp; Branch</h3>
+                        <p>Install attribution tracking, deferred deep linking, campaign ROI measurement, universal
+                            links on iOS, and Android App Links for user acquisition funnels.</p>
+                        <div class="rt-badges">
+                            <span>AppsFlyer</span> <span>Branch.io</span> <span>Universal Links</span>
+                            <span>Attribution</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: WebViews & Payment SDKs -->
+                    <div class="realtime-card">
+                        <div class="rt-icon-wrap"><i class="fa-solid fa-globe"></i></div>
+                        <h3>Flutter WebViews &amp; In-App Checkout</h3>
+                        <p>Embedded web views with two-way JavaScript communication channels, in-app web authentication,
+                            external portal handoffs, and third-party payment integrations.</p>
+                        <div class="rt-badges">
+                            <span>Flutter WebView</span> <span>JS Bridge</span> <span>Web Auth</span> <span>Payment
+                                SDKs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Mobile Architecture, Performance & QA -->
+        <section id="architecture-quality" class="section arch-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="sub-kicker">ENGINEERING STANDARDS</span>
+                    <h2 class="main-title">Architecture, Performance &amp; <span class="lime-text">QA</span></h2>
+                    <p class="section-desc">I don't just "make screens" — I build testable, modular, and performant
+                        application architectures that stand up to real-world scale.</p>
+                </div>
+
+                <div class="arch-quote-banner">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>“Great mobile software isn't just about how it looks on day one. It's about how gracefully it
+                        handles bad network connections, how smoothly it renders at 60fps, and how easily a team can
+                        extend it six months later.”</p>
+                </div>
+
+                <div class="arch-cards-grid">
+                    <!-- Card 1: Clean Architecture -->
+                    <div class="arch-card">
+                        <div class="arch-card-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <h3>Clean Architecture, BLoC &amp; SOLID</h3>
+                        <p>Decoupled systems with strict separation between Presentation, Domain, and Data layers. Led
+                            codebase migrations to Clean Architecture reducing technical debt and regressions by 35%.
+                        </p>
+                        <ul class="arch-item-list">
+                            <li><strong>State Management:</strong> Unidirectional BLoC/Cubit event-state streams and
+                                Riverpod providers.</li>
+                            <li><strong>Repository Pattern:</strong> Single source of truth abstracting APIs and local
+                                Hive/SQLite databases.</li>
+                            <li><strong>Service Layer:</strong> Encapsulating third-party SDKs and payment gateways
+                                behind testable interfaces.</li>
+                            <li><strong>Feature-Based Folders:</strong> Modular, scalable codebases structured for
+                                multi-developer agile squads.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2: Performance Optimization -->
+                    <div class="arch-card">
+                        <div class="arch-card-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                        <h3>Performance &amp; Profiling (+60% Speed)</h3>
+                        <p>Delivering 60% faster frame rendering and eliminating jank by profiling memory allocations,
+                            widget rebuilds, and network payloads via Flutter DevTools.</p>
+                        <ul class="arch-item-list">
+                            <li><strong>Widget Rebuild Pruning:</strong> Targeted state selectors, <code>const</code>
+                                constructors, and RepaintBoundaries.</li>
+                            <li><strong>Lazy Pagination:</strong> Infinite scroll caching and memory-efficient list view
+                                recycling.</li>
+                            <li><strong>Memory Leak Audits:</strong> DevTools allocation tracking, stream disposal, and
+                                image cache tuning.</li>
+                            <li><strong>Startup Acceleration:</strong> Lazy dependency injection and deferred service
+                                instantiation.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3: Testing & Debugging -->
+                    <div class="arch-card">
+                        <div class="arch-card-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+                        <h3>Testing &amp; Store Release (4.5★ Rated)</h3>
+                        <p>End-to-end quality assurance spanning automated testing, native debugging, and Play Store /
+                            App Store compliance maintaining 4.5+ star ratings.</p>
+                        <ul class="arch-item-list">
+                            <li><strong>Testing Pyramid:</strong> Unit tests (use cases &amp; repositories), Widget
+                                tests, and integration tests.</li>
+                            <li><strong>Native Platform Debugging:</strong> Android Studio Gradle troubleshooting, Xcode
+                                signing, and CocoaPods resolution.</li>
+                            <li><strong>Crash Triage:</strong> Firebase Crashlytics stack trace analysis and proactive
+                                bug eradication.</li>
+                            <li><strong>Store Releases:</strong> AAB/APK signing, TestFlight staging, Google Play
+                                submission, and App Store compliance.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Services & Solutions -->
+        <section id="services" class="section services-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="sub-kicker">WHAT CLIENTS &amp; TEAMS CAN HIRE ME FOR</span>
+                    <h2 class="main-title">Services &amp; <span class="lime-text">Solutions</span></h2>
+                    <p class="section-desc">Direct value I deliver for startups, software agencies, product teams, and
+                        enterprise clients.</p>
+                </div>
+
+                <div class="services-list">
+                    <article class="service-card">
+                        <div class="service-index">01</div>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h3>Build App From Scratch</h3>
+                        <p>Complete product engineering: requirement scoping, technical architecture, Flutter mobile
+                            app, cloud backend, and store release.</p>
+                        <div class="service-tags">MVP · FULL PRODUCT · APP STORE</div>
+                        <a href="#contact" class="service-order-btn">Inquire Now <i
+                                class="fa-solid fa-chevron-right"></i></a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-index">02</div>
+                        <i class="fa-solid fa-brain"></i>
+                        <h3>AI &amp; LLM Feature Integration</h3>
+                        <p>Upgrading existing apps with Google Gemini LLMs, streaming chat assistants, multimodal
+                            vision, smart search, and on-device TFLite models.</p>
+                        <div class="service-tags">GEMINI · TFLITE · LLM WORKFLOWS</div>
+                        <a href="#contact" class="service-order-btn">Inquire Now <i
+                                class="fa-solid fa-chevron-right"></i></a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-index">03</div>
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <h3>Architecture Refactoring &amp; Fixes</h3>
+                        <p>Untangling legacy Flutter codebases. Migrating to Clean Architecture, modern state management
+                            (BLoC/Riverpod), and fixing technical debt.</p>
+                        <div class="service-tags">CLEAN ARCH · REFACTORING · BLOC</div>
+                        <a href="#contact" class="service-order-btn">Inquire Now <i
+                                class="fa-solid fa-chevron-right"></i></a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-index">04</div>
+                        <i class="fa-solid fa-cloud"></i>
+                        <h3>Firebase &amp; Supabase Backend</h3>
+                        <p>Setting up scalable BaaS foundations: Authentication, Firestore/PostgreSQL, Cloud Functions,
+                            storage, and security rules.</p>
+                        <div class="service-tags">FIREBASE · SUPABASE · POSTGRESQL</div>
+                        <a href="#contact" class="service-order-btn">Inquire Now <i
+                                class="fa-solid fa-chevron-right"></i></a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-index">05</div>
+                        <i class="fa-solid fa-comments"></i>
+                        <h3>Real-Time Chat &amp; Audio/Video</h3>
+                        <p>Implementing live WebSocket/STOMP messaging, push notifications, and Agora real-time voice
+                            and video communication channels.</p>
+                        <div class="service-tags">WEBSOCKETS · STOMP · AGORA</div>
+                        <a href="#contact" class="service-order-btn">Inquire Now <i
+                                class="fa-solid fa-chevron-right"></i></a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-index">06</div>
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <h3>Performance &amp; Crash Auditing</h3>
+                        <p>Diagnosing frame drops, memory leaks, high battery usage, and production crashes. Profiling
+                            apps for buttery 60fps performance.</p>
+                        <div class="service-tags">PERF AUDIT · 60FPS · CRASHLYTICS</div>
+                        <a href="#contact" class="service-order-btn">Inquire Now <i
+                                class="fa-solid fa-chevron-right"></i></a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-index">07</div>
+                        <i class="fa-solid fa-bezier-curve"></i>
+                        <h3>Figma to Flutter Conversion</h3>
+                        <p>Transforming complex Figma UI kits and design systems into modular, responsive, pixel-perfect
+                            Flutter widget libraries.</p>
+                        <div class="service-tags">FIGMA TO FLUTTER · DESIGN SYSTEM</div>
+                        <a href="#contact" class="service-order-btn">Inquire Now <i
+                                class="fa-solid fa-chevron-right"></i></a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-index">08</div>
+                        <i class="fa-solid fa-rocket"></i>
+                        <h3>Store Publishing &amp; Release Support</h3>
+                        <p>Handling Google Play Console &amp; Apple App Store Connect submissions, TestFlight beta
+                            distribution, signing, and rejection troubleshooting.</p>
+                        <div class="service-tags">PLAY STORE · APP STORE · TESTFLIGHT</div>
+                        <a href="#contact" class="service-order-btn">Inquire Now <i
+                                class="fa-solid fa-chevron-right"></i></a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-index">09</div>
+                        <i class="fa-solid fa-plug"></i>
+                        <h3>Third-Party SDKs &amp; APIs</h3>
+                        <p>Integrating Google Maps, payment gateways, AppsFlyer/Branch attribution, in-app WebViews, and
+                            native platform channels.</p>
+                        <div class="service-tags">MAPS · APPSFLYER · PAYMENTS</div>
+                        <a href="#contact" class="service-order-btn">Inquire Now <i
+                                class="fa-solid fa-chevron-right"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: Structured Technology Stack Matrix -->
+        <section id="tech-stack" class="section tech-matrix-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="sub-kicker">STRUCTURED COMPETENCY MATRIX</span>
+                    <h2 class="main-title">Technology <span class="lime-text">Stack</span></h2>
+                    <p class="section-desc">Organized by engineering domain to reflect both deep mobile craft and broad
+                        full-stack capabilities without random keyword clutter.</p>
+                </div>
+
+                <div class="tech-matrix-grid">
+                    <!-- Group 1: Primary Mobile -->
+                    <div class="tech-group-card">
+                        <div class="group-header">
+                            <span class="group-badge primary-badge">PRIMARY</span>
+                            <h4>Mobile Development</h4>
+                        </div>
+                        <div class="group-pills">
+                            <span class="pill primary">Flutter</span>
+                            <span class="pill primary">Dart</span>
+                            <span class="pill">Android</span>
+                            <span class="pill">iOS</span>
+                            <span class="pill">Web</span>
+                            <span class="pill">Windows Desktop</span>
+                            <span class="pill">Responsive UI</span>
+                            <span class="pill">Platform Channels</span>
+                        </div>
+                    </div>
+
+                    <!-- Group 2: Architecture & State -->
+                    <div class="tech-group-card">
+                        <div class="group-header">
+                            <span class="group-badge">ARCHITECTURE</span>
+                            <h4>Architecture &amp; State</h4>
+                        </div>
+                        <div class="group-pills">
+                            <span class="pill gold">Clean Architecture</span>
+                            <span class="pill gold">BLoC / Cubit</span>
+                            <span class="pill gold">Riverpod</span>
+                            <span class="pill">MVVM</span>
+                            <span class="pill">SOLID Principles</span>
+                            <span class="pill">Repository Pattern</span>
+                            <span class="pill">Offline-First</span>
+                        </div>
+                    </div>
+
+                    <!-- Group 3: AI & Intelligent Features -->
+                    <div class="tech-group-card">
+                        <div class="group-header">
+                            <span class="group-badge ai-badge">AI / ML</span>
+                            <h4>AI &amp; Intelligent Systems</h4>
+                        </div>
+                        <div class="group-pills">
+                            <span class="pill gold">OpenAI API</span>
+                            <span class="pill gold">Google Gemini API</span>
+                            <span class="pill gold">SSE Streaming</span>
+                            <span class="pill">Multimodal AI</span>
+                            <span class="pill">Prompt Engineering</span>
+                            <span class="pill">Google ML Kit</span>
+                            <span class="pill">TensorFlow Lite</span>
+                        </div>
+                    </div>
+
+                    <!-- Group 4: Backend & Networking -->
+                    <div class="tech-group-card">
+                        <div class="group-header">
+                            <span class="group-badge">NETWORKING</span>
+                            <h4>Backend &amp; Data</h4>
+                        </div>
+                        <div class="group-pills">
+                            <span class="pill gold">REST APIs</span>
+                            <span class="pill gold">Dio (Interceptors)</span>
+                            <span class="pill gold">WebSockets</span>
+                            <span class="pill">Firebase (Auth, Firestore, FCM)</span>
+                            <span class="pill">Supabase</span>
+                            <span class="pill">Caching &amp; Token Refresh</span>
+                        </div>
+                    </div>
+
+                    <!-- Group 5: Databases & Local Storage -->
+                    <div class="tech-group-card">
+                        <div class="group-header">
+                            <span class="group-badge">DATA LAYER</span>
+                            <h4>Databases &amp; Local Storage</h4>
+                        </div>
+                        <div class="group-pills">
+                            <span class="pill gold">Hive (NoSQL)</span>
+                            <span class="pill gold">SQLite / SQFLite</span>
+                            <span class="pill">Flutter Secure Storage</span>
+                            <span class="pill">Offline Cache</span>
+                            <span class="pill">Cloud Firestore</span>
+                            <span class="pill">PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Group 6: Performance & Engineering -->
+                    <div class="tech-group-card">
+                        <div class="group-header">
+                            <span class="group-badge">PROFILING</span>
+                            <h4>Performance &amp; Profiling</h4>
+                        </div>
+                        <div class="group-pills">
+                            <span class="pill gold">Flutter DevTools</span>
+                            <span class="pill gold">Memory Profiling</span>
+                            <span class="pill gold">Rebuild Optimization</span>
+                            <span class="pill">Lazy Loading / Pagination</span>
+                            <span class="pill">60 FPS Rendering</span>
+                            <span class="pill">Jank Elimination</span>
+                        </div>
+                    </div>
+
+                    <!-- Group 7: Tools, Payments & Deployment -->
+                    <div class="tech-group-card">
+                        <div class="group-header">
+                            <span class="group-badge">DEPLOYMENT</span>
+                            <h4>Tools, Payments &amp; Release</h4>
+                        </div>
+                        <div class="group-pills">
+                            <span class="pill gold">Razorpay</span>
+                            <span class="pill gold">Stripe</span>
+                            <span class="pill">Git &amp; GitHub</span>
+                            <span class="pill">CI/CD Pipelines</span>
+                            <span class="pill">Play Console</span>
+                            <span class="pill">TestFlight / App Store</span>
+                            <span class="pill">Postman</span>
+                        </div>
+                    </div>
+
+                    <!-- Group 8: Real-Time & Media -->
+                    <div class="tech-group-card">
+                        <div class="group-header">
+                            <span class="group-badge">REAL-TIME</span>
+                            <h4>Real-Time &amp; Media</h4>
+                        </div>
+                        <div class="group-pills">
+                            <span class="pill gold">WebSockets</span>
+                            <span class="pill gold">STOMP Protocol</span>
+                            <span class="pill">Agora RTC</span>
+                            <span class="pill">Video Consultations</span>
+                            <span class="pill">Live Chat</span>
+                            <span class="pill">Google Maps SDK</span>
+                        </div>
+                    </div>
+
+                    <!-- Group 9: Leadership & Methodologies -->
+                    <div class="tech-group-card">
+                        <div class="group-header">
+                            <span class="group-badge primary-badge">LEADERSHIP</span>
+                            <h4>Leadership &amp; Practices</h4>
+                        </div>
+                        <div class="group-pills">
+                            <span class="pill primary">Team Leadership</span>
+                            <span class="pill primary">Agile / Scrum</span>
+                            <span class="pill">Code Review &amp; Linting</span>
+                            <span class="pill">Developer Mentorship</span>
+                            <span class="pill">Architecture Audits</span>
+                            <span class="pill">Generative AI Workflows</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 10: Works / Portfolio -->
+        <section id="portfolio" class="section portfolio-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="sub-kicker">PORTFOLIO &amp; CASE STUDIES</span>
+                    <h2 class="main-title">Featured <span class="lime-text">Works</span></h2>
+                    <p class="section-desc">Production applications and systems built for real-world reliability, high
+                        performance, and smooth UX.</p>
+                </div>
+
+                <!-- Category Filters (Arter Style) -->
+                <div class="portfolio-filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All Projects</button>
+                    <button class="filter-tab" data-filter="healthcare">Healthcare</button>
+                    <button class="filter-tab" data-filter="ai">AI / GenAI</button>
+                    <button class="filter-tab" data-filter="fintech">Fintech</button>
+                    <button class="filter-tab" data-filter="ecommerce">E-Commerce</button>
+                </div>
+
+                <div class="work-list">
+                    <!-- Project 1: QiSpine -->
+                    <article class="work" data-cat="healthcare mobile">
+                        <div class="work-image">
+                            <img src="images/ph1.png" alt="QiSpine Telemedicine App">
+                            <span>01</span>
+                        </div>
+                        <div class="work-content">
+                            <small>HEALTHCARE · TELEMEDICINE · WEBSOCKETS</small>
+                            <h3>QiSpine Telemedicine</h3>
+                            <p>Architected dual doctor-patient applications with real-time video consultations,
+                                appointment booking, patient vital monitoring, and encrypted health records.</p>
+                            <a href="#contact">
+                                Inquire Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Kookease -->
+                    <article class="work" data-cat="ai mobile">
+                        <div class="work-image">
+                            <img src="images/flutter.png" alt="Kookease Generative AI Recipe Platform">
+                            <span>02</span>
+                        </div>
+                        <div class="work-content">
+                            <small>GENERATIVE AI · GEMINI / OPENAI · SSE</small>
+                            <h3>Kookease GenAI Kitchen</h3>
+                            <p>Integrated multimodal LLM pipelines (Gemini &amp; OpenAI API) with real-time SSE token
+                                streaming, voice/image inputs, and structured JSON parsing to synthesize interactive
+                                recipes.</p>
+                            <a href="#contact">
+                                Inquire Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Impetus Wealthtech -->
+                    <article class="work" data-cat="fintech mobile">
+                        <div class="work-image">
+                            <img src="images/ph2.png" alt="Impetus Wealthtech App">
+                            <span>03</span>
+                        </div>
+                        <div class="work-content">
+                            <small>FINTECH · WEALTHTECH · LIVE MARKET</small>
+                            <h3>Impetus Wealthtech</h3>
+                            <p>Personal wealth management app with proprietary risk assessment algorithms, live
+                                financial market news streaming, and advisory consultation scheduling.</p>
+                            <a href="#contact">
+                                Inquire Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Mitra Fintech -->
+                    <article class="work" data-cat="fintech mobile">
+                        <div class="work-image">
+                            <img src="images/ph1.png" alt="Mitra Fintech Lending App">
+                            <span>04</span>
+                        </div>
+                        <div class="work-content">
+                            <small>FINTECH · DIGITAL KYC · LENDING</small>
+                            <h3>Mitra Fintech Lending</h3>
+                            <p>Delivered dual-app lending solution with digital KYC verification, auto-cropping camera
+                                document scan, automated credit scoring, and status tracking.</p>
+                            <a href="#contact">
+                                Inquire Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Green India Retail -->
+                    <article class="work" data-cat="ecommerce mobile">
+                        <div class="work-image">
+                            <img src="images/ph2.png" alt="Green India Retail Platform">
+                            <span>05</span>
+                        </div>
+                        <div class="work-content">
+                            <small>E-COMMERCE · RECURRING PAYMENTS · GPS</small>
+                            <h3>Green India Retail</h3>
+                            <p>Multi-role subscription e-commerce platform for customers and delivery partners featuring
+                                automated recurring payments, live GPS tracking, and inventory sync.</p>
+                            <a href="#contact">
+                                Inquire Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Expense Tracker -->
+                    <article class="work" data-cat="fintech mobile">
+                        <div class="work-image">
+                            <img src="images/ph3.png" alt="Expense Tracker App">
+                            <span>06</span>
+                        </div>
+                        <div class="work-content">
+                            <small>FINTECH · SQLITE · CHARTS</small>
+                            <h3>Expense Tracker (Open Source)</h3>
+                            <p>Focused personal finance mobile app featuring interactive spending charts, multi-category
+                                budgeting, and instant SQLite local persistence.</p>
+                            <a href="https://github.com/Jaat0050/CipherSchools-Flutter-Assignment" target="_blank"
+                                rel="noopener">
+                                View GitHub Repo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="portfolio-more-wrap">
+                    <a href="https://github.com/Jaat0050" class="btn-secondary-glass" target="_blank" rel="noopener">
+                        See More On GitHub <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 11: History / Resume -->
+        <section id="history" class="section history-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="sub-kicker">RESUME &amp; TRACK RECORD</span>
+                    <h2 class="main-title">Education &amp; <span class="lime-text">History</span></h2>
+                    <p class="section-desc">My academic background and progressive professional software engineering
+                        journey.</p>
+                </div>
+
+                <div class="arter-history-grid">
+                    <!-- Column 1: Education, Speaking & Certifications -->
+                    <div class="history-col">
+                        <div class="history-col-header">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h3>Education &amp; Credentials</h3>
+                        </div>
+
+                        <div class="timeline-track">
+                            <!-- Education -->
+                            <div class="timeline-card">
+                                <span class="timeline-date">2019 — 2023</span>
+                                <h4>B.Tech in Computer Science &amp; Engineering</h4>
+                                <span class="timeline-subtitle">Uttarakhand Technical University</span>
+                                <p>Comprehensive software engineering coursework: Data Structures &amp; Algorithms,
+                                    Object-Oriented Design, Operating Systems, Database Management Systems, Computer
+                                    Networks, and Mobile Software Development.</p>
+                            </div>
+
+                            <!-- Speaking Experience -->
+                            <div class="timeline-card">
+                                <span class="timeline-date">JUL 2024 · TECH SPEAKER</span>
+                                <h4>Flutter Siliguri Conference</h4>
+                                <span class="timeline-subtitle">"Building Production-Ready Flutter Apps"</span>
+                                <p>Delivered technical talk to community developers on architecting robust Flutter
+                                    codebases, state management best practices with BLoC, and production deployment
+                                    checklists.</p>
+                            </div>
+
+                            <!-- Certifications -->
+                            <div class="timeline-card">
+                                <span class="timeline-date">CERTIFICATIONS</span>
+                                <h4>Professional Accreditations</h4>
+                                <span class="timeline-subtitle">Verified Industry Credentials</span>
+                                <ul class="timeline-bullets">
+                                    <li><strong>Advanced Flutter Development</strong> — Coursera (2023)</li>
+                                    <li><strong>Flutter Development Bootcamp</strong> — Udemy (2022)</li>
+                                    <li><strong>Git &amp; GitHub Essentials</strong> — Udemy (2022)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Leadership & Methodologies -->
+                            <div class="timeline-card">
+                                <span class="timeline-date">LEADERSHIP &amp; PRACTICES</span>
+                                <h4>Engineering Methodologies</h4>
+                                <span class="timeline-subtitle">Squad Leadership &amp; Delivery</span>
+                                <div class="timeline-tags">
+                                    <span>Team Leadership</span>
+                                    <span>Agile / Scrum</span>
+                                    <span>Code Reviews</span>
+                                    <span>CI/CD Automation</span>
+                                    <span>Generative AI</span>
+                                    <span>App Store Release</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Work History -->
+                    <div class="history-col">
+                        <div class="history-col-header">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <h3>Work History</h3>
+                        </div>
+
+                        <div class="timeline-track">
+                            <!-- Job 1: Innovins -->
+                            <div class="timeline-card">
+                                <span class="timeline-date">APR 2024 — PRESENT</span>
+                                <h4>Flutter Developer</h4>
+                                <span class="timeline-subtitle">Innovins Softech Solution Pvt. Ltd. · Remote</span>
+                                <ul class="timeline-bullets">
+                                    <li>Engineered and shipped <strong>10+ enterprise mobile apps</strong> across
+                                        healthcare, fintech, and retail, consistently maintaining <strong>4.5+ star
+                                            store ratings</strong>.</li>
+                                    <li><strong>Improved app performance &amp; frame rendering by 60%</strong> by
+                                        eliminating unnecessary widget rebuilds, implementing lazy pagination, and
+                                        profiling memory leaks via Flutter DevTools.</li>
+                                    <li><strong>Reduced API failure rates by 40%</strong> by designing a unified
+                                        networking and caching framework utilizing Dio interceptors, token refresh
+                                        flows, and Hive local storage.</li>
+                                    <li>Mentored 3 junior developers through architecture reviews, test-driven
+                                        development practices, and standardized linting guidelines.</li>
+                                </ul>
+                                <div class="timeline-project-pills">
+                                    <span class="t-pill">QiSpine (Telemedicine)</span>
+                                    <span class="t-pill">Kookease (GenAI Recipes)</span>
+                                    <span class="t-pill">Impetus (Fintech)</span>
+                                </div>
+                            </div>
+
+                            <!-- Job 2: NextGen -->
+                            <div class="timeline-card">
+                                <span class="timeline-date">JUN 2023 — MAR 2024 · 10 MOS</span>
+                                <h4>Team Lead | Flutter Developer</h4>
+                                <span class="timeline-subtitle">NextGen Techno Ventures · Remote</span>
+                                <ul class="timeline-bullets">
+                                    <li>Directed a cross-functional agile squad of 4 (2 backend engineers, 1 UI/UX
+                                        designer, 1 QA), consistently achieving a <strong>95% sprint completion
+                                            rate</strong>.</li>
+                                    <li><strong>Improved engineering delivery velocity by 30%</strong> by standardizing
+                                        repository branching strategies, automated code review pipelines, and shared UI
+                                        component libraries.</li>
+                                    <li>Led technical architecture decisions, migrating legacy codebases to Clean
+                                        Architecture with BLoC, <strong>reducing technical debt and feature regression
+                                            bugs by 35%</strong>.</li>
+                                </ul>
+                                <div class="timeline-project-pills">
+                                    <span class="t-pill">Mitra Fintech (KYC Lending)</span>
+                                    <span class="t-pill">Green India Retail (E-Commerce)</span>
+                                </div>
+                            </div>
+
+                            <!-- Job 3: Celebrare -->
+                            <div class="timeline-card">
+                                <span class="timeline-date">MAY 2023 · 1 MO</span>
+                                <h4>Flutter Developer Intern</h4>
+                                <span class="timeline-subtitle">Celebrare · Remote</span>
+                                <ul class="timeline-bullets">
+                                    <li>Developed 15+ production features and resolved 50+ bugs across consumer-facing
+                                        mobile applications.</li>
+                                    <li>Built 30+ reusable, pixel-perfect custom widgets from Figma specifications,
+                                        accelerating front-end delivery by 25%.</li>
+                                    <li>Integrated Firebase Auth, Firestore, and FCM Push Notifications, boosting user
+                                        engagement and retention.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Job 4: Baoiam -->
+                            <div class="timeline-card">
+                                <span class="timeline-date">MAR 2022 — MAY 2022 · 3 MOS</span>
+                                <h4>Flutter Developer Intern</h4>
+                                <span class="timeline-subtitle">Baoiam Innovations Pvt. Ltd. · Remote</span>
+                                <ul class="timeline-bullets">
+                                    <li>Developed core cross-platform UI modules and navigation flows for ed-tech mobile
+                                        application using Flutter and Dart.</li>
+                                    <li>Integrated REST APIs and authentication services, ensuring responsive data
+                                        rendering and smooth state transitions.</li>
+                                    <li>Built 25+ reusable responsive widgets, ensuring smooth 60 FPS performance and
+                                        cross-device compatibility across Android and iOS.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 12: Get in Touch / Contact -->
         <section id="contact" class="section contact-section">
             <div class="container">
-                <div class="contact-grid reveal">
-                    <!-- Left Column: Contact Details & Social Links -->
+                <div class="section-heading">
+                    <span class="sub-kicker">LET'S CONNECT</span>
+                    <h2 class="main-title">Get in <span class="lime-text">Touch</span></h2>
+                    <p class="section-desc">Have a product idea, high-impact project, or full-time opportunity? Let's
+                        discuss how we can build something exceptional together.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Contact Details Cards -->
                     <div class="contact-left">
-                        <span class="sub-kicker">09 — CONTACT</span>
-                        <h2 class="main-title">Let's build<br><span class="lime-text">something great.</span></h2>
-                        <p class="section-desc">
-                            Have an idea, product or application in mind?<br>Let's turn it into a production-ready experience.
-                        </p>
-
-                        <!-- Contact Details Items -->
-                        <div class="contact-details-list">
-                            <!-- Email Item -->
-                            <div class="contact-detail-item">
-                                <div class="c-icon-tile"><i class="fa-regular fa-envelope"></i></div>
-                                <div class="c-info">
-                                    <span class="c-label">Email</span>
-                                    <a href="mailto:rana.arjun62001@gmail.com" class="c-val">rana.arjun62001@gmail.com</a>
-                                </div>
-                            </div>
-
-                            <!-- Phone Item -->
-                            <div class="contact-detail-item">
-                                <div class="c-icon-tile"><i class="fa-solid fa-phone"></i></div>
-                                <div class="c-info">
-                                    <span class="c-label">Phone</span>
-                                    <a href="tel:+917417662218" class="c-val">+91 74176 62218</a>
-                                </div>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Saharanpur, Uttar Pradesh, India (Remote worldwide)</p>
                             </div>
                         </div>
 
-                        <!-- Let's Connect Social Tiles -->
-                        <div class="contact-social-wrap">
-                            <span class="social-label">Let's connect</span>
-                            <div class="social-tiles-grid">
-                                <a href="https://www.linkedin.com/in/arjun-rana-jaat0050/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-tile">
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                </a>
-                                <a href="https://github.com/Jaat0050" target="_blank" rel="noopener" aria-label="GitHub" class="social-tile">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                                <a href="https://www.instagram.com/rana.a_005/" target="_blank" rel="noopener" aria-label="Instagram" class="social-tile">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                                <a href="https://wa.me/917417662218" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-tile">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                </a>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p><a href="mailto:rana.arjun62000@gmail.com"
+                                        class="gold-link">rana.arjun62000@gmail.com</a></p>
                             </div>
                         </div>
 
-                        <!-- Download CV Card Button -->
-                        <a href="images/Arjun Rana Resume.pdf" download class="cv-card-btn">
-                            <div class="cv-tile-icon"><i class="fa-solid fa-download"></i></div>
-                            <div class="cv-info">
-                                <strong>Download CV</strong>
-                                <span>Get my resume</span>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div class="contact-details">
+                                <h3>WhatsApp / Call</h3>
+                                <p><a href="https://wa.me/917417662218" target="_blank" rel="noopener"
+                                        class="gold-link">+91 74176 62218</a></p>
                             </div>
-                            <div class="cv-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                        </a>
+                        </div>
+
+                        <!-- Mini CV Download Box -->
+                        <div class="contact-cv-box">
+                            <div class="cv-box-text">
+                                <strong>Looking for my full resume?</strong>
+                                <span>Download a clean 2-page PDF summary.</span>
+                            </div>
+                            <a href="images/Arjun Rana Resume.pdf" download class="btn-primary-lime">
+                                Download CV <i class="fa-solid fa-download"></i>
+                            </a>
+                        </div>
                     </div>
 
-                    <!-- Right Column: Interactive Glass Contact Form Card -->
-                    <div class="contact-right">
-                        <div class="contact-form-card">
-                            <div class="form-card-header">
-                                <div class="form-icon-tile"><i class="fa-solid fa-paper-plane"></i></div>
-                                <div class="form-header-text">
-                                    <h3>Send a message</h3>
-                                    <p>I'll get back to you as soon as possible.</p>
-                                </div>
-                            </div>
-
-                            <form name="submit-to-google-sheet">
-                                <!-- Name Input -->
-                                <div class="input-wrap">
-                                    <i class="fa-regular fa-user input-icon"></i>
-                                    <input type="text" name="Name" placeholder="Your name" required>
-                                </div>
-
-                                <!-- Email Input -->
-                                <div class="input-wrap">
-                                    <i class="fa-regular fa-envelope input-icon"></i>
-                                    <input type="email" name="Email" placeholder="Your email" required>
-                                </div>
-
-                                <!-- Message Textarea -->
-                                <div class="input-wrap textarea-wrap">
-                                    <i class="fa-regular fa-comment-dots input-icon"></i>
-                                    <textarea name="Message" rows="5" placeholder="Tell me about your project" required></textarea>
-                                </div>
-
-                                <!-- Submit Button -->
-                                <button type="submit" class="form-submit-btn">
-                                    <i class="fa-solid fa-paper-plane"></i>
-                                    <span>Let's talk</span>
-                                    <div class="btn-arrow-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                                </button>
-                            </form>
-
-                            <span id="msg"></span>
-
-                            <!-- Security Note -->
-                            <div class="form-security-note">
-                                <i class="fa-solid fa-lock"></i>
-                                <span>Your information is 100% safe and secure.</span>
-                            </div>
+                    <!-- Right: Direct Message Form -->
+                    <div class="contact-form-card">
+                        <div class="form-header-text">
+                            <h3>Send Message</h3>
+                            <p>Fill out the form below and I'll respond within 24 hours.</p>
                         </div>
+
+                        <form name="submit-to-google-sheet">
+                            <div class="form-row">
+                                <div class="input-wrap">
+                                    <input type="text" name="Name" placeholder="Your Name" required autocomplete="name">
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="email" name="Email" placeholder="Your Email" required
+                                        autocomplete="email">
+                                </div>
+                                <div class="input-wrap">
+                                    <textarea name="Message" placeholder="Your Message or Project Details" rows="5"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="form-submit-btn">
+                                    <span>Send Message</span>
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                                <div id="msg" role="status" aria-live="polite"></div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-card reveal">
-                <!-- Top Main Grid -->
-                <div class="footer-top-grid">
-                    <!-- Column 1: Brand & Bio -->
-                    <div class="footer-col f-brand-col">
-                        <div class="f-brand-header">
-                            <span class="f-logo-mark">AR.</span>
-                            <div class="f-brand-title">
-                                <h3>ARJUN RANA</h3>
-                                <span>Flutter Developer</span>
-                            </div>
-                        </div>
-                        <p class="f-bio">
-                            I build cross-platform mobile applications that are fast, scalable and user-centric.
-                        </p>
-                        <a href="images/Arjun Rana Resume.pdf" download class="f-cv-btn">
-                            <i class="fa-solid fa-download"></i> Download CV
-                        </a>
-                    </div>
-
-                    <!-- Column 2: Explore -->
-                    <div class="footer-col">
-                        <h4 class="f-kicker">EXPLORE</h4>
-                        <ul class="f-links">
-                            <li><a href="#about">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#experience">Experience</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Column 3: Services -->
-                    <div class="footer-col">
-                        <h4 class="f-kicker">SERVICES</h4>
-                        <ul class="f-links">
-                            <li><a href="#services">Flutter Development</a></li>
-                            <li><a href="#ai-lab">AI Integration</a></li>
-                            <li><a href="#services">Firebase Solutions</a></li>
-                            <li><a href="#architecture">App Architecture</a></li>
-                            <li><a href="#contact">Consulting</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Column 4: Tech Stack -->
-                    <div class="footer-col">
-                        <h4 class="f-kicker">TECH STACK</h4>
-                        <ul class="f-links">
-                            <li><a href="#skills">Flutter</a></li>
-                            <li><a href="#skills">Firebase</a></li>
-                            <li><a href="#skills">Supabase</a></li>
-                            <li><a href="#skills">REST APIs</a></li>
-                            <li><a href="#ai-lab">AI / LLMs</a></li>
-                            <li><a href="#skills">& More</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Column 5: Let's Connect & Project Box -->
-                    <div class="footer-col f-connect-col">
-                        <h4 class="f-kicker">LET'S CONNECT</h4>
-                        <div class="f-social-row">
-                            <a href="https://www.linkedin.com/in/arjun-rana-jaat0050/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="https://github.com/Jaat0050" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://www.instagram.com/rana.a_005/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://wa.me/917417662218" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                        </div>
-
-                        <!-- Have a project in mind callout box -->
-                        <a href="#contact" class="f-project-card">
-                            <div class="f-proj-icon"><i class="fa-regular fa-envelope"></i></div>
-                            <div class="f-proj-text">
-                                <strong>Have a project in mind?</strong>
-                                <span>Let's turn your idea into something amazing.</span>
-                            </div>
-                            <div class="f-proj-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Bottom Bar Divider Line & Credits -->
-                <div class="footer-bottom-bar">
-                    <div class="f-status">
-                        <i class="fa-solid fa-shield-halved"></i>
-                        <span>Available for new opportunities</span>
-                    </div>
-
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-bar-content">
                     <div class="f-copyright">
-                        © 2026 Arjun Rana. All rights reserved.
+                        © 2026 Arjun Rana. All rights reserved. Flutter Developer · Mobile Architecture &amp; AI
+                        Integration.
                     </div>
-
-                    <div class="f-location-email">
-                        <span class="f-loc"><i class="fa-solid fa-location-dot"></i> India (IST)</span>
-                        <span class="f-sep">|</span>
-                        <a href="mailto:rana.arjun62001@gmail.com" class="f-email-link">Email: rana.arjun62001@gmail.com</a>
+                    <div class="f-status">
+                        <span class="status-indicator"></span>
+                        <span>Available for high-impact projects &amp; full-time roles</span>
+                    </div>
+                    <div class="f-socials">
+                        <a href="https://www.linkedin.com/in/arjun-rana" target="_blank" rel="noopener"
+                            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Jaat0050" target="_blank" rel="noopener" aria-label="GitHub"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/rana.a_005/" target="_blank" rel="noopener"
+                            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/917417662218" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div><!-- End arter-main-canvas -->
 
     <script src="script.js"></script>
 </body>
